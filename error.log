@@ -1,0 +1,2982 @@
+[Mon Nov 30 2015 19:44:50 GMT+0800 (中国标准时间)] /
+Error: Failed to lookup view "index"
+    at Function.app.render (e:\blog\node_modules\express\lib\application.js:493:17)
+    at ServerResponse.res.render (e:\blog\node_modules\express\lib\response.js:801:7)
+    at e:\blog\routes\index.js:30:17
+    at e:\blog\models\post.js:99:21
+    at handleCallback (e:\blog\node_modules\mongodb\lib\utils.js:96:12)
+    at e:\blog\node_modules\mongodb\lib\cursor.js:842:16
+    at handleCallback (e:\blog\node_modules\mongodb-core\lib\cursor.js:244:5)
+    at setCursorDeadAndNotified (e:\blog\node_modules\mongodb-core\lib\cursor.js:554:3)
+    at nextFunction (e:\blog\node_modules\mongodb-core\lib\cursor.js:729:7)
+    at Cursor.next [as _next] (e:\blog\node_modules\mongodb-core\lib\cursor.js:770:3)
+[Mon Nov 30 2015 19:45:03 GMT+0800 (中国标准时间)] /
+Error: Failed to lookup view "index"
+    at Function.app.render (e:\blog\node_modules\express\lib\application.js:493:17)
+    at ServerResponse.res.render (e:\blog\node_modules\express\lib\response.js:801:7)
+    at e:\blog\routes\index.js:30:17
+    at e:\blog\models\post.js:99:21
+    at handleCallback (e:\blog\node_modules\mongodb\lib\utils.js:96:12)
+    at e:\blog\node_modules\mongodb\lib\cursor.js:842:16
+    at handleCallback (e:\blog\node_modules\mongodb-core\lib\cursor.js:244:5)
+    at setCursorDeadAndNotified (e:\blog\node_modules\mongodb-core\lib\cursor.js:554:3)
+    at nextFunction (e:\blog\node_modules\mongodb-core\lib\cursor.js:729:7)
+    at Cursor.next [as _next] (e:\blog\node_modules\mongodb-core\lib\cursor.js:770:3)
+[Mon Nov 30 2015 19:45:05 GMT+0800 (中国标准时间)] /
+Error: Failed to lookup view "index"
+    at Function.app.render (e:\blog\node_modules\express\lib\application.js:493:17)
+    at ServerResponse.res.render (e:\blog\node_modules\express\lib\response.js:801:7)
+    at e:\blog\routes\index.js:30:17
+    at e:\blog\models\post.js:99:21
+    at handleCallback (e:\blog\node_modules\mongodb\lib\utils.js:96:12)
+    at e:\blog\node_modules\mongodb\lib\cursor.js:842:16
+    at handleCallback (e:\blog\node_modules\mongodb-core\lib\cursor.js:244:5)
+    at setCursorDeadAndNotified (e:\blog\node_modules\mongodb-core\lib\cursor.js:554:3)
+    at nextFunction (e:\blog\node_modules\mongodb-core\lib\cursor.js:729:7)
+    at Cursor.next [as _next] (e:\blog\node_modules\mongodb-core\lib\cursor.js:770:3)
+[Mon Nov 30 2015 19:47:03 GMT+0800 (中国标准时间)] /
+Error: Failed to lookup view "index"
+    at Function.app.render (e:\blog\node_modules\express\lib\application.js:493:17)
+    at ServerResponse.res.render (e:\blog\node_modules\express\lib\response.js:801:7)
+    at e:\blog\routes\index.js:30:17
+    at e:\blog\models\post.js:99:21
+    at handleCallback (e:\blog\node_modules\mongodb\lib\utils.js:96:12)
+    at e:\blog\node_modules\mongodb\lib\cursor.js:842:16
+    at handleCallback (e:\blog\node_modules\mongodb-core\lib\cursor.js:244:5)
+    at setCursorDeadAndNotified (e:\blog\node_modules\mongodb-core\lib\cursor.js:554:3)
+    at nextFunction (e:\blog\node_modules\mongodb-core\lib\cursor.js:729:7)
+    at Cursor.next [as _next] (e:\blog\node_modules\mongodb-core\lib\cursor.js:770:3)
+[Mon Nov 30 2015 19:48:26 GMT+0800 (中国标准时间)] /
+Error: Failed to lookup view "index"
+    at Function.app.render (e:\blog\node_modules\express\lib\application.js:493:17)
+    at ServerResponse.res.render (e:\blog\node_modules\express\lib\response.js:801:7)
+    at e:\blog\routes\index.js:30:17
+    at e:\blog\models\post.js:99:21
+    at handleCallback (e:\blog\node_modules\mongodb\lib\utils.js:96:12)
+    at e:\blog\node_modules\mongodb\lib\cursor.js:842:16
+    at handleCallback (e:\blog\node_modules\mongodb-core\lib\cursor.js:244:5)
+    at setCursorDeadAndNotified (e:\blog\node_modules\mongodb-core\lib\cursor.js:554:3)
+    at nextFunction (e:\blog\node_modules\mongodb-core\lib\cursor.js:729:7)
+    at Cursor.next [as _next] (e:\blog\node_modules\mongodb-core\lib\cursor.js:770:3)
+[Mon Nov 30 2015 19:49:11 GMT+0800 (中国标准时间)] /
+Error: Failed to lookup view "index"
+    at Function.app.render (e:\blog\node_modules\express\lib\application.js:493:17)
+    at ServerResponse.res.render (e:\blog\node_modules\express\lib\response.js:801:7)
+    at e:\blog\routes\index.js:30:17
+    at e:\blog\models\post.js:99:21
+    at handleCallback (e:\blog\node_modules\mongodb\lib\utils.js:96:12)
+    at e:\blog\node_modules\mongodb\lib\cursor.js:842:16
+    at handleCallback (e:\blog\node_modules\mongodb-core\lib\cursor.js:244:5)
+    at setCursorNotified (e:\blog\node_modules\mongodb-core\lib\cursor.js:564:3)
+    at e:\blog\node_modules\mongodb-core\lib\cursor.js:672:16
+    at queryCallback (e:\blog\node_modules\mongodb-core\lib\cursor.js:323:5)
+[Mon Nov 30 2015 19:49:13 GMT+0800 (中国标准时间)] /
+Error: Failed to lookup view "index"
+    at Function.app.render (e:\blog\node_modules\express\lib\application.js:493:17)
+    at ServerResponse.res.render (e:\blog\node_modules\express\lib\response.js:801:7)
+    at e:\blog\routes\index.js:30:17
+    at e:\blog\models\post.js:99:21
+    at handleCallback (e:\blog\node_modules\mongodb\lib\utils.js:96:12)
+    at e:\blog\node_modules\mongodb\lib\cursor.js:842:16
+    at handleCallback (e:\blog\node_modules\mongodb-core\lib\cursor.js:244:5)
+    at setCursorNotified (e:\blog\node_modules\mongodb-core\lib\cursor.js:564:3)
+    at e:\blog\node_modules\mongodb-core\lib\cursor.js:672:16
+    at queryCallback (e:\blog\node_modules\mongodb-core\lib\cursor.js:323:5)
+[Mon Nov 30 2015 19:54:50 GMT+0800 (中国标准时间)] /archive
+Error: Failed to lookup view "archive"
+    at Function.app.render (e:\blog\node_modules\express\lib\application.js:493:17)
+    at ServerResponse.res.render (e:\blog\node_modules\express\lib\response.js:801:7)
+    at e:\blog\routes\index.js:198:17
+    at e:\blog\models\post.js:314:17
+    at handleCallback (e:\blog\node_modules\mongodb\lib\utils.js:96:12)
+    at e:\blog\node_modules\mongodb\lib\cursor.js:842:16
+    at handleCallback (e:\blog\node_modules\mongodb-core\lib\cursor.js:244:5)
+    at setCursorNotified (e:\blog\node_modules\mongodb-core\lib\cursor.js:564:3)
+    at e:\blog\node_modules\mongodb-core\lib\cursor.js:672:16
+    at queryCallback (e:\blog\node_modules\mongodb-core\lib\cursor.js:323:5)
+[Mon Nov 30 2015 20:01:13 GMT+0800 (中国标准时间)] /login
+Error: Failed to lookup view "login"
+    at Function.app.render (e:\blog\node_modules\express\lib\application.js:493:17)
+    at ServerResponse.res.render (e:\blog\node_modules\express\lib\response.js:801:7)
+    at e:\blog\routes\index.js:93:13
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkNotLogin (e:\blog\routes\index.js:439:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+[Mon Nov 30 2015 20:06:25 GMT+0800 (中国标准时间)] /reg
+Error: Failed to lookup view "reg"
+    at Function.app.render (e:\blog\node_modules\express\lib\application.js:493:17)
+    at ServerResponse.res.render (e:\blog\node_modules\express\lib\response.js:801:7)
+    at e:\blog\routes\index.js:44:13
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkNotLogin (e:\blog\routes\index.js:439:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+[Mon Nov 30 2015 20:11:09 GMT+0800 (中国标准时间)] /archive
+Error: Failed to lookup view "archive"
+    at Function.app.render (e:\blog\node_modules\express\lib\application.js:493:17)
+    at ServerResponse.res.render (e:\blog\node_modules\express\lib\response.js:801:7)
+    at e:\blog\routes\index.js:198:17
+    at e:\blog\models\post.js:314:17
+    at handleCallback (e:\blog\node_modules\mongodb\lib\utils.js:96:12)
+    at e:\blog\node_modules\mongodb\lib\cursor.js:842:16
+    at handleCallback (e:\blog\node_modules\mongodb-core\lib\cursor.js:244:5)
+    at setCursorNotified (e:\blog\node_modules\mongodb-core\lib\cursor.js:564:3)
+    at e:\blog\node_modules\mongodb-core\lib\cursor.js:672:16
+    at queryCallback (e:\blog\node_modules\mongodb-core\lib\cursor.js:323:5)
+[Mon Nov 30 2015 20:21:19 GMT+0800 (中国标准时间)] /archive
+Error: Failed to lookup view "archive"
+    at Function.app.render (e:\blog\node_modules\express\lib\application.js:493:17)
+    at ServerResponse.res.render (e:\blog\node_modules\express\lib\response.js:801:7)
+    at e:\blog\routes\index.js:198:17
+    at e:\blog\models\post.js:314:17
+    at handleCallback (e:\blog\node_modules\mongodb\lib\utils.js:96:12)
+    at e:\blog\node_modules\mongodb\lib\cursor.js:842:16
+    at handleCallback (e:\blog\node_modules\mongodb-core\lib\cursor.js:244:5)
+    at setCursorNotified (e:\blog\node_modules\mongodb-core\lib\cursor.js:564:3)
+    at e:\blog\node_modules\mongodb-core\lib\cursor.js:672:16
+    at queryCallback (e:\blog\node_modules\mongodb-core\lib\cursor.js:323:5)
+[Mon Nov 30 2015 20:21:23 GMT+0800 (中国标准时间)] /login
+Error: Failed to lookup view "login"
+    at Function.app.render (e:\blog\node_modules\express\lib\application.js:493:17)
+    at ServerResponse.res.render (e:\blog\node_modules\express\lib\response.js:801:7)
+    at e:\blog\routes\index.js:93:13
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkNotLogin (e:\blog\routes\index.js:439:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+[Mon Nov 30 2015 20:21:25 GMT+0800 (中国标准时间)] /links
+Error: Failed to lookup view "links"
+    at Function.app.render (e:\blog\node_modules\express\lib\application.js:493:17)
+    at ServerResponse.res.render (e:\blog\node_modules\express\lib\response.js:801:7)
+    at e:\blog\routes\index.js:245:13
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at Router._dispatch (e:\blog\node_modules\express\lib\router\index.js:173:5)
+    at Object.router (e:\blog\node_modules\express\lib\router\index.js:33:10)
+    at next (e:\blog\node_modules\connect\lib\proto.js:193:15)
+    at next (e:\blog\node_modules\connect\lib\middleware\session.js:318:9)
+[Mon Nov 30 2015 20:23:45 GMT+0800 (中国标准时间)] /archive
+Error: Failed to lookup view "archive"
+    at Function.app.render (e:\blog\node_modules\express\lib\application.js:493:17)
+    at ServerResponse.res.render (e:\blog\node_modules\express\lib\response.js:801:7)
+    at e:\blog\routes\index.js:199:17
+    at e:\blog\models\post.js:314:17
+    at handleCallback (e:\blog\node_modules\mongodb\lib\utils.js:96:12)
+    at e:\blog\node_modules\mongodb\lib\cursor.js:842:16
+    at handleCallback (e:\blog\node_modules\mongodb-core\lib\cursor.js:244:5)
+    at setCursorNotified (e:\blog\node_modules\mongodb-core\lib\cursor.js:564:3)
+    at e:\blog\node_modules\mongodb-core\lib\cursor.js:672:16
+    at queryCallback (e:\blog\node_modules\mongodb-core\lib\cursor.js:323:5)
+[Mon Nov 30 2015 20:23:48 GMT+0800 (中国标准时间)] /tags
+Error: Failed to lookup view "tags"
+    at Function.app.render (e:\blog\node_modules\express\lib\application.js:493:17)
+    at ServerResponse.res.render (e:\blog\node_modules\express\lib\response.js:801:7)
+    at e:\blog\routes\index.js:216:17
+    at e:\blog\models\post.js:337:17
+    at handleCallback (e:\blog\node_modules\mongodb\lib\utils.js:96:12)
+    at e:\blog\node_modules\mongodb\lib\collection.js:1983:5
+    at handleCallback (e:\blog\node_modules\mongodb\lib\utils.js:96:12)
+    at e:\blog\node_modules\mongodb\lib\db.js:283:5
+    at e:\blog\node_modules\mongodb-core\lib\topologies\server.js:772:13
+    at Callbacks.emit (e:\blog\node_modules\mongodb-core\lib\topologies\server.js:95:3)
+[Mon Nov 30 2015 20:51:12 GMT+0800 (中国标准时间)] /tags
+Error: Failed to lookup view "tags"
+    at Function.app.render (e:\blog\node_modules\express\lib\application.js:493:17)
+    at ServerResponse.res.render (e:\blog\node_modules\express\lib\response.js:801:7)
+    at e:\blog\routes\index.js:224:17
+    at e:\blog\models\post.js:337:17
+    at handleCallback (e:\blog\node_modules\mongodb\lib\utils.js:96:12)
+    at e:\blog\node_modules\mongodb\lib\collection.js:1983:5
+    at handleCallback (e:\blog\node_modules\mongodb\lib\utils.js:96:12)
+    at e:\blog\node_modules\mongodb\lib\db.js:283:5
+    at e:\blog\node_modules\mongodb-core\lib\topologies\server.js:772:13
+    at Callbacks.emit (e:\blog\node_modules\mongodb-core\lib\topologies\server.js:95:3)
+[Thu Dec 03 2015 09:33:44 GMT+0800 (中国标准时间)] /
+Error: Failed to lookup view "index"
+    at Function.app.render (e:\blog\node_modules\express\lib\application.js:493:17)
+    at ServerResponse.res.render (e:\blog\node_modules\express\lib\response.js:801:7)
+    at e:\blog\routes\index.js:31:17
+    at e:\blog\models\post.js:99:21
+    at handleCallback (e:\blog\node_modules\mongodb\lib\utils.js:96:12)
+    at e:\blog\node_modules\mongodb\lib\cursor.js:842:16
+    at handleCallback (e:\blog\node_modules\mongodb-core\lib\cursor.js:244:5)
+    at setCursorNotified (e:\blog\node_modules\mongodb-core\lib\cursor.js:564:3)
+    at e:\blog\node_modules\mongodb-core\lib\cursor.js:672:16
+    at queryCallback (e:\blog\node_modules\mongodb-core\lib\cursor.js:323:5)
+[Thu Dec 03 2015 09:33:54 GMT+0800 (中国标准时间)] /
+Error: Failed to lookup view "index"
+    at Function.app.render (e:\blog\node_modules\express\lib\application.js:493:17)
+    at ServerResponse.res.render (e:\blog\node_modules\express\lib\response.js:801:7)
+    at e:\blog\routes\index.js:31:17
+    at e:\blog\models\post.js:99:21
+    at handleCallback (e:\blog\node_modules\mongodb\lib\utils.js:96:12)
+    at e:\blog\node_modules\mongodb\lib\cursor.js:842:16
+    at handleCallback (e:\blog\node_modules\mongodb-core\lib\cursor.js:244:5)
+    at setCursorNotified (e:\blog\node_modules\mongodb-core\lib\cursor.js:564:3)
+    at e:\blog\node_modules\mongodb-core\lib\cursor.js:672:16
+    at queryCallback (e:\blog\node_modules\mongodb-core\lib\cursor.js:323:5)
+[Sun Dec 06 2015 15:54:11 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:142:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:441:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Sun Dec 06 2015 15:55:06 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:142:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:441:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Sun Dec 06 2015 15:56:16 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:142:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:441:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Sun Dec 06 2015 15:59:11 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:142:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:441:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Sun Dec 06 2015 16:11:43 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:142:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:441:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Sun Dec 06 2015 16:33:05 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:444:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Sun Dec 06 2015 21:51:18 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at Router._dispatch (e:\blog\node_modules\express\lib\router\index.js:173:5)
+    at Object.router (e:\blog\node_modules\express\lib\router\index.js:33:10)
+    at next (e:\blog\node_modules\connect\lib\proto.js:193:15)
+    at Object.session [as handle] (e:\blog\node_modules\connect\lib\middleware\session.js:307:7)
+    at next (e:\blog\node_modules\connect\lib\proto.js:193:15)
+    at Object.cookieParser [as handle] (e:\blog\node_modules\connect\lib\middleware\cookieParser.js:60:5)
+[Sun Dec 06 2015 21:51:43 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at Router._dispatch (e:\blog\node_modules\express\lib\router\index.js:173:5)
+    at Object.router (e:\blog\node_modules\express\lib\router\index.js:33:10)
+    at next (e:\blog\node_modules\connect\lib\proto.js:193:15)
+    at Object.session [as handle] (e:\blog\node_modules\connect\lib\middleware\session.js:307:7)
+    at next (e:\blog\node_modules\connect\lib\proto.js:193:15)
+    at Object.cookieParser [as handle] (e:\blog\node_modules\connect\lib\middleware\cookieParser.js:60:5)
+[Sun Dec 06 2015 21:53:43 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at Router._dispatch (e:\blog\node_modules\express\lib\router\index.js:173:5)
+    at Object.router (e:\blog\node_modules\express\lib\router\index.js:33:10)
+    at next (e:\blog\node_modules\connect\lib\proto.js:193:15)
+    at Object.session [as handle] (e:\blog\node_modules\connect\lib\middleware\session.js:307:7)
+    at next (e:\blog\node_modules\connect\lib\proto.js:193:15)
+    at Object.cookieParser [as handle] (e:\blog\node_modules\connect\lib\middleware\cookieParser.js:60:5)
+[Sun Dec 06 2015 21:59:14 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at Router._dispatch (e:\blog\node_modules\express\lib\router\index.js:173:5)
+    at Object.router (e:\blog\node_modules\express\lib\router\index.js:33:10)
+    at next (e:\blog\node_modules\connect\lib\proto.js:193:15)
+    at Object.session [as handle] (e:\blog\node_modules\connect\lib\middleware\session.js:307:7)
+    at next (e:\blog\node_modules\connect\lib\proto.js:193:15)
+    at Object.cookieParser [as handle] (e:\blog\node_modules\connect\lib\middleware\cookieParser.js:60:5)
+[Mon Dec 07 2015 12:39:45 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at Router._dispatch (e:\blog\node_modules\express\lib\router\index.js:173:5)
+    at Object.router (e:\blog\node_modules\express\lib\router\index.js:33:10)
+    at next (e:\blog\node_modules\connect\lib\proto.js:193:15)
+    at Object.session [as handle] (e:\blog\node_modules\connect\lib\middleware\session.js:307:7)
+    at next (e:\blog\node_modules\connect\lib\proto.js:193:15)
+    at Object.cookieParser [as handle] (e:\blog\node_modules\connect\lib\middleware\cookieParser.js:60:5)
+[Mon Dec 07 2015 12:42:03 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at Router._dispatch (e:\blog\node_modules\express\lib\router\index.js:173:5)
+    at Object.router (e:\blog\node_modules\express\lib\router\index.js:33:10)
+    at next (e:\blog\node_modules\connect\lib\proto.js:193:15)
+    at Object.session [as handle] (e:\blog\node_modules\connect\lib\middleware\session.js:307:7)
+    at next (e:\blog\node_modules\connect\lib\proto.js:193:15)
+    at Object.cookieParser [as handle] (e:\blog\node_modules\connect\lib\middleware\cookieParser.js:60:5)
+[Mon Dec 07 2015 12:59:05 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at Router._dispatch (e:\blog\node_modules\express\lib\router\index.js:173:5)
+    at Object.router (e:\blog\node_modules\express\lib\router\index.js:33:10)
+    at next (e:\blog\node_modules\connect\lib\proto.js:193:15)
+    at Object.session [as handle] (e:\blog\node_modules\connect\lib\middleware\session.js:307:7)
+    at next (e:\blog\node_modules\connect\lib\proto.js:193:15)
+    at Object.cookieParser [as handle] (e:\blog\node_modules\connect\lib\middleware\cookieParser.js:60:5)
+[Mon Dec 07 2015 13:02:13 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at Router._dispatch (e:\blog\node_modules\express\lib\router\index.js:173:5)
+    at Object.router (e:\blog\node_modules\express\lib\router\index.js:33:10)
+    at next (e:\blog\node_modules\connect\lib\proto.js:193:15)
+    at Object.session [as handle] (e:\blog\node_modules\connect\lib\middleware\session.js:307:7)
+    at next (e:\blog\node_modules\connect\lib\proto.js:193:15)
+    at Object.cookieParser [as handle] (e:\blog\node_modules\connect\lib\middleware\cookieParser.js:60:5)
+[Mon Dec 07 2015 13:05:16 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at Router._dispatch (e:\blog\node_modules\express\lib\router\index.js:173:5)
+    at Object.router (e:\blog\node_modules\express\lib\router\index.js:33:10)
+    at next (e:\blog\node_modules\connect\lib\proto.js:193:15)
+    at Object.session [as handle] (e:\blog\node_modules\connect\lib\middleware\session.js:307:7)
+    at next (e:\blog\node_modules\connect\lib\proto.js:193:15)
+    at Object.cookieParser [as handle] (e:\blog\node_modules\connect\lib\middleware\cookieParser.js:60:5)
+[Mon Dec 07 2015 13:07:11 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of null
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at Router._dispatch (e:\blog\node_modules\express\lib\router\index.js:173:5)
+    at Object.router (e:\blog\node_modules\express\lib\router\index.js:33:10)
+    at next (e:\blog\node_modules\connect\lib\proto.js:193:15)
+    at next (e:\blog\node_modules\connect\lib\middleware\session.js:318:9)
+    at e:\blog\node_modules\connect\lib\middleware\session.js:342:9
+    at e:\blog\node_modules\connect-mongo\lib\connect-mongo.js:305:11
+[Mon Dec 07 2015 13:12:11 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of null
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at Router._dispatch (e:\blog\node_modules\express\lib\router\index.js:173:5)
+    at Object.router (e:\blog\node_modules\express\lib\router\index.js:33:10)
+    at next (e:\blog\node_modules\connect\lib\proto.js:193:15)
+    at next (e:\blog\node_modules\connect\lib\middleware\session.js:318:9)
+    at e:\blog\node_modules\connect\lib\middleware\session.js:342:9
+    at e:\blog\node_modules\connect-mongo\lib\connect-mongo.js:305:11
+[Mon Dec 07 2015 13:12:20 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of null
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at Router._dispatch (e:\blog\node_modules\express\lib\router\index.js:173:5)
+    at Object.router (e:\blog\node_modules\express\lib\router\index.js:33:10)
+    at next (e:\blog\node_modules\connect\lib\proto.js:193:15)
+    at next (e:\blog\node_modules\connect\lib\middleware\session.js:318:9)
+    at e:\blog\node_modules\connect\lib\middleware\session.js:342:9
+    at e:\blog\node_modules\connect-mongo\lib\connect-mongo.js:305:11
+[Mon Dec 07 2015 13:39:50 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:444:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Mon Dec 07 2015 13:41:54 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:444:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Mon Dec 07 2015 14:19:11 GMT+0800 (中国标准时间)] /login
+TypeError: Not a string or buffer
+    at TypeError (native)
+    at Hash.update (crypto.js:70:16)
+    at e:\blog\routes\index.js:106:28
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkNotLogin (e:\blog\routes\index.js:451:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+[Mon Dec 07 2015 14:34:41 GMT+0800 (中国标准时间)] /login
+TypeError: Not a string or buffer
+    at TypeError (native)
+    at Hash.update (crypto.js:70:16)
+    at e:\blog\routes\index.js:106:28
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkNotLogin (e:\blog\routes\index.js:452:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+[Mon Dec 07 2015 14:34:51 GMT+0800 (中国标准时间)] /login
+TypeError: Not a string or buffer
+    at TypeError (native)
+    at Hash.update (crypto.js:70:16)
+    at e:\blog\routes\index.js:106:28
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkNotLogin (e:\blog\routes\index.js:452:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+[Mon Dec 07 2015 14:38:01 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Mon Dec 07 2015 14:38:06 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Mon Dec 07 2015 14:38:23 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Mon Dec 07 2015 14:38:28 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Mon Dec 07 2015 14:41:54 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Mon Dec 07 2015 14:54:03 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Mon Dec 07 2015 14:59:11 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Mon Dec 07 2015 14:59:19 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Mon Dec 07 2015 16:35:02 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Mon Dec 07 2015 19:25:06 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Mon Dec 07 2015 19:28:30 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Mon Dec 07 2015 19:30:27 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Mon Dec 07 2015 20:10:29 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Mon Dec 07 2015 20:21:00 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Tue Dec 08 2015 16:57:05 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Tue Dec 08 2015 20:22:24 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Tue Dec 08 2015 20:28:00 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Tue Dec 08 2015 20:29:11 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Tue Dec 08 2015 20:29:45 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Tue Dec 08 2015 20:30:35 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Tue Dec 08 2015 20:31:53 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Tue Dec 08 2015 20:32:36 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Tue Dec 08 2015 20:33:23 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Tue Dec 08 2015 20:34:33 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Tue Dec 08 2015 21:20:42 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Tue Dec 08 2015 21:21:19 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Tue Dec 08 2015 21:21:42 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Tue Dec 08 2015 21:23:04 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Tue Dec 08 2015 21:23:20 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Tue Dec 08 2015 21:23:32 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Tue Dec 08 2015 21:24:35 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Tue Dec 08 2015 21:25:04 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Tue Dec 08 2015 21:39:52 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Tue Dec 08 2015 21:48:26 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Tue Dec 08 2015 21:48:55 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Tue Dec 08 2015 21:49:19 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Tue Dec 08 2015 21:49:38 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Tue Dec 08 2015 21:59:11 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Tue Dec 08 2015 22:02:09 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Tue Dec 08 2015 22:03:21 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Tue Dec 08 2015 22:08:22 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Tue Dec 08 2015 22:10:35 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Tue Dec 08 2015 22:12:19 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Tue Dec 08 2015 22:15:13 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Fri Dec 25 2015 15:06:37 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Fri Dec 25 2015 15:07:47 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Fri Dec 25 2015 15:09:46 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Fri Dec 25 2015 15:10:44 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Fri Dec 25 2015 15:12:55 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Fri Dec 25 2015 15:13:44 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Fri Dec 25 2015 15:14:04 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Fri Dec 25 2015 15:15:20 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Fri Dec 25 2015 15:17:52 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Fri Dec 25 2015 15:28:29 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Fri Dec 25 2015 15:42:49 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Fri Dec 25 2015 15:43:25 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Fri Dec 25 2015 15:43:55 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Fri Dec 25 2015 15:47:39 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Fri Dec 25 2015 15:49:32 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Fri Dec 25 2015 15:50:05 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Fri Dec 25 2015 15:54:11 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Fri Dec 25 2015 16:12:58 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Fri Dec 25 2015 16:18:39 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Fri Dec 25 2015 16:24:54 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Fri Dec 25 2015 16:25:31 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Fri Dec 25 2015 16:29:16 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Fri Dec 25 2015 16:31:08 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Fri Dec 25 2015 16:35:06 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Fri Dec 25 2015 16:42:14 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Fri Dec 25 2015 16:45:59 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Fri Dec 25 2015 16:47:39 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Fri Dec 25 2015 16:50:13 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Fri Dec 25 2015 16:51:09 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Fri Dec 25 2015 16:52:12 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Fri Dec 25 2015 16:52:55 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Sat Dec 26 2015 12:05:29 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Sat Dec 26 2015 12:10:49 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Sat Dec 26 2015 12:15:54 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Sat Dec 26 2015 12:40:55 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Sat Dec 26 2015 12:41:13 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Sat Dec 26 2015 12:41:37 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Sat Dec 26 2015 12:41:52 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Sat Dec 26 2015 12:42:04 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Sat Dec 26 2015 12:42:23 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Sat Dec 26 2015 12:42:39 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Sat Dec 26 2015 12:42:51 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Sat Dec 26 2015 12:42:55 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Sat Dec 26 2015 12:43:01 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Sat Dec 26 2015 12:43:08 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Sat Dec 26 2015 12:43:19 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Sat Dec 26 2015 12:43:52 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Sat Dec 26 2015 12:45:15 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Sat Dec 26 2015 12:45:30 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Sat Dec 26 2015 12:45:35 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Sat Dec 26 2015 12:45:39 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Sat Dec 26 2015 12:45:42 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Sat Dec 26 2015 12:45:46 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Sat Dec 26 2015 12:45:48 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Sat Dec 26 2015 12:47:08 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Sat Dec 26 2015 12:47:22 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Sat Dec 26 2015 12:47:26 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Sat Dec 26 2015 12:47:40 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Sat Dec 26 2015 12:47:45 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Sat Dec 26 2015 12:53:39 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Sat Dec 26 2015 12:53:40 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Sat Dec 26 2015 12:53:40 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Sat Dec 26 2015 12:53:41 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Sat Dec 26 2015 12:53:42 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Sat Dec 26 2015 12:53:42 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Sat Dec 26 2015 13:03:42 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Sat Dec 26 2015 13:04:30 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Sat Dec 26 2015 13:20:22 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Sat Dec 26 2015 13:25:51 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Sat Dec 26 2015 13:29:19 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Sat Dec 26 2015 13:32:46 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Wed Dec 30 2015 11:14:26 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Wed Dec 30 2015 11:15:31 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Wed Dec 30 2015 11:19:21 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Wed Dec 30 2015 12:18:27 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Wed Dec 30 2015 12:20:32 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Wed Dec 30 2015 12:21:37 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Wed Dec 30 2015 12:28:43 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Wed Dec 30 2015 12:40:40 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Wed Dec 30 2015 12:41:18 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Wed Dec 30 2015 13:27:43 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Wed Dec 30 2015 13:47:42 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Wed Dec 30 2015 13:51:49 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Wed Dec 30 2015 14:37:31 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Wed Dec 30 2015 14:38:13 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Wed Dec 30 2015 15:26:23 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Wed Dec 30 2015 15:57:17 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Wed Dec 30 2015 16:37:52 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Wed Dec 30 2015 16:45:34 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Wed Dec 30 2015 17:03:51 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Wed Dec 30 2015 17:06:14 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Wed Dec 30 2015 17:11:01 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Wed Dec 30 2015 17:12:07 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Wed Dec 30 2015 18:39:15 GMT+0800 (中国标准时间)] /login
+TypeError: Not a string or buffer
+    at TypeError (native)
+    at Hash.update (crypto.js:70:16)
+    at e:\blog\routes\index.js:106:28
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkNotLogin (e:\blog\routes\index.js:452:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+[Wed Dec 30 2015 18:39:38 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of null
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Wed Dec 30 2015 18:40:23 GMT+0800 (中国标准时间)] /login
+TypeError: Not a string or buffer
+    at TypeError (native)
+    at Hash.update (crypto.js:70:16)
+    at e:\blog\routes\index.js:106:28
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkNotLogin (e:\blog\routes\index.js:452:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+[Wed Dec 30 2015 18:40:30 GMT+0800 (中国标准时间)] /login
+TypeError: Not a string or buffer
+    at TypeError (native)
+    at Hash.update (crypto.js:70:16)
+    at e:\blog\routes\index.js:106:28
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkNotLogin (e:\blog\routes\index.js:452:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+[Wed Dec 30 2015 18:40:53 GMT+0800 (中国标准时间)] /login
+TypeError: Not a string or buffer
+    at TypeError (native)
+    at Hash.update (crypto.js:70:16)
+    at e:\blog\routes\index.js:106:28
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkNotLogin (e:\blog\routes\index.js:452:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+[Wed Dec 30 2015 18:41:00 GMT+0800 (中国标准时间)] /login
+TypeError: Not a string or buffer
+    at TypeError (native)
+    at Hash.update (crypto.js:70:16)
+    at e:\blog\routes\index.js:106:28
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkNotLogin (e:\blog\routes\index.js:452:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+[Wed Dec 30 2015 18:43:38 GMT+0800 (中国标准时间)] /login
+TypeError: Not a string or buffer
+    at TypeError (native)
+    at Hash.update (crypto.js:70:16)
+    at e:\blog\routes\index.js:106:28
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkNotLogin (e:\blog\routes\index.js:452:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+[Wed Dec 30 2015 19:47:09 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Wed Dec 30 2015 19:51:54 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Wed Dec 30 2015 20:01:41 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Wed Dec 30 2015 20:06:16 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Wed Dec 30 2015 20:29:15 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Wed Dec 30 2015 20:39:41 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Wed Dec 30 2015 20:47:16 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Wed Dec 30 2015 20:48:41 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Wed Dec 30 2015 20:49:19 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Wed Dec 30 2015 20:58:04 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Thu Dec 31 2015 10:20:12 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Thu Dec 31 2015 10:30:28 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Thu Dec 31 2015 10:55:16 GMT+0800 (中国标准时间)] /login
+TypeError: Not a string or buffer
+    at TypeError (native)
+    at Hash.update (crypto.js:70:16)
+    at e:\blog\routes\index.js:106:28
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkNotLogin (e:\blog\routes\index.js:452:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+[Thu Dec 31 2015 10:57:30 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Thu Dec 31 2015 11:06:55 GMT+0800 (中国标准时间)] /login
+TypeError: Not a string or buffer
+    at TypeError (native)
+    at Hash.update (crypto.js:70:16)
+    at e:\blog\routes\index.js:106:28
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkNotLogin (e:\blog\routes\index.js:452:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+[Thu Dec 31 2015 11:32:28 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Thu Dec 31 2015 11:42:32 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Fri Jan 01 2016 22:16:09 GMT+0800 (中国标准时间)] /post
+TypeError: Cannot read property 'name' of undefined
+    at e:\blog\routes\index.js:145:40
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (e:\blog\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:167:11)
+    at checkLogin (e:\blog\routes\index.js:445:9)
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Sat Mar 12 2016 11:18:33 GMT+0800 (中国标准时间)] /chats
+TypeError: first argument must be a string or Buffer
+    at ClientRequest.OutgoingMessage.write (_http_outgoing.js:430:11)
+    at e:\blog\routes\index.js:443:14
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at Router._dispatch (e:\blog\node_modules\express\lib\router\index.js:173:5)
+    at Object.router (e:\blog\node_modules\express\lib\router\index.js:33:10)
+    at next (e:\blog\node_modules\connect\lib\proto.js:193:15)
+    at next (e:\blog\node_modules\connect\lib\middleware\session.js:318:9)
+    at e:\blog\node_modules\connect\lib\middleware\session.js:342:9
+[Sat Mar 12 2016 11:21:01 GMT+0800 (中国标准时间)] /chats
+TypeError: first argument must be a string or Buffer
+    at ClientRequest.OutgoingMessage.write (_http_outgoing.js:430:11)
+    at e:\blog\routes\index.js:443:14
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at Router._dispatch (e:\blog\node_modules\express\lib\router\index.js:173:5)
+    at Object.router (e:\blog\node_modules\express\lib\router\index.js:33:10)
+    at next (e:\blog\node_modules\connect\lib\proto.js:193:15)
+    at next (e:\blog\node_modules\connect\lib\middleware\session.js:318:9)
+    at e:\blog\node_modules\connect\lib\middleware\session.js:342:9
+[Sat Mar 12 2016 11:25:47 GMT+0800 (中国标准时间)] /chats
+TypeError: first argument must be a string or Buffer
+    at ClientRequest.OutgoingMessage.write (_http_outgoing.js:430:11)
+    at e:\blog\routes\index.js:442:14
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at Router._dispatch (e:\blog\node_modules\express\lib\router\index.js:173:5)
+    at Object.router (e:\blog\node_modules\express\lib\router\index.js:33:10)
+    at next (e:\blog\node_modules\connect\lib\proto.js:193:15)
+    at next (e:\blog\node_modules\connect\lib\middleware\session.js:318:9)
+    at e:\blog\node_modules\connect\lib\middleware\session.js:342:9
+[Sat Mar 12 2016 11:25:55 GMT+0800 (中国标准时间)] /chats
+TypeError: first argument must be a string or Buffer
+    at ClientRequest.OutgoingMessage.write (_http_outgoing.js:430:11)
+    at e:\blog\routes\index.js:442:14
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at Router._dispatch (e:\blog\node_modules\express\lib\router\index.js:173:5)
+    at Object.router (e:\blog\node_modules\express\lib\router\index.js:33:10)
+    at next (e:\blog\node_modules\connect\lib\proto.js:193:15)
+    at next (e:\blog\node_modules\connect\lib\middleware\session.js:318:9)
+    at e:\blog\node_modules\connect\lib\middleware\session.js:342:9
+[Sat Mar 12 2016 11:26:02 GMT+0800 (中国标准时间)] /chats
+TypeError: first argument must be a string or Buffer
+    at ClientRequest.OutgoingMessage.write (_http_outgoing.js:430:11)
+    at e:\blog\routes\index.js:442:14
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at Router._dispatch (e:\blog\node_modules\express\lib\router\index.js:173:5)
+    at Object.router (e:\blog\node_modules\express\lib\router\index.js:33:10)
+    at next (e:\blog\node_modules\connect\lib\proto.js:193:15)
+    at next (e:\blog\node_modules\connect\lib\middleware\session.js:318:9)
+    at e:\blog\node_modules\connect\lib\middleware\session.js:342:9
+[Sat Mar 12 2016 13:29:14 GMT+0800 (中国标准时间)] /chats
+TypeError: first argument must be a string or Buffer
+    at ClientRequest.OutgoingMessage.write (_http_outgoing.js:430:11)
+    at e:\blog\routes\index.js:442:14
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at Router._dispatch (e:\blog\node_modules\express\lib\router\index.js:173:5)
+    at Object.router (e:\blog\node_modules\express\lib\router\index.js:33:10)
+    at next (e:\blog\node_modules\connect\lib\proto.js:193:15)
+    at next (e:\blog\node_modules\connect\lib\middleware\session.js:318:9)
+    at e:\blog\node_modules\connect\lib\middleware\session.js:342:9
+[Sat Mar 12 2016 13:41:37 GMT+0800 (中国标准时间)] /chats
+TypeError: first argument must be a string or Buffer
+    at ClientRequest.OutgoingMessage.write (_http_outgoing.js:430:11)
+    at e:\blog\routes\index.js:442:14
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at Router._dispatch (e:\blog\node_modules\express\lib\router\index.js:173:5)
+    at Object.router (e:\blog\node_modules\express\lib\router\index.js:33:10)
+    at next (e:\blog\node_modules\connect\lib\proto.js:193:15)
+    at next (e:\blog\node_modules\connect\lib\middleware\session.js:318:9)
+    at e:\blog\node_modules\connect\lib\middleware\session.js:342:9
+[Sun Mar 13 2016 10:24:55 GMT+0800 (中国标准时间)] /chats
+TypeError: first argument must be a string or Buffer
+    at ClientRequest.OutgoingMessage.write (_http_outgoing.js:430:11)
+    at e:\blog\routes\index.js:450:14
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at Router._dispatch (e:\blog\node_modules\express\lib\router\index.js:173:5)
+    at Object.router (e:\blog\node_modules\express\lib\router\index.js:33:10)
+    at next (e:\blog\node_modules\connect\lib\proto.js:193:15)
+    at next (e:\blog\node_modules\connect\lib\middleware\session.js:318:9)
+    at e:\blog\node_modules\connect\lib\middleware\session.js:342:9
+[Sun Mar 13 2016 10:33:53 GMT+0800 (中国标准时间)] /chats
+TypeError: first argument must be a string or Buffer
+    at ClientRequest.OutgoingMessage.write (_http_outgoing.js:430:11)
+    at e:\blog\routes\index.js:450:14
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at Router._dispatch (e:\blog\node_modules\express\lib\router\index.js:173:5)
+    at Object.router (e:\blog\node_modules\express\lib\router\index.js:33:10)
+    at next (e:\blog\node_modules\connect\lib\proto.js:193:15)
+    at next (e:\blog\node_modules\connect\lib\middleware\session.js:318:9)
+    at e:\blog\node_modules\connect\lib\middleware\session.js:342:9
+[Sun Mar 13 2016 10:43:20 GMT+0800 (中国标准时间)] /chats
+TypeError: first argument must be a string or Buffer
+    at ClientRequest.OutgoingMessage.write (_http_outgoing.js:430:11)
+    at e:\blog\routes\index.js:450:14
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at Router._dispatch (e:\blog\node_modules\express\lib\router\index.js:173:5)
+    at Object.router (e:\blog\node_modules\express\lib\router\index.js:33:10)
+    at next (e:\blog\node_modules\connect\lib\proto.js:193:15)
+    at next (e:\blog\node_modules\connect\lib\middleware\session.js:318:9)
+    at e:\blog\node_modules\connect\lib\middleware\session.js:342:9
+[Sun Mar 13 2016 10:48:01 GMT+0800 (中国标准时间)] /chats
+TypeError: first argument must be a string or Buffer
+    at ClientRequest.OutgoingMessage.write (_http_outgoing.js:430:11)
+    at e:\blog\routes\index.js:449:14
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at Router._dispatch (e:\blog\node_modules\express\lib\router\index.js:173:5)
+    at Object.router (e:\blog\node_modules\express\lib\router\index.js:33:10)
+    at next (e:\blog\node_modules\connect\lib\proto.js:193:15)
+    at next (e:\blog\node_modules\connect\lib\middleware\session.js:318:9)
+    at e:\blog\node_modules\connect\lib\middleware\session.js:342:9
+[Sun Mar 13 2016 10:51:08 GMT+0800 (中国标准时间)] /chats
+TypeError: first argument must be a string or Buffer
+    at ClientRequest.OutgoingMessage.write (_http_outgoing.js:430:11)
+    at e:\blog\routes\index.js:451:14
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at Router._dispatch (e:\blog\node_modules\express\lib\router\index.js:173:5)
+    at Object.router (e:\blog\node_modules\express\lib\router\index.js:33:10)
+    at next (e:\blog\node_modules\connect\lib\proto.js:193:15)
+    at next (e:\blog\node_modules\connect\lib\middleware\session.js:318:9)
+    at e:\blog\node_modules\connect\lib\middleware\session.js:342:9
+[Sun Mar 13 2016 10:51:31 GMT+0800 (中国标准时间)] /chats
+TypeError: first argument must be a string or Buffer
+    at ClientRequest.OutgoingMessage.write (_http_outgoing.js:430:11)
+    at e:\blog\routes\index.js:451:14
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at Router._dispatch (e:\blog\node_modules\express\lib\router\index.js:173:5)
+    at Object.router (e:\blog\node_modules\express\lib\router\index.js:33:10)
+    at next (e:\blog\node_modules\connect\lib\proto.js:193:15)
+    at next (e:\blog\node_modules\connect\lib\middleware\session.js:318:9)
+    at e:\blog\node_modules\connect\lib\middleware\session.js:342:9
+[Mon Mar 14 2016 09:14:23 GMT+0800 (中国标准时间)] /chats2
+Error: ENOENT: no such file or directory, stat 'e:\blog\qq.html'
+    at Error (native)
+[Sat Apr 09 2016 10:34:39 GMT+0800 (中国标准时间)] /chats3
+ReferenceError: e:\blog\views\qq.ejs:61
+    59| </body>
+    60| <script type="text/template" id="msg-tmpl">
+ >> 61| <dl<%=className%>>
+    62| 	<dt><%=nick%>&nbsp;<%=time%></dt>
+    63| 	<dd><%=msg%></dd>
+    64| </dl>
+
+className is not defined
+    at eval (eval at <anonymous> (e:\blog\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:11:23)
+    at returnedFn (e:\blog\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (e:\blog\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (e:\blog\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (e:\blog\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (e:\blog\node_modules\express\lib\response.js:801:7)
+    at IncomingMessage.<anonymous> (e:\blog\routes\index.js:582:22)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:905:12)
+[Sat Apr 09 2016 10:39:38 GMT+0800 (中国标准时间)] /chatting
+Error: Failed to lookup view "/qq"
+    at Function.app.render (e:\blog\node_modules\express\lib\application.js:493:17)
+    at ServerResponse.res.render (e:\blog\node_modules\express\lib\response.js:801:7)
+    at e:\blog\routes\index.js:597:13
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at Router._dispatch (e:\blog\node_modules\express\lib\router\index.js:173:5)
+    at Object.router (e:\blog\node_modules\express\lib\router\index.js:33:10)
+    at next (e:\blog\node_modules\connect\lib\proto.js:193:15)
+    at next (e:\blog\node_modules\connect\lib\middleware\session.js:318:9)
+[Sat Apr 09 2016 10:42:38 GMT+0800 (中国标准时间)] /chatting
+Error: Failed to lookup view "/links"
+    at Function.app.render (e:\blog\node_modules\express\lib\application.js:493:17)
+    at ServerResponse.res.render (e:\blog\node_modules\express\lib\response.js:801:7)
+    at e:\blog\routes\index.js:597:13
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at Router._dispatch (e:\blog\node_modules\express\lib\router\index.js:173:5)
+    at Object.router (e:\blog\node_modules\express\lib\router\index.js:33:10)
+    at next (e:\blog\node_modules\connect\lib\proto.js:193:15)
+    at next (e:\blog\node_modules\connect\lib\middleware\session.js:318:9)
+[Sat Apr 09 2016 11:03:44 GMT+0800 (中国标准时间)] /chatting
+Error: Failed to lookup view "/links"
+    at Function.app.render (e:\blog\node_modules\express\lib\application.js:493:17)
+    at ServerResponse.res.render (e:\blog\node_modules\express\lib\response.js:801:7)
+    at e:\blog\routes\index.js:597:13
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at Router._dispatch (e:\blog\node_modules\express\lib\router\index.js:173:5)
+    at Object.router (e:\blog\node_modules\express\lib\router\index.js:33:10)
+    at next (e:\blog\node_modules\connect\lib\proto.js:193:15)
+    at next (e:\blog\node_modules\connect\lib\middleware\session.js:318:9)
+[Sat Apr 09 2016 11:04:02 GMT+0800 (中国标准时间)] /chatting
+Error: Failed to lookup view "/links"
+    at Function.app.render (e:\blog\node_modules\express\lib\application.js:493:17)
+    at ServerResponse.res.render (e:\blog\node_modules\express\lib\response.js:801:7)
+    at e:\blog\routes\index.js:597:13
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+    at Router._dispatch (e:\blog\node_modules\express\lib\router\index.js:173:5)
+    at Object.router (e:\blog\node_modules\express\lib\router\index.js:33:10)
+    at next (e:\blog\node_modules\connect\lib\proto.js:193:15)
+    at next (e:\blog\node_modules\connect\lib\middleware\session.js:318:9)
+[Sat Apr 09 2016 11:05:19 GMT+0800 (中国标准时间)] /chatting
+ReferenceError: e:\blog\views\links.ejs:19
+
+
+title is not defined
+    at eval (eval at <anonymous> (e:\blog\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:12:23)
+    at eval (eval at <anonymous> (e:\blog\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:42:9)
+    at returnedFn (e:\blog\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (e:\blog\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (e:\blog\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (e:\blog\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (e:\blog\node_modules\express\lib\response.js:801:7)
+    at e:\blog\routes\index.js:597:13
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+[Sat Apr 09 2016 11:07:00 GMT+0800 (中国标准时间)] /chatting
+ReferenceError: e:\blog\views\qq.ejs:61
+    59| </body>
+    60| <script type="text/template" id="msg-tmpl">
+ >> 61| <dl<%=className%>>
+    62| 	<dt><%=nick%>&nbsp;<%=time%></dt>
+    63| 	<dd><%=msg%></dd>
+    64| </dl>
+
+className is not defined
+    at eval (eval at <anonymous> (e:\blog\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:11:23)
+    at returnedFn (e:\blog\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (e:\blog\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (e:\blog\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (e:\blog\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (e:\blog\node_modules\express\lib\response.js:801:7)
+    at e:\blog\routes\index.js:597:13
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Sat Apr 09 2016 11:07:55 GMT+0800 (中国标准时间)] /chatting
+ReferenceError: e:\blog\views\qq.ejs:61
+    59| </body>
+    60| <script type="text/template" id="msg-tmpl">
+ >> 61| <dl<%=className%>>
+    62| 	<dt><%=nick%>&nbsp;<%=time%></dt>
+    63| 	<dd><%=msg%></dd>
+    64| </dl>
+
+className is not defined
+    at eval (eval at <anonymous> (e:\blog\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:11:23)
+    at returnedFn (e:\blog\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (e:\blog\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (e:\blog\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (e:\blog\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (e:\blog\node_modules\express\lib\response.js:801:7)
+    at e:\blog\routes\index.js:597:13
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Sat Apr 09 2016 11:09:18 GMT+0800 (中国标准时间)] /chatting
+ReferenceError: e:\blog\views\qq.ejs:61
+    59| </body>
+    60| <script type="text/template" id="msg-tmpl">
+ >> 61| <dl<%=className%>>
+    62| 	<dt><%=nick%>&nbsp;<%=time%></dt>
+    63| 	<dd><%=msg%></dd>
+    64| </dl>
+
+className is not defined
+    at eval (eval at <anonymous> (e:\blog\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:11:23)
+    at returnedFn (e:\blog\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (e:\blog\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (e:\blog\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (e:\blog\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (e:\blog\node_modules\express\lib\response.js:801:7)
+    at e:\blog\routes\index.js:597:13
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Sat Apr 09 2016 11:10:48 GMT+0800 (中国标准时间)] /chatting
+ReferenceError: e:\blog\views\index.ejs:19
+    17| <p><%- post.post %></p>
+    18| <p class="info">
+ >> 19|     阅读：<%= post.pv %> |
+    20|    评论：<%= post.comments.length %>
+    21|     转载：
+    22|     <% if ( post.reprint_info.reprint_to) { %>
+
+title is not defined
+    at eval (eval at <anonymous> (e:\blog\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:12:23)
+    at eval (eval at <anonymous> (e:\blog\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:42:9)
+    at returnedFn (e:\blog\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (e:\blog\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (e:\blog\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (e:\blog\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (e:\blog\node_modules\express\lib\response.js:801:7)
+    at e:\blog\routes\index.js:597:13
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+[Sat Apr 09 2016 11:11:25 GMT+0800 (中国标准时间)] /chatting
+ReferenceError: e:\blog\views\qq.ejs:61
+    59| </body>
+    60| <script type="text/template" id="msg-tmpl">
+ >> 61| <dl<%=className%>>
+    62| 	<dt><%=nick%>&nbsp;<%=time%></dt>
+    63| 	<dd><%=msg%></dd>
+    64| </dl>
+
+className is not defined
+    at eval (eval at <anonymous> (e:\blog\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:11:23)
+    at returnedFn (e:\blog\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (e:\blog\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (e:\blog\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (e:\blog\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (e:\blog\node_modules\express\lib\response.js:801:7)
+    at e:\blog\routes\index.js:597:13
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Sat Apr 09 2016 11:12:27 GMT+0800 (中国标准时间)] /chatting
+ReferenceError: e:\blog\views\qq.ejs:61
+    59| </body>
+    60| <script type="text/template" id="msg-tmpl">
+ >> 61| <dl<%=className%>>
+    62| 	<dt><%=nick%>&nbsp;<%=time%></dt>
+    63| 	<dd><%=msg%></dd>
+    64| </dl>
+
+className is not defined
+    at eval (eval at <anonymous> (e:\blog\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:11:23)
+    at returnedFn (e:\blog\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (e:\blog\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (e:\blog\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (e:\blog\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (e:\blog\node_modules\express\lib\response.js:801:7)
+    at e:\blog\routes\index.js:597:13
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Sat Apr 09 2016 11:15:50 GMT+0800 (中国标准时间)] /chatting
+ReferenceError: e:\blog\views\qq.ejs:61
+    59| </body>
+    60| <script type="text/template" id="msg-tmpl">
+ >> 61| <dl<%=className%>>
+    62| 	<dt><%=nick%>&nbsp;<%=time%></dt>
+    63| 	<dd><%=msg%></dd>
+    64| </dl>
+
+className is not defined
+    at eval (eval at <anonymous> (e:\blog\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:11:23)
+    at returnedFn (e:\blog\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (e:\blog\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (e:\blog\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (e:\blog\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (e:\blog\node_modules\express\lib\response.js:801:7)
+    at e:\blog\routes\index.js:597:13
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Sat Apr 09 2016 13:01:10 GMT+0800 (中国标准时间)] /chatting
+ReferenceError: e:\blog\views\qq.ejs:62
+    60| </body>
+    61| 
+ >> 62| <dl<%=className%>>
+    63|     <dt><%=nick%>&nbsp;<%=time%></dt>
+    64|     <dd><%=msg%></dd>
+    65| </dl>
+
+className is not defined
+    at eval (eval at <anonymous> (e:\blog\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:11:23)
+    at returnedFn (e:\blog\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (e:\blog\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (e:\blog\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (e:\blog\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (e:\blog\node_modules\express\lib\response.js:801:7)
+    at e:\blog\routes\index.js:597:13
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Sat Apr 09 2016 13:08:56 GMT+0800 (中国标准时间)] /chatting
+ReferenceError: e:\blog\views\qq.ejs:65
+    63| 
+    64| 
+ >> 65| <dl<%=className%>>
+    66|     <dt><%=nick%>&nbsp;<%=time%></dt>
+    67|     <dd><%=msg%></dd>
+    68| </dl>
+
+className is not defined
+    at eval (eval at <anonymous> (e:\blog\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:11:23)
+    at returnedFn (e:\blog\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (e:\blog\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (e:\blog\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (e:\blog\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (e:\blog\node_modules\express\lib\response.js:801:7)
+    at e:\blog\routes\index.js:597:13
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Sat Apr 09 2016 13:08:59 GMT+0800 (中国标准时间)] /chatting
+ReferenceError: e:\blog\views\qq.ejs:65
+    63| 
+    64| 
+ >> 65| <dl<%=className%>>
+    66|     <dt><%=nick%>&nbsp;<%=time%></dt>
+    67|     <dd><%=msg%></dd>
+    68| </dl>
+
+className is not defined
+    at eval (eval at <anonymous> (e:\blog\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:11:23)
+    at returnedFn (e:\blog\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (e:\blog\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (e:\blog\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (e:\blog\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (e:\blog\node_modules\express\lib\response.js:801:7)
+    at e:\blog\routes\index.js:597:13
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Sat Apr 09 2016 13:11:03 GMT+0800 (中国标准时间)] /chatting
+ReferenceError: e:\blog\views\qq.ejs:65
+    63| 
+    64| 
+ >> 65| <dl<%= className %>>
+    66|     <dt><%=nick%><%=time%></dt>
+    67|     <dd><%=msg%></dd>
+    68| </dl>
+
+className is not defined
+    at eval (eval at <anonymous> (e:\blog\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:11:23)
+    at returnedFn (e:\blog\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (e:\blog\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (e:\blog\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (e:\blog\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (e:\blog\node_modules\express\lib\response.js:801:7)
+    at e:\blog\routes\index.js:597:13
+    at callbacks (e:\blog\node_modules\express\lib\router\index.js:164:37)
+    at param (e:\blog\node_modules\express\lib\router\index.js:138:11)
+    at pass (e:\blog\node_modules\express\lib\router\index.js:145:5)
+[Fri Mar 17 2017 18:52:02 GMT+0800 (中国标准时间)] /
+SyntaxError: Unexpected token ) in e:\SchoolTest\views\index.ejs while compiling ejs
+    at Function (native)
+    at Object.Template.compile (e:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12)
+    at Object.compile (e:\SchoolTest\node_modules\ejs\lib\ejs.js:288:16)
+    at handleCache (e:\SchoolTest\node_modules\ejs\lib\ejs.js:147:16)
+    at View.exports.renderFile [as engine] (e:\SchoolTest\node_modules\ejs\lib\ejs.js:350:14)
+    at View.render (e:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (e:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (e:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at e:\SchoolTest\routes\index.js:39:17
+    at e:\SchoolTest\models\post.js:99:21
+[Fri Mar 17 2017 18:52:13 GMT+0800 (中国标准时间)] /
+SyntaxError: Unexpected token ) in e:\SchoolTest\views\index.ejs while compiling ejs
+    at Function (native)
+    at Object.Template.compile (e:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12)
+    at Object.compile (e:\SchoolTest\node_modules\ejs\lib\ejs.js:288:16)
+    at handleCache (e:\SchoolTest\node_modules\ejs\lib\ejs.js:147:16)
+    at View.exports.renderFile [as engine] (e:\SchoolTest\node_modules\ejs\lib\ejs.js:350:14)
+    at View.render (e:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (e:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (e:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at e:\SchoolTest\routes\index.js:39:17
+    at e:\SchoolTest\models\post.js:99:21
+[Fri Mar 17 2017 18:52:40 GMT+0800 (中国标准时间)] /
+SyntaxError: Unexpected token ) in e:\SchoolTest\views\index.ejs while compiling ejs
+    at Function (native)
+    at Object.Template.compile (e:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12)
+    at Object.compile (e:\SchoolTest\node_modules\ejs\lib\ejs.js:288:16)
+    at handleCache (e:\SchoolTest\node_modules\ejs\lib\ejs.js:147:16)
+    at View.exports.renderFile [as engine] (e:\SchoolTest\node_modules\ejs\lib\ejs.js:350:14)
+    at View.render (e:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (e:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (e:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at e:\SchoolTest\routes\index.js:39:17
+    at e:\SchoolTest\models\post.js:99:21
+[Fri Mar 17 2017 18:52:45 GMT+0800 (中国标准时间)] /
+SyntaxError: Unexpected token ) in e:\SchoolTest\views\index.ejs while compiling ejs
+    at Function (native)
+    at Object.Template.compile (e:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12)
+    at Object.compile (e:\SchoolTest\node_modules\ejs\lib\ejs.js:288:16)
+    at handleCache (e:\SchoolTest\node_modules\ejs\lib\ejs.js:147:16)
+    at View.exports.renderFile [as engine] (e:\SchoolTest\node_modules\ejs\lib\ejs.js:350:14)
+    at View.render (e:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (e:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (e:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at e:\SchoolTest\routes\index.js:39:17
+    at e:\SchoolTest\models\post.js:99:21
+[Fri Mar 17 2017 18:52:48 GMT+0800 (中国标准时间)] /
+SyntaxError: Unexpected token ) in e:\SchoolTest\views\index.ejs while compiling ejs
+    at Function (native)
+    at Object.Template.compile (e:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12)
+    at Object.compile (e:\SchoolTest\node_modules\ejs\lib\ejs.js:288:16)
+    at handleCache (e:\SchoolTest\node_modules\ejs\lib\ejs.js:147:16)
+    at View.exports.renderFile [as engine] (e:\SchoolTest\node_modules\ejs\lib\ejs.js:350:14)
+    at View.render (e:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (e:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (e:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at e:\SchoolTest\routes\index.js:39:17
+    at e:\SchoolTest\models\post.js:99:21
+[Fri Mar 17 2017 18:53:09 GMT+0800 (中国标准时间)] /
+SyntaxError: Unexpected token ) in e:\SchoolTest\views\index.ejs while compiling ejs
+    at Function (native)
+    at Object.Template.compile (e:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12)
+    at Object.compile (e:\SchoolTest\node_modules\ejs\lib\ejs.js:288:16)
+    at handleCache (e:\SchoolTest\node_modules\ejs\lib\ejs.js:147:16)
+    at View.exports.renderFile [as engine] (e:\SchoolTest\node_modules\ejs\lib\ejs.js:350:14)
+    at View.render (e:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (e:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (e:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at e:\SchoolTest\routes\index.js:39:17
+    at e:\SchoolTest\models\post.js:99:21
