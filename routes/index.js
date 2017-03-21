@@ -61,7 +61,12 @@ module.exports=function(app) {
 
     app.post('/reg', checkNotLogin);
     app.post('/reg', function (req, res) {
+        for(var i in req.body){
+            console.log(i+":"+req.body[i]);
+        }
+        /*
         var name = req.body.name,
+            studentID = req.body.studentID,
             password = req.body.password,
             password_re = req.body['password-repeat'];
 //检验用户两次输入的密码是否一致
@@ -85,6 +90,8 @@ module.exports=function(app) {
                 return res.redirect('/reg');//返回注册页
             }
 //如果不存在则新增用户
+
+            //verifyUser(newUser);
             newUser.save(function (err, user) {
                 if (err) {
                     req.flash('error', err);
@@ -95,7 +102,12 @@ module.exports=function(app) {
                 res.redirect('/');//注册成功后返回主页
             });
         });
+        */
     });
+
+    function verifyUser(newUser) {
+
+    }
 
     app.get('/login', checkNotLogin);
     app.get('/login', function (req, res) {
@@ -413,196 +425,6 @@ module.exports=function(app) {
     });
 
 
-    app.get('/chats',function (req, res1) {
-        var header={};
-        var filedata = '';
-
-        var options1 = {
-            hostname: 'wpa.qq.com',
-            port: 80,
-            path:'/msgrd?v=3&uin=2472740498&site=qq&menu=yes',
-            method: 'GET',
-            rejectUnauthorized:false,
-            headers: {
-                'Content-Type': 'application/x-www-form-urlencoded',
-                'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.71 Safari/537.36',
-                'Connection': 'keep-alive'
-            }
-        };
-        var req1 = http.request(options1, function(res) {
-            console.log('STATUS: ' + res.statusCode);
-            header=JSON.stringify(res.headers);
-            res.setEncoding('utf8');
-            res.on('data', function (chunk) {
-                filedata += chunk;
-            });
-            res.on('end',function() {
-                console.log('No more data in response.');
-                var reg = /tencentSeries\s*=\s*("|')([^"]+?)\1/g;
-                var tencentSeries = reg.exec(filedata)[2];
-                console.log(tencentSeries);
-                sigt = tencentSeries.replace(/^\S+sigT=/g, "").replace(/&\S+$/g, "");
-                var str = sigt.substr(0, sigt.indexOf('s'));
-                sigt = str.substring(0,str.length - 6);
-                sigu = tencentSeries.replace(/^\S+sigU=/g, "").replace(/&\S+$/g, "");
-                console.log("sigt:"+sigt);
-                console.log("sigu:"+sigu);
-                url="/widget/wpa/chat.html?tuin=2472740498&sigT="+sigt+"&sigU="+sigu;
-                res1.redirect('/chats2');
-               // res1.redirect('http://connect.qq.com/widget/wpa/chat.html?tuin=2472740498&sigT='+sigt+"&sigU="+sigu);
-                //var data0='';
-               /* fs.writeFile('e:/blog/views/qq.html', data0, function (err) {
-                    if (!err) {
-                        console.log('Wrote data0 to qq.ejs');
-                    } else {
-                        throw err;
-                    }
-                });
-*/
-            });
-        });
-
-        req1.on('error', function(e) {
-            console.log('problem with request: ' + e.message);
-        });
-//        req1.write({});
-        req1.end();
-
-    });
-
-    app.get('/chats2',function (req, res1) {
-        var header = {};
-
-        //    var sigt='1fbc805af2d1d88f764e707955d921a25bcd35c6ed4bedcb2ed5c0bed140e4bf0790bd3b5fd2156cd8359c71c6119397';
-        //   var sigu='2613fc2c0ef7457f3a1d8f588ec0aa8e283550b0e8677aba9840ded3c6e4671ffc03fad25ca4c4dd';
-        var user = querystring.stringify({
-            'u': '2183573656',
-            'p': '18232577982'
-
-        });
-
-        var options1 = {
-            hostname: 'ui.ptlogin2.qq.com',
-            port: 80,
-            path: '/cgi-bin/login?appid=716027604&style=12&dummy=1&s_url=http%3A%2F%2Fconnect.qq.com%2Fwidget%2Fwpa%2Fchat.html%3Ftuin%3D2472740498%26sigT%3D' + sigt + '%26sigU%3D' + sigu,
-            method: 'GET',
-            rejectUnauthorized: false,
-            headers: {
-                'Content-Type': 'application/x-www-form-urlencoded',
-                'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.71 Safari/537.36',
-                'Connection': 'keep-alive',
-                //'Cookie': cookie,
-                'Content-Length': user.length
-            }
-        };
-
-        var req1 = http.request(options1, function (res) {
-            console.log('STATUS: ' + res.statusCode);
-            header = JSON.stringify(res.headers);
-            console.log('HEADERS: ' + header);
-//console.log('WEBFORMS: ' + JSON.stringify(res.WebForms));
-            cookie = (JSON.parse(header)['set-cookie']);
-            console.log(cookie);
-            console.log('-------------------------------');
-            for (x in cookie) {
-                cookies += (cookie[x]).split(";")[0] + '; ';
-                //console.log(cookies);
-                //cookies=cookie[0]
-            }
-            cookies = cookies.substring(0, cookies.length - 2);
-            console.log(cookies);
-            res.setEncoding('utf8');
-            res.on('data', function (chunk) {
-                console.log('BODY:' + chunk);
-              /*  fs.appendFile('file.js', chunk, function (err) {
-
-                    if (!err) {
-                        console.log('Wrote data to file.txt');
-                    } else {
-                        throw err;
-                    }
-                });*/
-
-
-            });
-            res.on('end', function () {
-                console.log('No more data in response.');
-                res1.redirect('/chats3');
-            })
-        });
-
-        req1.on('error', function (e) {
-            console.log('problem with request: ' + e.message);
-        });
-
-        req1.write(user);
-//req1.write(hello);
-        req1.end();
-    });
-    app.get('/chats3',function (req, res1) {
-        var header={};
-        var hello = querystring.stringify({
-            'u' : '2183573656',
-            'p' : '18232577982'
-        });
-        var options2 = {
-            hostname: 'connect.qq.com',
-            port: 80,
-            path:url,
-            method: 'GET',
-            rejectUnauthorized:false,
-            headers: {
-                'Content-Type': 'application/x-www-form-urlencoded',
-                'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.71 Safari/537.36',
-                'Connection': 'keep-alive',
-                //'Cookie': 'ptui_loginuin=1404563299; pt2gguin=o1404563299; uin=o1404563299; skey=@DyVWF8E5a; ptisp=edu; RK=T9vO0DXGey; ptcz=ffd4352d2b5fe2f4a2ec272ee7bdf2a79d29c33a5230ddaf79fc7ef7a8b3121b'
-                'Cookie':cookies
-
-            }
-        };
-        var req2 = http.request(options2, function(res) {
-            console.log('STATUS: ' + res.statusCode);
-            header=JSON.stringify(res.headers);
-            console.log('HEADERS: ' + header);
-            res.setEncoding('utf8');
-            res.on('data', function (chunk) {
-console.log('BODY:'+chunk);
-             /* fs.appendFile('e:/blog/views/qq.html', chunk, function (err) {
-                    if (!err) {
-                        console.log('Wrote chunk to file.txt');
-                    } else {
-                        throw err;
-                    }
-                });*/
-
-
-            });
-            res.on('end',function() {
-                console.log('No more data in response.');
-               // res1.render('qq', {});
-               res1.redirect('/chatting');
-               //res1.redirect('http://connect.qq.com/widget/wpa/chat.html?tuin=2472740498&sigT='+sigt+"&sigU="+sigu);
-               // res1.redirect('/chats3');
-            })
-        });
-        req2.on('error', function(e) {
-            console.log('problem with request: ' + e.message);
-        });
-        req2.write(hello);
-        req2.end();
-    });
-
-
-    app.get('/chatting',function(req,res){
-        res.render("qq",{
-            className:"className",
-            nick:"nick",
-            time:"time",
-            msg:"kuaijiyihao"
-
-        });
-
-    })
 
     app.get('/reprint/:name/:day/:title', checkLogin);
     app.get('/reprint/:name/:day/:title', function (req, res) {
@@ -650,4 +472,6 @@ console.log('BODY:'+chunk);
         }
         next();
     }
+
+
 };
