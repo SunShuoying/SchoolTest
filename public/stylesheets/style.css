@@ -1,7 +1,7 @@
 /* inspired by http://yihui.name/cn/ */
 *{padding:0;margin:0;}
 body{font-size:14px;font-family:"Microsoft YaHei";}
-#allBody{width:800px;margin:2em auto;padding:0 2em;}
+#allBody{width:80%;margin:2em auto;padding:0 2em;}
 p{line-height:24px;margin:1em 0;}
 header{border-bottom:1px solid #cccccc;  color: grey;}
 nav{position:absolute;left:0em;font-family:"Microsoft YaHei";font-size:1.1em;text-transform:uppercase;width:9em;text-align:right;}
