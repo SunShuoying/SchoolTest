@@ -4,8 +4,8 @@
         //experience show or hiden;
         $("#undergraduate-div").hide();
         $("#master-div").hide();
-        $("#docter-div").hide();
-        $("#postdocter-div").hide();
+        $("#doctor-div").hide();
+        $("#postdoctor-div").hide();
         $("#checkbox-undergraduate").change(function () {
             // alert("undergraduate");
             $("#undergraduate-div").toggle(200);
@@ -14,20 +14,20 @@
             // alert("undergraduate");
             $("#master-div").toggle(200);
         });
-        $("#checkbox-docter").change(function () {
+        $("#checkbox-doctor").change(function () {
             // alert("undergraduate");
-            $("#docter-div").toggle(200);
+            $("#doctor-div").toggle(200);
         });
-        $("#checkbox-postdocter").change(function () {
+        $("#checkbox-postdoctor").change(function () {
             // alert("undergraduate");
-            $("#postdocter-div").toggle(200);
+            $("#postdoctor-div").toggle(200);
         });
     });
     $(function () {
         $("#regSubmit").click(function() {
             var result;
             var data = $("input:text[name='name']").val();
-            /*
+
             if(data == ""){
                 alert("姓名为必填项");
                 return false;
@@ -89,7 +89,7 @@
                 //  $(obj).val("");
                 return false;
             }
-             */
+
             //check email
             data = $("input[name='email']").val();
             //alert("email"+data);
@@ -98,7 +98,6 @@
                 alert("请输入正确的邮箱");
                 return false;
             }
-           // alert(result);
 
         });
     })
@@ -138,18 +137,18 @@
 
             </div>
             <div >
-                <label><input id="checkbox-docter" name="experience" type="checkbox" value="docter" />博士 </label>
-                <div id="docter-div" class="checkbox-edu">
-                    <span><label>专业<span class="necessary"> *</span>：</label><input type="text" class="form-control"  name="docter-major" placeholder="请输入专业"/> </span>
-                    <span><label>入学年份<span class="necessary"> *</span>：</label><input type="date" class="form-control" name="docter-date"/> </span>
-                    <span><label>班级<span class="necessary"> *</span>：</label><input type="text" class="form-control" name="docter-class" placeholder="请输班级"/> </span>
-                    <span><label>学号：</label><input type="text" class="form-control" name="docter-studentID" placeholder="请输入学号"/> </span>
+                <label><input id="checkbox-doctor" name="experience" type="checkbox" value="doctor" />博士 </label>
+                <div id="doctor-div" class="checkbox-edu">
+                    <span><label>专业<span class="necessary"> *</span>：</label><input type="text" class="form-control"  name="doctor-major" placeholder="请输入专业"/> </span>
+                    <span><label>入学年份<span class="necessary"> *</span>：</label><input type="date" class="form-control" name="doctor-date"/> </span>
+                    <span><label>班级<span class="necessary"> *</span>：</label><input type="text" class="form-control" name="doctor-class" placeholder="请输班级"/> </span>
+                    <span><label>学号：</label><input type="text" class="form-control" name="doctor-studentID" placeholder="请输入学号"/> </span>
                 </div>
 
             </div>
             <div >
-                <label><input id="checkbox-postdocter" name="experience" type="checkbox" value="postdocter" />博士后 </label>
-                <div id="postdocter-div" class="checkbox-edu">
+                <label><input id="checkbox-postdoctor" name="experience" type="checkbox" value="postdoctor" />博士后 </label>
+                <div id="postdoctor-div" class="checkbox-edu">
                     <span><label>专业<span class="necessary"> *</span>：</label><input type="text" class="form-control"  name="post-major" placeholder="请输入专业"/> </span>
                     <span><label>入学年份<span class="necessary"> *</span>：</label><input type="date" class="form-control" name="post-date"/> </span>
                     <span><label>班级<span class="necessary"> *</span>：</label><input type="text" class="form-control" name="post-class" placeholder="请输班级"/> </span>
