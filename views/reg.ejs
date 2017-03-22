@@ -1,12 +1,53 @@
 <%- include header %>
-<script>
+<script type="text/javascript" language="javascript">
+    $(document).ready(function () {
+        //experience show or hiden;
+        $("#under-div").hide();
+        $("#master-div").hide();
+        $("#docter-div").hide();
+        $("#post-div").hide();
+        $("#checkbox-undergraduate").change(function () {
+            // alert("undergraduate");
+            $("#under-div").toggle(200);
+        });
+        $("#checkbox-master").change(function () {
+            // alert("undergraduate");
+            $("#master-div").toggle(200);
+        });
+        $("#checkbox-docter").change(function () {
+            // alert("undergraduate");
+            $("#docter-div").toggle(200);
+        });
+        $("#checkbox-postdocter").change(function () {
+            // alert("undergraduate");
+            $("#post-div").toggle(200);
+        });
+    });
+    $(function () {
+        $("#regSubmit").click(function() {
+            var result;
+            var data = $("#name").val();
+            if(data == null){
+                alert("姓名为必填项");
+                return false;
+            }
+            result += "/name :"+data;
+            data = $('input:radio[name="sex"]:checked').val();
+            if(data == null){
+                alert("性别为必选项");
+                return false;
+            }
+            data =
+        });
+    })
+
 
 </script>
 <form method="post">
     <div style="width:50%;position: relative;left:20%;top: 1em;">
         <div class="form-group">
             <label>姓名<span class="necessary"> *</span>：</label>
-            <input type="text" class="form-control" name="name"   placeholder="请输入姓名">
+            <input type="text" class="form-control" name="name" id="name" placeholder="请输入姓名">
         </div>
         <div class="form-group">
             <label>性别<span class="necessary"> *</span>：</label><br />
@@ -96,7 +137,7 @@
         </div>
         <div class="form-group">
             <div class="col-sm-offset-2 col-sm-10">
-                <button type="submit" class="btn btn-default">注册</button>
+                <button type="submit" class="btn btn-default" id="regSubmit">注册</button>
             </div>
         </div>
         <br/><br/><br/><br/><br/>
