@@ -6,10 +6,10 @@
 var mongodb = require('./db');
 var crypto = require('crypto');
 var async = require('async');
-function regUser(user) {
+function RegUser(user) {
     this.name = user.name;
     this.sex = user.sex;
-    this.experience = user.experience;
+    //this.experience = user.experience;
     this.underMajor = user.underMajor;
     this.underDate = user.underDate;
     this.underClass = user.underClass;
@@ -36,9 +36,13 @@ function regUser(user) {
     this.xPosition = user.xPosition;
     this.password = user.password;
     //this.email = user.email;
+    this.experience = [];
+    for(var i = 0;i<user.experience.length;i++){
+        this.experience[i] = user.experience[i];
+    }
 };
-module.exports = regUser;
-regUser.prototype.save = function(callback) {
+module.exports = RegUser;
+RegUser.prototype.save = function(callback) {
     var md5 = crypto.createHash('md5'),
         email_MD5 = md5.update(this.email.toLowerCase()).digest('hex'),
         head = "http://www.gravatar.com/avatar/" + email_MD5 + "?s=48";
@@ -63,8 +67,18 @@ regUser.prototype.save = function(callback) {
               [this.masterMajor,this.masterDate,this.masterClass,this.underStudentID],
               [this.doctorMajor,this.doctorDate,this.doctorClass,this.underStudentID],
               [this.postMajor  ,this.postDate  ,this.postClass  ,this.postStudentID]];
+    if (!this.experience.indexOf) {
+        this.experience.prototype.indexOf = function (obj) {
+            for (var i = 0; i < this.length; i++) {
+                if (this[i] == obj) {
+                    return i;
+                }
+            }
+            return -1;
+        }
+    }
     for(var i = 0;i<4;i++){
-        if(exp[i] in this.experience){
+        if(this.experience.indexOf(exp[i]) != -1){
             user.experience.exp[i] = {
                 major:va[i][0],
                 date:va[i][1],
@@ -101,7 +115,7 @@ regUser.prototype.save = function(callback) {
     });
 
 };
-regUser.get = function(email, callback) {
+RegUser.get = function(email, callback) {
     async.waterfall([
         function (cb) {
             mongodb.open(function (err, db) {
@@ -126,7 +140,7 @@ regUser.get = function(email, callback) {
     });
 };
 
-regUser.getTen = function ( page, callback) {
+RegUser.getTen = function ( page, callback) {
     //打开数据库
     mongodb.open(function (err, db) {
         if (err) {
@@ -157,6 +171,7 @@ regUser.getTen = function ( page, callback) {
                     docs.forEach(function (doc) {
                         doc.post = markdown.toHTML(doc.post);
                     });
+                    console.log("overcome"+total);
                     callback(null, docs, total);//成功！以数组形式查询结果
                 });
             });
@@ -167,7 +182,7 @@ regUser.getTen = function ( page, callback) {
 
 
 //remove regUser
-regUser.remove = function(name, email, telephone, callback) {
+RegUser.remove = function(name, email, telephone, callback) {
     //打开数据库
     mongodb.open(function (err, db) {
         if (err) {

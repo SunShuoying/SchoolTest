@@ -3172,3 +3172,343 @@ ReferenceError: regUser is not defined
     at next (D:\SchoolTest\node_modules\connect\lib\middleware\session.js:318:9)
     at D:\SchoolTest\node_modules\connect\lib\middleware\session.js:342:9
     at D:\SchoolTest\node_modules\connect-mongo\lib\connect-mongo.js:305:11
+[Wed Mar 22 2017 21:06:36 GMT+0800 (中国标准时间)] /verify
+ReferenceError: regUser is not defined
+    at D:\SchoolTest\routes\index.js:246:9
+    at callbacks (D:\SchoolTest\node_modules\express\lib\router\index.js:164:37)
+    at param (D:\SchoolTest\node_modules\express\lib\router\index.js:138:11)
+    at pass (D:\SchoolTest\node_modules\express\lib\router\index.js:145:5)
+    at Router._dispatch (D:\SchoolTest\node_modules\express\lib\router\index.js:173:5)
+    at Object.router (D:\SchoolTest\node_modules\express\lib\router\index.js:33:10)
+    at next (D:\SchoolTest\node_modules\connect\lib\proto.js:193:15)
+    at next (D:\SchoolTest\node_modules\connect\lib\middleware\session.js:318:9)
+    at D:\SchoolTest\node_modules\connect\lib\middleware\session.js:342:9
+    at D:\SchoolTest\node_modules\connect-mongo\lib\connect-mongo.js:305:11
+[Wed Mar 22 2017 21:11:50 GMT+0800 (中国标准时间)] /verify
+ReferenceError: regUser is not defined
+    at D:\SchoolTest\routes\index.js:247:9
+    at callbacks (D:\SchoolTest\node_modules\express\lib\router\index.js:164:37)
+    at param (D:\SchoolTest\node_modules\express\lib\router\index.js:138:11)
+    at pass (D:\SchoolTest\node_modules\express\lib\router\index.js:145:5)
+    at Router._dispatch (D:\SchoolTest\node_modules\express\lib\router\index.js:173:5)
+    at Object.router (D:\SchoolTest\node_modules\express\lib\router\index.js:33:10)
+    at next (D:\SchoolTest\node_modules\connect\lib\proto.js:193:15)
+    at next (D:\SchoolTest\node_modules\connect\lib\middleware\session.js:318:9)
+    at D:\SchoolTest\node_modules\connect\lib\middleware\session.js:342:9
+    at D:\SchoolTest\node_modules\connect-mongo\lib\connect-mongo.js:305:11
+[Wed Mar 22 2017 21:12:23 GMT+0800 (中国标准时间)] /verify
+ReferenceError: regUser is not defined
+    at D:\SchoolTest\routes\index.js:247:9
+    at callbacks (D:\SchoolTest\node_modules\express\lib\router\index.js:164:37)
+    at param (D:\SchoolTest\node_modules\express\lib\router\index.js:138:11)
+    at pass (D:\SchoolTest\node_modules\express\lib\router\index.js:145:5)
+    at Router._dispatch (D:\SchoolTest\node_modules\express\lib\router\index.js:173:5)
+    at Object.router (D:\SchoolTest\node_modules\express\lib\router\index.js:33:10)
+    at next (D:\SchoolTest\node_modules\connect\lib\proto.js:193:15)
+    at next (D:\SchoolTest\node_modules\connect\lib\middleware\session.js:318:9)
+    at D:\SchoolTest\node_modules\connect\lib\middleware\session.js:342:9
+    at D:\SchoolTest\node_modules\connect-mongo\lib\connect-mongo.js:305:11
+[Wed Mar 22 2017 21:12:38 GMT+0800 (中国标准时间)] /verify
+ReferenceError: regUser is not defined
+    at D:\SchoolTest\routes\index.js:247:9
+    at callbacks (D:\SchoolTest\node_modules\express\lib\router\index.js:164:37)
+    at param (D:\SchoolTest\node_modules\express\lib\router\index.js:138:11)
+    at pass (D:\SchoolTest\node_modules\express\lib\router\index.js:145:5)
+    at Router._dispatch (D:\SchoolTest\node_modules\express\lib\router\index.js:173:5)
+    at Object.router (D:\SchoolTest\node_modules\express\lib\router\index.js:33:10)
+    at next (D:\SchoolTest\node_modules\connect\lib\proto.js:193:15)
+    at next (D:\SchoolTest\node_modules\connect\lib\middleware\session.js:318:9)
+    at D:\SchoolTest\node_modules\connect\lib\middleware\session.js:342:9
+    at D:\SchoolTest\node_modules\connect-mongo\lib\connect-mongo.js:305:11
+[Wed Mar 22 2017 21:15:24 GMT+0800 (中国标准时间)] /verify
+ReferenceError: D:\SchoolTest\views\verify.ejs:56
+
+
+user is not defined
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:12:11)
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:42:9)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:249:17
+    at D:\SchoolTest\models\regUser.js:160:21
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+[Wed Mar 22 2017 21:15:32 GMT+0800 (中国标准时间)] /verify
+ReferenceError: D:\SchoolTest\views\verify.ejs:56
+
+
+user is not defined
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:12:11)
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:42:9)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:249:17
+    at D:\SchoolTest\models\regUser.js:160:21
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+[Wed Mar 22 2017 21:16:27 GMT+0800 (中国标准时间)] /verify
+ReferenceError: D:\SchoolTest\views\verify.ejs:56
+
+
+user is not defined
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:12:11)
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:42:9)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:249:17
+    at D:\SchoolTest\models\regUser.js:160:21
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+[Wed Mar 22 2017 21:18:15 GMT+0800 (中国标准时间)] /verify
+ReferenceError: D:\SchoolTest\views\verify.ejs:56
+
+
+user is not defined
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:12:11)
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:42:9)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:249:17
+    at D:\SchoolTest\models\regUser.js:160:21
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+[Wed Mar 22 2017 21:18:22 GMT+0800 (中国标准时间)] /verify
+ReferenceError: D:\SchoolTest\views\verify.ejs:56
+
+
+user is not defined
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:12:11)
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:42:9)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:249:17
+    at D:\SchoolTest\models\regUser.js:160:21
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+[Wed Mar 22 2017 21:18:24 GMT+0800 (中国标准时间)] /verify
+ReferenceError: D:\SchoolTest\views\verify.ejs:56
+
+
+user is not defined
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:12:11)
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:42:9)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:249:17
+    at D:\SchoolTest\models\regUser.js:160:21
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+[Wed Mar 22 2017 21:18:25 GMT+0800 (中国标准时间)] /verify
+ReferenceError: D:\SchoolTest\views\verify.ejs:56
+
+
+user is not defined
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:12:11)
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:42:9)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:249:17
+    at D:\SchoolTest\models\regUser.js:160:21
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+[Wed Mar 22 2017 21:21:22 GMT+0800 (中国标准时间)] /verify
+ReferenceError: D:\SchoolTest\views\verify.ejs:56
+
+
+user is not defined
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:12:11)
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:42:9)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:249:17
+    at D:\SchoolTest\models\regUser.js:160:21
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+[Wed Mar 22 2017 21:23:30 GMT+0800 (中国标准时间)] /verify
+ReferenceError: D:\SchoolTest\views\verify.ejs:56
+
+
+user is not defined
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:12:11)
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:42:9)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:249:17
+    at D:\SchoolTest\models\regUser.js:161:21
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+[Wed Mar 22 2017 21:26:05 GMT+0800 (中国标准时间)] /verify
+ReferenceError: D:\SchoolTest\views\verify.ejs:56
+
+
+user is not defined
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:12:11)
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:42:9)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:249:17
+    at D:\SchoolTest\models\regUser.js:161:21
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+[Wed Mar 22 2017 21:27:15 GMT+0800 (中国标准时间)] /verify
+ReferenceError: D:\SchoolTest\views\archive.ejs:56
+
+
+user is not defined
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:12:11)
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:42:9)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:249:17
+    at D:\SchoolTest\models\regUser.js:161:21
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+[Wed Mar 22 2017 21:27:21 GMT+0800 (中国标准时间)] /verify
+ReferenceError: D:\SchoolTest\views\archive.ejs:56
+
+
+user is not defined
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:12:11)
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:42:9)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:249:17
+    at D:\SchoolTest\models\regUser.js:161:21
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+[Wed Mar 22 2017 21:28:58 GMT+0800 (中国标准时间)] /verify
+ReferenceError: D:\SchoolTest\views\archive.ejs:4
+    2| <ul class="archive">
+    3|     <% var lastYear = 0 %>
+ >> 4|     <% posts.forEach(function (post, index) { %>
+    5|     <% if (lastYear != post.time.year) { %>
+    6|     <li><h3><%= post.time.year %></h3></li>
+    7|     <% lastYear = post.time.year } %>
+
+posts is not defined
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:48:8)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:249:17
+    at D:\SchoolTest\models\regUser.js:161:21
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\cursor.js:842:16
+[Wed Mar 22 2017 21:29:51 GMT+0800 (中国标准时间)] /archive
+TypeError: D:\SchoolTest\views\archive.ejs:4
+    2| <ul class="archive">
+    3|     <% var lastYear = 0 %>
+ >> 4|     <% posts.forEach(function (post, index) { %>
+    5|     <% if (lastYear != post.time.year) { %>
+    6|     <li><h3><%= post.time.year %></h3></li>
+    7|     <% lastYear = post.time.year } %>
+
+posts.forEach is not a function
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:48:14)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:219:17
+    at D:\SchoolTest\models\post.js:314:17
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\cursor.js:842:16
+[Wed Mar 22 2017 21:29:56 GMT+0800 (中国标准时间)] /archive
+TypeError: D:\SchoolTest\views\archive.ejs:4
+    2| <ul class="archive">
+    3|     <% var lastYear = 0 %>
+ >> 4|     <% posts.forEach(function (post, index) { %>
+    5|     <% if (lastYear != post.time.year) { %>
+    6|     <li><h3><%= post.time.year %></h3></li>
+    7|     <% lastYear = post.time.year } %>
+
+posts.forEach is not a function
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:48:14)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:219:17
+    at D:\SchoolTest\models\post.js:314:17
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\cursor.js:842:16
+[Wed Mar 22 2017 21:30:47 GMT+0800 (中国标准时间)] /verify
+ReferenceError: D:\SchoolTest\views\archive.ejs:4
+    2| <ul class="archive">
+    3|     <% var lastYear = 0 %>
+ >> 4|     <% posts.forEach(function (post, index) { %>
+    5|     <% if (lastYear != post.time.year) { %>
+    6|     <li><h3><%= post.time.year %></h3></li>
+    7|     <% lastYear = post.time.year } %>
+
+posts is not defined
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:48:8)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:250:17
+    at D:\SchoolTest\models\regUser.js:161:21
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\cursor.js:842:16
+[Wed Mar 22 2017 21:31:33 GMT+0800 (中国标准时间)] /verify
+ReferenceError: D:\SchoolTest\views\archive.ejs:4
+    2| <ul class="archive">
+    3|     <% var lastYear = 0 %>
+ >> 4|     <% posts.forEach(function (post, index) { %>
+    5|     <% if (lastYear != post.time.year) { %>
+    6|     <li><h3><%= post.time.year %></h3></li>
+    7|     <% lastYear = post.time.year } %>
+
+posts is not defined
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:48:8)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:250:17
+    at D:\SchoolTest\models\regUser.js:161:21
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\cursor.js:842:16
+[Wed Mar 22 2017 22:35:21 GMT+0800 (中国标准时间)] /reg
+TypeError: Cannot read property 'length' of undefined
+    at new RegUser (D:\SchoolTest\models\regUser.js:40:36)
+    at D:\SchoolTest\routes\index.js:67:26
+    at callbacks (D:\SchoolTest\node_modules\express\lib\router\index.js:164:37)
+    at param (D:\SchoolTest\node_modules\express\lib\router\index.js:138:11)
+    at pass (D:\SchoolTest\node_modules\express\lib\router\index.js:145:5)
+    at nextRoute (D:\SchoolTest\node_modules\express\lib\router\index.js:100:7)
+    at callbacks (D:\SchoolTest\node_modules\express\lib\router\index.js:167:11)
+    at checkNotLogin (D:\SchoolTest\routes\index.js:554:9)
+    at callbacks (D:\SchoolTest\node_modules\express\lib\router\index.js:164:37)
+    at param (D:\SchoolTest\node_modules\express\lib\router\index.js:138:11)

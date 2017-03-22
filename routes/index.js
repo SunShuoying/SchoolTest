@@ -10,16 +10,12 @@ var  crypto = require('crypto'),
      fs = require('fs'),
      User = require('../models/user.js'),
      Post = require('../models/post.js'),
+    RegUser = require('../models/regUser.js'),
     Comment = require('../models/comment.js');
 var exphbs = require('express3-handlebars');
 var querystring = require('querystring');
 var http = require('http');
 
-var url;
-var sigt;
-var sigu;
-var cookies = '';
-var cookie = '';
 
 module.exports=function(app) {
     /*app.get('/',function (req,res){
@@ -65,6 +61,57 @@ module.exports=function(app) {
         for(var i in req.body){
             console.log(i+":"+req.body[i]);
         }
+        console.log(req.body.experience[0]+":"+typeof req.body.experience);
+        var md5 = crypto.createHash('md5'),
+            password = md5.update(req.body.password).digest('hex');
+        var newRegUser = new RegUser({
+            name: req.body.name,
+            sex: req.body.sex,
+            experience:req.body.exprience,
+            underMajor:req.body.underMajor,
+            underDate:req.body.underDate,
+            underClass:req.body.underClass,
+            underStudentID:req.body.underStudentID,
+            masterMajor:req.body.masterMajor,
+            masterDate:req.body.masterDate,
+            masterClass:req.body.masterClass,
+            masterStudentID:req.body.masterStudentID,
+            doctorMajor:req.body.doctorMajor,
+            doctorDate:req.body.doctorDate,
+            doctorClass:req.body.doctorClass,
+            doctorStudentID:req.body.doctorStudentID,
+            postMajor:req.body.postMajor,
+            postDate:req.body.postDate,
+            postClass:req.body.postClass,
+            postStudentID:req.body.postStudentID,
+            country: req.body.country,
+            city: req.body.city,
+            company: req.body.company,
+            position: req.body.position,
+            telephone: req.body.telephone,
+            xiaoHui: req.body.xiaoHui,
+            xPosition: req.body.xPosition,
+            password: password,
+            email: req.body.email
+        });
+        RegUser.get(newRegUser.email, function (err, user) {
+            if (user) {
+                req.flash('error', '用户已存在!');
+                return res.redirect('/reg');//返回注册页
+            }
+//如果不存在则新增用户
+
+            //verifyUser(newUser);
+            newRegUser.save(function (err, user) {
+                if (err) {
+                    req.flash('error', err);
+                    return res.redirect('/reg');//注册失败返回主册页
+                }
+                //req.session.user = user;//用户信息存入 session
+                req.flash('success', '注册申请成功，等待审核通过邮箱通知!');
+                res.redirect('/');//注册成功后返回主页
+            });
+        });
         /*
         var name = req.body.name,
             studentID = req.body.studentID,
@@ -243,21 +290,31 @@ module.exports=function(app) {
         console.log("verify");
         var page = req.query.p?parseInt(req.query.p):1;
         //查询并返回第page页的10篇文章
-        regUser.getTen( page ,function (err, regUsers, total) {
+        console.log("page"+page);
+        RegUser.getTen( page ,function (err, regUsers, total) {
             if (err) {
                 posts = [];
                 console.log("error");
             }
-
-            res.render('verify', {
+          //console.log("enter");
+            //console.log("regUser"+typeof regUsers);
+            res.render('archive', {
                 title: '验证',
                 regUsers: regUsers,
                 page :page,
                 isFirstPage:(page-1)==0,
-                isLastPage: ((page-1)*10+posts.length)==total,
-                //user:req.session.user,
-                //success: req.flash('success').toString(),
-                //error: req.flash('error').toString()
+                isLastPage: ((page-1)*10+regUsers.length)==total,
+                user: req.session.user,
+                success: req.flash('success').toString(),
+                error: req.flash('error').toString(),
+                helpers: {
+                    showYear: function(index, options) {
+                        if ((index == 0) || (regUsers[index].time.year != regUsers[index - 1].time.year))
+                        {
+                            return options.fn(this);
+                        }
+                    }
+                }
             });
         });
     });
