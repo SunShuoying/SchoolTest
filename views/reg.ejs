@@ -1,105 +1,103 @@
 <%- include header %>
 <form method="post">
-    <div>姓
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        名 ：<input type="text" name="name"/><br /><br /></div>
-    <div>性
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        别 ：<label><input name="sex" type="radio" value="male" />男 </label>
-        <label><input name="sex" type="radio" value="female" />女 </label> <br /><br /></div>
-    <div>在校经历 ：
-        <div class="checkbox-edu">
-            <label><input id="checkbox-undergraduate" name="experience" type="checkbox" value="undergraduate" />本科 </label><br />
-            <div id = "under-div" >
-                <span> 专
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                业 <input type="text" name="under-major"/> </span>
-                <span> 入学年份 <input type="text" name="under-date"/> </span><br /><br />
-                <span> 班
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                级 <input type="text" name="under-class"/> </span>
-                <span> 学
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                号 <input type="text" name="under-studentID"/> </span><br /><br />
-            </div>
-
-
+    <div style="width:50%;position: relative;left:20%;">
+        <div class="form-group">
+            <label for="name">姓名：</label>
+            <input type="text" class="form-control" id="name" placeholder="请输入姓名">
         </div>
-        <div class="checkbox-edu">
-            <label><input id="checkbox-master" name="experience" type="checkbox" value="master" />硕士 </label><br />
-            <div id="master-div">
-                <span> 专
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                业 <input type="text" name="master-major"/> </span>
-                <span> 入学年份 <input type="text" name="master-date"/> </span><br /><br />
-                <span> 班
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                级 <input type="text" name="master-class"/> </span>
-                <span> 学
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                号 <input type="text" name="master-studentID"/> </span><br /><br />
-            </div>
-
+        <div class="form-group">
+            <label for="sex">性别：</label><br />
+            <label><input name="sex"  type="radio" value="male" />男 </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label><input name="sex"  type="radio" value="female" />女 </label> <br /><br />
         </div>
-        <div class="checkbox-edu">
-            <label><input id="checkbox-docter" name="experience" type="checkbox" value="docter" />博士 </label><br />
-            <div id="docter-div">
-                <span> 专
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                业 <input type="text" name="docter-major"/> </span>
-                <span> 入学年份 <input type="text" name="docter-date"/> </span><br /><br />
-                <span> 班
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                级 <input type="text" name="docter-class"/> </span>
-                <span> 学
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                号 <input type="text" name="docter-studentID"/> </span><br /><br />
+        <div class="form-group">
+            <label for="exprience">在校经历：</label><br />
+            <div >
+                <label><input id="checkbox-undergraduate" name="experience" type="checkbox" value="undergraduate" />本科 </label><br />
+                <div id = "under-div" class="checkbox-edu" >
+                    <span><label>专业 </label><input type="text" class="form-control"  id="under-major" placeholder="请输入专业"/> </span>
+                    <span><label>入学年份 </label><input type="date" class="form-control" id="under-date"/> </span>
+                    <span><label>班级 </label><input type="text" class="form-control" id="under-class" placeholder="请输班级"/> </span>
+                    <span><label>学号 </label><input type="text" class="form-control" id="under-studentID" placeholder="请输入学号"/> </span>
+                </div>
             </div>
+            <div >
+                <label><input id="checkbox-master" name="experience" type="checkbox" value="master" />硕士 </label><br />
+                <div id="master-div" class="checkbox-edu">
+                    <span><label>专业 </label><input type="text" class="form-control"  id="master-major" placeholder="请输入专业"/> </span>
+                    <span><label>入学年份 </label><input type="date" class="form-control" id="master-date"/> </span>
+                    <span><label>班级 </label><input type="text" class="form-control" id="master-class" placeholder="请输班级"/> </span>
+                    <span><label>学号 </label><input type="text" class="form-control" id="master-studentID" placeholder="请输入学号"/> </span>
+                </div>
 
+            </div>
+            <div >
+                <label><input id="checkbox-docter" name="experience" type="checkbox" value="docter" />博士 </label><br />
+                <div id="docter-div" class="checkbox-edu">
+                    <span><label>专业 </label><input type="text" class="form-control"  id="docter-major" placeholder="请输入专业"/> </span>
+                    <span><label>入学年份 </label><input type="date" class="form-control" id="docter-date"/> </span>
+                    <span><label>班级 </label><input type="text" class="form-control" id="docter-class" placeholder="请输班级"/> </span>
+                    <span><label>学号 </label><input type="text" class="form-control" id="docter-studentID" placeholder="请输入学号"/> </span>
+                </div>
+
+            </div>
+            <div >
+                <label><input id="checkbox-postdocter" name="experience" type="checkbox" value="postdocter" />博士后 </label> <br /><br />
+                <div id="post-div" class="checkbox-edu">
+                    <span><label>专业 </label><input type="text" class="form-control"  id="post-major" placeholder="请输入专业"/> </span>
+                    <span><label>入学年份 </label><input type="date" class="form-control" id="post-date"/> </span>
+                    <span><label>班级 </label><input type="text" class="form-control" id="post-class" placeholder="请输班级"/> </span>
+                    <span><label>学号 </label><input type="text" class="form-control" id="post-studentID" placeholder="请输入学号"/> </span>
+                </div>
+
+            </div>
         </div>
-        <div class="checkbox-edu">
-            <label><input id="checkbox-postdocter" name="experience" type="checkbox" value="postdocter" />博士后 </label> <br /><br />
-            <div id="post-div">
-                <span> 专
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                业 <input type="text" name="post-major"/> </span>
-                <span> 入学年份 <input type="text" name="post-date"/> </span><br /><br />
-                <span> 班
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                级 <input type="text" name="post-class"/> </span>
-                <span> 学
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                号 <input type="text" name="post-studentID"/> </span><br /><br />
+        <div class="form-group">
+            <label for="country">所在国家：</label>
+            <input type="text" class="form-control" id="country" placeholder="请输入国家">
+        </div>
+        <div class="form-group">
+            <label for="city">城市：</label>
+            <input type="text" class="form-control" id="city" placeholder="请输入城市">
+        </div>
+        <div class="form-group">
+            <label for="company">工作单位：</label>
+            <input type="text" class="form-control" id="company" placeholder="请输入工作单位">
+        </div>
+        <div class="form-group">
+            <label for="position">职位：</label>
+            <input type="text" class="form-control" id="position" placeholder="请输入职位">
+        </div>
+        <div class="form-group">
+            <label for="telephone">手机：</label>
+            <input type="tel" class="form-control" id="telephone" placeholder="请输入手机">
+        </div>
+        <div class="form-group">
+            <label for="email">邮箱：</label>
+            <input type="email" class="form-control" id="email" placeholder="请输入邮箱">
+        </div>
+        <div class="form-group">
+            <label for="xiaoHui">所属地方校友会：</label>
+            <input type="text" class="form-control" id="xiaoHui" placeholder="请输入校友会（选填）">
+        </div>
+        <div class="form-group">
+            <label for="x-position">校友会职务：</label>
+            <input type="text" class="form-control" id="x-position" placeholder="请输入校友会职务（选填）">
+        </div>
+        <div class="form-group">
+            <label for="password">你的密码：</label>
+            <input type="password" class="form-control" id="password" placeholder="请输入密码">
+        </div>
+        <div class="form-group">
+            <label for="password-repeat">确认密码：</label>
+            <input type="password" class="form-control" id="password-repeat" placeholder="请输入确认密码">
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-default">注册</button>
             </div>
-
         </div>
     </div>
-    <div>所在国家 ：<input type="text" name="country"/><br /><br /></div>
-    <div>城
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        市 ：<input type="text" name="city"/><br /><br /></div>
-    <div>工作单位 ：<input type="text" name="company"/><br /><br /></div>
-    <div>职
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        位 ：<input type="text" name="position"/><br /><br /></div>
-    <div>手
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        机 ：<input type="text" name="mobile"/><br /><br /></div>
-    <div>邮
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        箱 ：<input type="email" name="email"/><br /><br /></div>
-    <div>所属地方校友会 ：<input type="text" name="xiaoHui"/><br /><br /></div>
-    <div>校友会职务 ：<input type="text" name="x-position"/><br /><br /></div>
-    <div>密
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        码 ：<input type="password" name="password"/><br /><br /></div>
-    <div>确认密码 ：<input type="password" name="password-repeat"/><br /><br /></div>
 
-
-
-
-
-
-    <input type="submit" value="注册"/>
 </form>
 <%- include footer %>
