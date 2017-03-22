@@ -57,16 +57,25 @@ regUser.prototype.save = function(callback) {
         email: this.email,
        // head: head
     };
+
     var exp = ["undergraduate","master","doctor","postdoctor"];
     var va = [[this.underMajor ,this.underDate ,this.underClass ,this.underStudentID],
               [this.masterMajor,this.masterDate,this.masterClass,this.underStudentID],
               [this.doctorMajor,this.doctorDate,this.doctorClass,this.underStudentID],
               [this.postMajor  ,this.postDate  ,this.postClass  ,this.postStudentID]];
-    if(exp[0] in this.experience){
-        user.experience.exp[0] = {
+    for(var i = 0;i<4;i++){
+        if(exp[i] in this.experience){
+            user.experience.exp[i] = {
+                major:va[i][0],
+                date:va[i][1],
+                class:va[i][2],
+                studentID:va[i][3]
+            };
+        }
 
-        };
+
     }
+    console.log(user);
 
     async.waterfall([
         function (cb) {
@@ -92,7 +101,7 @@ regUser.prototype.save = function(callback) {
     });
 
 };
-regUser.get = function(name, callback) {
+regUser.get = function(email, callback) {
     async.waterfall([
         function (cb) {
             mongodb.open(function (err, db) {
@@ -100,13 +109,13 @@ regUser.get = function(name, callback) {
             });
         },
         function (db, cb) {
-            db.collection('users', function (err, collection) {
+            db.collection('regUsers', function (err, collection) {
                 cb(err, collection);
             });
         },
         function (collection, cb) {
             collection.findOne({
-                name: name
+                email: email
             }, function (err, user) {
                 cb(err, user);
             });
@@ -114,5 +123,87 @@ regUser.get = function(name, callback) {
     ], function (err, user) {
         mongodb.close();
         err ? callback(err) : callback(null, user);
+    });
+};
+
+regUser.getTen = function ( page, callback) {
+    //打开数据库
+    mongodb.open(function (err, db) {
+        if (err) {
+            return callback(err);
+        }
+        //读取posts集合
+        db.collection('regUsers', function(err, collection) {
+            if (err) {
+                mongodb.close();
+                return callback(err);
+            }
+            var query = {};
+
+            //使用count返回特定查询的文档数total
+            collection.count(query, function(err, total) {
+                //根据query对象查询,并跳过前（page-1）*10 个结果，返回之后的10个结果
+                collection.find(query, {
+                    skip:(page-1)*10,
+                    limit:10
+                }).sort({
+                    time:-1
+                }).toArray(function (err, docs) {
+                    mongodb.close();
+                    if (err) {
+                        return callback(err);
+                    }
+                    //解析markdown为html
+                    docs.forEach(function (doc) {
+                        doc.post = markdown.toHTML(doc.post);
+                    });
+                    callback(null, docs, total);//成功！以数组形式查询结果
+                });
+            });
+        });
+    });
+};
+
+
+
+//remove regUser
+regUser.remove = function(name, email, telephone, callback) {
+    //打开数据库
+    mongodb.open(function (err, db) {
+        if (err) {
+            return callback(err);
+        }
+        //posts
+        db.collection('regUsers', function (err, collection) {
+            if (err) {
+                mongodb.close();
+                return callback(err);
+            }
+            //
+            collection.findOne({
+                "name": name,
+                "email": email,
+                "telephone": telephone
+            }, function (err, doc) {
+                if (err) {
+                    mongodb.close();
+                    return callback(err);
+                }
+                //删除转载来的文章所在的文档
+                collection.remove({
+                    "name": name,
+                    "email": email,
+                    "telephone": telephone
+                }, {
+                    w: 1
+                }, function (err) {
+                    mongodb.close();
+                    if (err) {
+                        return callback(err);
+                    }
+                    callback(null);
+                });
+            });
+        });
     });
 };

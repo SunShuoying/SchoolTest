@@ -48,6 +48,7 @@ module.exports=function(app) {
             });
         });
     });
+
     app.get('/reg', checkNotLogin);
     app.get('/reg', function (req, res) {
         res.render('reg', {
@@ -237,6 +238,29 @@ module.exports=function(app) {
         });
     });
 
+    app.get('/verify', function (req, res) {
+        //判断是否是第一页，并把请求的页数转换成number类型
+        console.log("verify");
+        var page = req.query.p?parseInt(req.query.p):1;
+        //查询并返回第page页的10篇文章
+        regUser.getTen( page ,function (err, regUsers, total) {
+            if (err) {
+                posts = [];
+                console.log("error");
+            }
+
+            res.render('verify', {
+                title: '验证',
+                regUsers: regUsers,
+                page :page,
+                isFirstPage:(page-1)==0,
+                isLastPage: ((page-1)*10+posts.length)==total,
+                //user:req.session.user,
+                //success: req.flash('success').toString(),
+                //error: req.flash('error').toString()
+            });
+        });
+    });
 
     app.get('/tags', function (req, res) {
         Post.getTags(function (err, posts) {

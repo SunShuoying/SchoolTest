@@ -2980,3 +2980,195 @@ SyntaxError: Unexpected token ) in e:\SchoolTest\views\index.ejs while compiling
     at ServerResponse.res.render (e:\SchoolTest\node_modules\express\lib\response.js:801:7)
     at e:\SchoolTest\routes\index.js:39:17
     at e:\SchoolTest\models\post.js:99:21
+[Wed Mar 22 2017 20:27:46 GMT+0800 (中国标准时间)] /u/sun1/2017-3-17/tinyScreen.css
+TypeError: D:\SchoolTest\views\article.ejs:28
+    26| </p>
+    27| <p class="info">
+ >> 28|     作者：<a href="/u/<%= post.name %>"><%= post.name %></a> |
+    29|     日期：<%= post.time.minute %> |
+    30|     标签：
+    31|     <%  post.tags.forEach(function (tag, index) { %>
+
+Cannot read property 'name' of null
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:125:27)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:343:17
+    at D:\SchoolTest\models\post.js:153:17
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\collection.js:1322:5
+[Wed Mar 22 2017 20:27:46 GMT+0800 (中国标准时间)] /u/sun1/2017-3-17/smallScreen.css
+TypeError: D:\SchoolTest\views\article.ejs:28
+    26| </p>
+    27| <p class="info">
+ >> 28|     作者：<a href="/u/<%= post.name %>"><%= post.name %></a> |
+    29|     日期：<%= post.time.minute %> |
+    30|     标签：
+    31|     <%  post.tags.forEach(function (tag, index) { %>
+
+Cannot read property 'name' of null
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:125:27)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:343:17
+    at D:\SchoolTest\models\post.js:153:17
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\collection.js:1322:5
+[Wed Mar 22 2017 20:28:00 GMT+0800 (中国标准时间)] /u/sun1/2017-3-17/tinyScreen.css
+TypeError: D:\SchoolTest\views\article.ejs:28
+    26| </p>
+    27| <p class="info">
+ >> 28|     作者：<a href="/u/<%= post.name %>"><%= post.name %></a> |
+    29|     日期：<%= post.time.minute %> |
+    30|     标签：
+    31|     <%  post.tags.forEach(function (tag, index) { %>
+
+Cannot read property 'name' of null
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:125:27)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:343:17
+    at D:\SchoolTest\models\post.js:153:17
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\collection.js:1322:5
+[Wed Mar 22 2017 20:28:00 GMT+0800 (中国标准时间)] /u/sun1/2017-3-17/smallScreen.css
+TypeError: D:\SchoolTest\views\article.ejs:28
+    26| </p>
+    27| <p class="info">
+ >> 28|     作者：<a href="/u/<%= post.name %>"><%= post.name %></a> |
+    29|     日期：<%= post.time.minute %> |
+    30|     标签：
+    31|     <%  post.tags.forEach(function (tag, index) { %>
+
+Cannot read property 'name' of null
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:125:27)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:343:17
+    at D:\SchoolTest\models\post.js:153:17
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\collection.js:1322:5
+[Wed Mar 22 2017 20:31:23 GMT+0800 (中国标准时间)] /u/sun1/2017-3-17/tinyScreen.css
+TypeError: D:\SchoolTest\views\article.ejs:28
+    26| </p>
+    27| <p class="info">
+ >> 28|     作者：<a href="/u/<%= post.name %>"><%= post.name %></a> |
+    29|     日期：<%= post.time.minute %> |
+    30|     标签：
+    31|     <%  post.tags.forEach(function (tag, index) { %>
+
+Cannot read property 'name' of null
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:125:27)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:343:17
+    at D:\SchoolTest\models\post.js:153:17
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\collection.js:1322:5
+[Wed Mar 22 2017 20:31:23 GMT+0800 (中国标准时间)] /u/sun1/2017-3-17/smallScreen.css
+TypeError: D:\SchoolTest\views\article.ejs:28
+    26| </p>
+    27| <p class="info">
+ >> 28|     作者：<a href="/u/<%= post.name %>"><%= post.name %></a> |
+    29|     日期：<%= post.time.minute %> |
+    30|     标签：
+    31|     <%  post.tags.forEach(function (tag, index) { %>
+
+Cannot read property 'name' of null
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:125:27)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:343:17
+    at D:\SchoolTest\models\post.js:153:17
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\collection.js:1322:5
+[Wed Mar 22 2017 20:53:46 GMT+0800 (中国标准时间)] /verify
+ReferenceError: regUser is not defined
+    at D:\SchoolTest\routes\index.js:56:9
+    at callbacks (D:\SchoolTest\node_modules\express\lib\router\index.js:164:37)
+    at param (D:\SchoolTest\node_modules\express\lib\router\index.js:138:11)
+    at pass (D:\SchoolTest\node_modules\express\lib\router\index.js:145:5)
+    at Router._dispatch (D:\SchoolTest\node_modules\express\lib\router\index.js:173:5)
+    at Object.router (D:\SchoolTest\node_modules\express\lib\router\index.js:33:10)
+    at next (D:\SchoolTest\node_modules\connect\lib\proto.js:193:15)
+    at next (D:\SchoolTest\node_modules\connect\lib\middleware\session.js:318:9)
+    at D:\SchoolTest\node_modules\connect\lib\middleware\session.js:342:9
+    at D:\SchoolTest\node_modules\connect-mongo\lib\connect-mongo.js:305:11
+[Wed Mar 22 2017 20:54:53 GMT+0800 (中国标准时间)] /verify
+ReferenceError: regUser is not defined
+    at D:\SchoolTest\routes\index.js:56:9
+    at callbacks (D:\SchoolTest\node_modules\express\lib\router\index.js:164:37)
+    at param (D:\SchoolTest\node_modules\express\lib\router\index.js:138:11)
+    at pass (D:\SchoolTest\node_modules\express\lib\router\index.js:145:5)
+    at Router._dispatch (D:\SchoolTest\node_modules\express\lib\router\index.js:173:5)
+    at Object.router (D:\SchoolTest\node_modules\express\lib\router\index.js:33:10)
+    at next (D:\SchoolTest\node_modules\connect\lib\proto.js:193:15)
+    at next (D:\SchoolTest\node_modules\connect\lib\middleware\session.js:318:9)
+    at D:\SchoolTest\node_modules\connect\lib\middleware\session.js:342:9
+    at D:\SchoolTest\node_modules\connect-mongo\lib\connect-mongo.js:305:11
+[Wed Mar 22 2017 21:01:39 GMT+0800 (中国标准时间)] /verify
+ReferenceError: regUser is not defined
+    at D:\SchoolTest\routes\index.js:245:9
+    at callbacks (D:\SchoolTest\node_modules\express\lib\router\index.js:164:37)
+    at param (D:\SchoolTest\node_modules\express\lib\router\index.js:138:11)
+    at pass (D:\SchoolTest\node_modules\express\lib\router\index.js:145:5)
+    at Router._dispatch (D:\SchoolTest\node_modules\express\lib\router\index.js:173:5)
+    at Object.router (D:\SchoolTest\node_modules\express\lib\router\index.js:33:10)
+    at next (D:\SchoolTest\node_modules\connect\lib\proto.js:193:15)
+    at next (D:\SchoolTest\node_modules\connect\lib\middleware\session.js:318:9)
+    at D:\SchoolTest\node_modules\connect\lib\middleware\session.js:342:9
+    at D:\SchoolTest\node_modules\connect-mongo\lib\connect-mongo.js:305:11
+[Wed Mar 22 2017 21:02:52 GMT+0800 (中国标准时间)] /verify
+ReferenceError: regUser is not defined
+    at D:\SchoolTest\routes\index.js:246:9
+    at callbacks (D:\SchoolTest\node_modules\express\lib\router\index.js:164:37)
+    at param (D:\SchoolTest\node_modules\express\lib\router\index.js:138:11)
+    at pass (D:\SchoolTest\node_modules\express\lib\router\index.js:145:5)
+    at Router._dispatch (D:\SchoolTest\node_modules\express\lib\router\index.js:173:5)
+    at Object.router (D:\SchoolTest\node_modules\express\lib\router\index.js:33:10)
+    at next (D:\SchoolTest\node_modules\connect\lib\proto.js:193:15)
+    at next (D:\SchoolTest\node_modules\connect\lib\middleware\session.js:318:9)
+    at D:\SchoolTest\node_modules\connect\lib\middleware\session.js:342:9
+    at D:\SchoolTest\node_modules\connect-mongo\lib\connect-mongo.js:305:11
+[Wed Mar 22 2017 21:03:31 GMT+0800 (中国标准时间)] /verify
+ReferenceError: regUser is not defined
+    at D:\SchoolTest\routes\index.js:246:9
+    at callbacks (D:\SchoolTest\node_modules\express\lib\router\index.js:164:37)
+    at param (D:\SchoolTest\node_modules\express\lib\router\index.js:138:11)
+    at pass (D:\SchoolTest\node_modules\express\lib\router\index.js:145:5)
+    at Router._dispatch (D:\SchoolTest\node_modules\express\lib\router\index.js:173:5)
+    at Object.router (D:\SchoolTest\node_modules\express\lib\router\index.js:33:10)
+    at next (D:\SchoolTest\node_modules\connect\lib\proto.js:193:15)
+    at next (D:\SchoolTest\node_modules\connect\lib\middleware\session.js:318:9)
+    at D:\SchoolTest\node_modules\connect\lib\middleware\session.js:342:9
+    at D:\SchoolTest\node_modules\connect-mongo\lib\connect-mongo.js:305:11
+[Wed Mar 22 2017 21:05:23 GMT+0800 (中国标准时间)] /verify
+ReferenceError: regUser is not defined
+    at D:\SchoolTest\routes\index.js:246:9
+    at callbacks (D:\SchoolTest\node_modules\express\lib\router\index.js:164:37)
+    at param (D:\SchoolTest\node_modules\express\lib\router\index.js:138:11)
+    at pass (D:\SchoolTest\node_modules\express\lib\router\index.js:145:5)
+    at Router._dispatch (D:\SchoolTest\node_modules\express\lib\router\index.js:173:5)
+    at Object.router (D:\SchoolTest\node_modules\express\lib\router\index.js:33:10)
+    at next (D:\SchoolTest\node_modules\connect\lib\proto.js:193:15)
+    at next (D:\SchoolTest\node_modules\connect\lib\middleware\session.js:318:9)
+    at D:\SchoolTest\node_modules\connect\lib\middleware\session.js:342:9
+    at D:\SchoolTest\node_modules\connect-mongo\lib\connect-mongo.js:305:11

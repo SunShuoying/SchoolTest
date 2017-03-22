@@ -1,0 +1,14 @@
+<%- include header %>
+<ul class="archive">
+    <% var lastDay= 0 %>
+    <% regUsers.forEach(function (regUser, index) { %>
+    <% if (lastDay != regUser.time.day ) { %>
+    <li><h3><%= regUser.time.day %></h3></li>
+    <% lastDay = regUser.time.day } %>
+    <li><time><%= regUser.time %></time></li>
+    <li><a href="/u/<%= regUser.name %>/<%= regUser.time.day %>/<%= regUser.title %>"><%=
+                regUser.title %></a></li>
+    <% }) %>
+</ul>
+<%- include paging %>
+<%- include footer %>
