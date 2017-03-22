@@ -13,6 +13,7 @@ article a:hover{color:#333333;text-decoration:underline;}
 .info{font-size:1em;}
 .nav-diy{font-size: 1.8em; font-weight: 500;font-family: inherit;}
 input{width: auto;}
+.necessary{color: red;}
 .outer_border {
     border: 1px solid #a6a7a6;
     border-radius: 5px;

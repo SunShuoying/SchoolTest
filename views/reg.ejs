@@ -1,102 +1,105 @@
 <%- include header %>
+<script>
+
+</script>
 <form method="post">
-    <div style="width:50%;position: relative;left:20%;">
+    <div style="width:50%;position: relative;left:20%;top: 1em;">
         <div class="form-group">
-            <label for="name">姓名：</label>
-            <input type="text" class="form-control" id="name" placeholder="请输入姓名">
+            <label>姓名<span class="necessary"> *</span>：</label>
+            <input type="text" class="form-control" name="name"   placeholder="请输入姓名">
         </div>
         <div class="form-group">
-            <label for="sex">性别：</label><br />
+            <label>性别<span class="necessary"> *</span>：</label><br />
             <label><input name="sex"  type="radio" value="male" />男 </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <label><input name="sex"  type="radio" value="female" />女 </label> <br /><br />
+            <label><input name="sex"  type="radio" value="female" />女 </label>
         </div>
         <div class="form-group">
-            <label for="exprience">在校经历：</label><br />
+            <label>在校经历<span class="necessary"> *</span>：</label>
             <div >
-                <label><input id="checkbox-undergraduate" name="experience" type="checkbox" value="undergraduate" />本科 </label><br />
+                <label><input id="checkbox-undergraduate" name="experience" type="checkbox" value="undergraduate" />本科 </label>
                 <div id = "under-div" class="checkbox-edu" >
-                    <span><label>专业 </label><input type="text" class="form-control"  id="under-major" placeholder="请输入专业"/> </span>
-                    <span><label>入学年份 </label><input type="date" class="form-control" id="under-date"/> </span>
-                    <span><label>班级 </label><input type="text" class="form-control" id="under-class" placeholder="请输班级"/> </span>
-                    <span><label>学号 </label><input type="text" class="form-control" id="under-studentID" placeholder="请输入学号"/> </span>
+                    <span><label>专业<span class="necessary"> *</span>：</label><input type="text" class="form-control"  name="under-major" placeholder="请输入专业"/> </span>
+                    <span><label>入学年份<span class="necessary"> *</span>：</label><input type="date" class="form-control" name="under-date"/> </span>
+                    <span><label>班级<span class="necessary"> *</span>：</label><input type="text" class="form-control" name="under-class" placeholder="请输班级"/> </span>
+                    <span><label>学号：</label><input type="text" class="form-control" name="under-studentID" placeholder="请输入学号"/> </span>
                 </div>
             </div>
             <div >
-                <label><input id="checkbox-master" name="experience" type="checkbox" value="master" />硕士 </label><br />
+                <label><input id="checkbox-master" name="experience" type="checkbox" value="master" />硕士 </label>
                 <div id="master-div" class="checkbox-edu">
-                    <span><label>专业 </label><input type="text" class="form-control"  id="master-major" placeholder="请输入专业"/> </span>
-                    <span><label>入学年份 </label><input type="date" class="form-control" id="master-date"/> </span>
-                    <span><label>班级 </label><input type="text" class="form-control" id="master-class" placeholder="请输班级"/> </span>
-                    <span><label>学号 </label><input type="text" class="form-control" id="master-studentID" placeholder="请输入学号"/> </span>
+                    <span><label>专业<span class="necessary"> *</span>：</label><input type="text" class="form-control"  name="master-major" placeholder="请输入专业"/> </span>
+                    <span><label>入学年份<span class="necessary"> *</span>：</label><input type="date" class="form-control" name="master-date"/> </span>
+                    <span><label>班级<span class="necessary"> *</span>：</label><input type="text" class="form-control" name="master-class" placeholder="请输班级"/> </span>
+                    <span><label>学号：</label><input type="text" class="form-control" name="master-studentID" placeholder="请输入学号"/> </span>
                 </div>
 
             </div>
             <div >
-                <label><input id="checkbox-docter" name="experience" type="checkbox" value="docter" />博士 </label><br />
+                <label><input id="checkbox-docter" name="experience" type="checkbox" value="docter" />博士 </label>
                 <div id="docter-div" class="checkbox-edu">
-                    <span><label>专业 </label><input type="text" class="form-control"  id="docter-major" placeholder="请输入专业"/> </span>
-                    <span><label>入学年份 </label><input type="date" class="form-control" id="docter-date"/> </span>
-                    <span><label>班级 </label><input type="text" class="form-control" id="docter-class" placeholder="请输班级"/> </span>
-                    <span><label>学号 </label><input type="text" class="form-control" id="docter-studentID" placeholder="请输入学号"/> </span>
+                    <span><label>专业<span class="necessary"> *</span>：</label><input type="text" class="form-control"  name="docter-major" placeholder="请输入专业"/> </span>
+                    <span><label>入学年份<span class="necessary"> *</span>：</label><input type="date" class="form-control" name="docter-date"/> </span>
+                    <span><label>班级<span class="necessary"> *</span>：</label><input type="text" class="form-control" name="docter-class" placeholder="请输班级"/> </span>
+                    <span><label>学号：</label><input type="text" class="form-control" name="docter-studentID" placeholder="请输入学号"/> </span>
                 </div>
 
             </div>
             <div >
-                <label><input id="checkbox-postdocter" name="experience" type="checkbox" value="postdocter" />博士后 </label> <br /><br />
+                <label><input id="checkbox-postdocter" name="experience" type="checkbox" value="postdocter" />博士后 </label>
                 <div id="post-div" class="checkbox-edu">
-                    <span><label>专业 </label><input type="text" class="form-control"  id="post-major" placeholder="请输入专业"/> </span>
-                    <span><label>入学年份 </label><input type="date" class="form-control" id="post-date"/> </span>
-                    <span><label>班级 </label><input type="text" class="form-control" id="post-class" placeholder="请输班级"/> </span>
-                    <span><label>学号 </label><input type="text" class="form-control" id="post-studentID" placeholder="请输入学号"/> </span>
+                    <span><label>专业<span class="necessary"> *</span>：</label><input type="text" class="form-control"  name="post-major" placeholder="请输入专业"/> </span>
+                    <span><label>入学年份<span class="necessary"> *</span>：</label><input type="date" class="form-control" name="post-date"/> </span>
+                    <span><label>班级<span class="necessary"> *</span>：</label><input type="text" class="form-control" name="post-class" placeholder="请输班级"/> </span>
+                    <span><label>学号<span class="necessary"> *</span>：</label><input type="text" class="form-control" name="post-studentID" placeholder="请输入学号"/> </span>
                 </div>
-
             </div>
         </div>
         <div class="form-group">
-            <label for="country">所在国家：</label>
-            <input type="text" class="form-control" id="country" placeholder="请输入国家">
+            <label>所在国家<span class="necessary"> *</span>：</label>
+            <input type="text" class="form-control" name="country" placeholder="请输入国家">
         </div>
         <div class="form-group">
-            <label for="city">城市：</label>
-            <input type="text" class="form-control" id="city" placeholder="请输入城市">
+            <label>城市<span class="necessary"> *</span>：</label>
+            <input type="text" class="form-control" name="city" placeholder="请输入城市">
         </div>
         <div class="form-group">
-            <label for="company">工作单位：</label>
-            <input type="text" class="form-control" id="company" placeholder="请输入工作单位">
+            <label>工作单位<span class="necessary"> *</span>：</label>
+            <input type="text" class="form-control" name="company" placeholder="请输入工作单位">
         </div>
         <div class="form-group">
-            <label for="position">职位：</label>
-            <input type="text" class="form-control" id="position" placeholder="请输入职位">
+            <label>职位<span class="necessary"> *</span>：</label>
+            <input type="text" class="form-control" name="position" placeholder="请输入职位">
         </div>
         <div class="form-group">
-            <label for="telephone">手机：</label>
-            <input type="tel" class="form-control" id="telephone" placeholder="请输入手机">
+            <label>手机<span class="necessary"> *</span>：</label>
+            <input type="tel" class="form-control" name="telephone" placeholder="请输入手机">
         </div>
         <div class="form-group">
-            <label for="email">邮箱：</label>
-            <input type="email" class="form-control" id="email" placeholder="请输入邮箱">
+            <label>邮箱<span class="necessary"> *</span>：</label>
+            <input type="email" class="form-control" name="email" placeholder="请输入邮箱">
         </div>
         <div class="form-group">
-            <label for="xiaoHui">所属地方校友会：</label>
-            <input type="text" class="form-control" id="xiaoHui" placeholder="请输入校友会（选填）">
+            <label>所属地方校友会：</label>
+            <input type="text" class="form-control" name="xiaoHui" placeholder="请输入校友会（选填）">
         </div>
         <div class="form-group">
-            <label for="x-position">校友会职务：</label>
-            <input type="text" class="form-control" id="x-position" placeholder="请输入校友会职务（选填）">
+            <label>校友会职务：</label>
+            <input type="text" class="form-control" name="x-position" placeholder="请输入校友会职务（选填）">
         </div>
         <div class="form-group">
-            <label for="password">你的密码：</label>
-            <input type="password" class="form-control" id="password" placeholder="请输入密码">
+            <label>你的密码<span class="necessary"> *</span>：</label>
+            <input type="password" class="form-control" name="password" placeholder="请输入密码">
         </div>
         <div class="form-group">
-            <label for="password-repeat">确认密码：</label>
-            <input type="password" class="form-control" id="password-repeat" placeholder="请输入确认密码">
+            <label>确认密码<span class="necessary"> *</span>：</label>
+            <input type="password" class="form-control" name="password-repeat" placeholder="请输入确认密码">
         </div>
         <div class="form-group">
             <div class="col-sm-offset-2 col-sm-10">
                 <button type="submit" class="btn btn-default">注册</button>
             </div>
         </div>
+        <br/><br/><br/><br/><br/>
     </div>
 
 </form>
