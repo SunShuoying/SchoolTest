@@ -67,7 +67,7 @@ module.exports=function(app) {
         var newRegUser = new RegUser({
             name: req.body.name,
             sex: req.body.sex,
-            experience:req.body.exprience,
+            experience:req.body.experience,
             underMajor:req.body.underMajor,
             underDate:req.body.underDate,
             underClass:req.body.underClass,
@@ -94,9 +94,11 @@ module.exports=function(app) {
             password: password,
             email: req.body.email
         });
+        console.log("get");
         RegUser.get(newRegUser.email, function (err, user) {
             if (user) {
                 req.flash('error', '用户已存在!');
+                console.log("用户已存在");
                 return res.redirect('/reg');//返回注册页
             }
 //如果不存在则新增用户
@@ -105,10 +107,12 @@ module.exports=function(app) {
             newRegUser.save(function (err, user) {
                 if (err) {
                     req.flash('error', err);
+                    console.log("error");
                     return res.redirect('/reg');//注册失败返回主册页
                 }
                 //req.session.user = user;//用户信息存入 session
                 req.flash('success', '注册申请成功，等待审核通过邮箱通知!');
+                console.log("success");
                 res.redirect('/');//注册成功后返回主页
             });
         });
@@ -297,8 +301,8 @@ module.exports=function(app) {
                 console.log("error");
             }
           //console.log("enter");
-            //console.log("regUser"+typeof regUsers);
-            res.render('archive', {
+            console.log("regUser"+typeof regUsers);
+            res.render('verify', {
                 title: '验证',
                 regUsers: regUsers,
                 page :page,
@@ -307,14 +311,7 @@ module.exports=function(app) {
                 user: req.session.user,
                 success: req.flash('success').toString(),
                 error: req.flash('error').toString(),
-                helpers: {
-                    showYear: function(index, options) {
-                        if ((index == 0) || (regUsers[index].time.year != regUsers[index - 1].time.year))
-                        {
-                            return options.fn(this);
-                        }
-                    }
-                }
+
             });
         });
     });
@@ -431,6 +428,23 @@ module.exports=function(app) {
         });
     });
 
+    app.get('/reg/:email', function (req, res) {
+        RegUser.get(req.params.email, function (err, regUser) {
+            if (err) {
+                req.flash('error', err);
+                return res.redirect('/');
+            }
+            console.log("come on");
+            res.render('reguser', {
+                title:req.params.email,
+                regUser:regUser,
+                user: req.session.user,
+                success:req.flash('success').toString(),
+                error:req.flash('error').toString()
+            });
+        });
+    });
+
 
     app.post('/u/:name/:day/:title', function (req, res) {
         var date = new Date(),
@@ -475,6 +489,16 @@ module.exports=function(app) {
         });
     });
 
+    app.get('/regRemove/:email',function (req,res) {
+        RegUser.remove(req.params.email,function (err) {
+            if (err) {
+                req.flash('error',err);
+                return res.redirect('back');
+            }
+            req.flash('success','删除成功！');
+            res.redirect('/verify');
+        })
+    });
 
     app.post('/edit/:name/:day/:title',checkLogin);
     app.post('/edit/:name/:day/:title',function (req, res) {
@@ -532,11 +556,11 @@ module.exports=function(app) {
         });
     });
 
-
+    /*
     app.use(function (req, res) {
         res.render("404");
     });
-
+    */
 
     function checkLogin(req,res,next) {
       //  console.log(req.session.user);

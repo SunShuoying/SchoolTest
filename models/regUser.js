@@ -9,7 +9,7 @@ var async = require('async');
 function RegUser(user) {
     this.name = user.name;
     this.sex = user.sex;
-    //this.experience = user.experience;
+    this.experience = user.experience;
     this.underMajor = user.underMajor;
     this.underDate = user.underDate;
     this.underClass = user.underClass;
@@ -36,20 +36,27 @@ function RegUser(user) {
     this.xPosition = user.xPosition;
     this.password = user.password;
     //this.email = user.email;
-    this.experience = [];
-    for(var i = 0;i<user.experience.length;i++){
-        this.experience[i] = user.experience[i];
-    }
+
 };
 module.exports = RegUser;
 RegUser.prototype.save = function(callback) {
+    var date = new Date();
+    //存储各种时间格式
+    var time = {
+        date: date,
+        year: date.getFullYear(),
+        month: date.getFullYear() + "-" + (date.getMonth() + 1),
+        day: date.getFullYear() + "-" + (date.getMonth() + 1) + "-" + date.getDate(),
+        minute: date.getFullYear() + "-" + (date.getMonth() + 1) + "-" + date.getDate() + " " + date.getHours() + ":" + (date.getMinutes() < 10 ? '0' + date.getMinutes() : date.getMinutes())
+    }
     var md5 = crypto.createHash('md5'),
         email_MD5 = md5.update(this.email.toLowerCase()).digest('hex'),
         head = "http://www.gravatar.com/avatar/" + email_MD5 + "?s=48";
     var user = {
+        time:time,
         name: this.name,
         sex: this.sex,
-        experience:{},
+        experience:[],
         country: this.country,
         city: this.city,
         company: this.company,
@@ -63,32 +70,55 @@ RegUser.prototype.save = function(callback) {
     };
 
     var exp = ["undergraduate","master","doctor","postdoctor"];
-    var va = [[this.underMajor ,this.underDate ,this.underClass ,this.underStudentID],
-              [this.masterMajor,this.masterDate,this.masterClass,this.underStudentID],
-              [this.doctorMajor,this.doctorDate,this.doctorClass,this.underStudentID],
-              [this.postMajor  ,this.postDate  ,this.postClass  ,this.postStudentID]];
-    if (!this.experience.indexOf) {
-        this.experience.prototype.indexOf = function (obj) {
-            for (var i = 0; i < this.length; i++) {
-                if (this[i] == obj) {
-                    return i;
-                }
-            }
-            return -1;
-        }
-    }
+    var unObj = {
+        experience:"undergraduate",
+        major:this.underMajor,
+        date:this.underDate,
+        class:this.underClass,
+        studentId:this.underStudentID
+    };
+    var maObj = {
+        experience:"master",
+        major:this.masterMajor,
+        date:this.masterDate,
+        class:this.masterClass,
+        studentId:this.masterStudentID
+    };
+    var doObj = {
+        experience:"doctor",
+        major:this.doctorMajor,
+        date:this.doctorDate,
+        class:this.doctorClass,
+        studentId:this.doctorStudentID
+    };
+    var poObj = {
+        experience:"postdoctor",
+        major:this.postMajor,
+        date:this.postDate,
+        class:this.postClass,
+        studentId:this.postStudentID
+    };
+    var ar = [unObj,maObj,doObj,poObj];
+
     for(var i = 0;i<4;i++){
         if(this.experience.indexOf(exp[i]) != -1){
-            user.experience.exp[i] = {
-                major:va[i][0],
-                date:va[i][1],
-                class:va[i][2],
-                studentID:va[i][3]
-            };
+            user.experience.push(ar[i]);
         }
-
-
     }
+    /*
+    if(this.experience.indexOf("undergraduate") != -1){
+        user.experience.undergraduate = unObj;
+    }
+    if(this.experience.indexOf("master") != -1){
+        user.experience.master = maObj;
+    }
+    if(this.experience.indexOf("doctor") != -1){
+        user.experience.doctor = doObj;
+    }
+    if(this.experience.indexOf("postdoctor") != -1){
+        user.experience.postdoctor = poObj;
+    }
+    */
     console.log(user);
 
     async.waterfall([
@@ -116,6 +146,7 @@ RegUser.prototype.save = function(callback) {
 
 };
 RegUser.get = function(email, callback) {
+    console.log("begin");
     async.waterfall([
         function (cb) {
             mongodb.open(function (err, db) {
@@ -131,11 +162,13 @@ RegUser.get = function(email, callback) {
             collection.findOne({
                 email: email
             }, function (err, user) {
+
                 cb(err, user);
             });
         }
     ], function (err, user) {
         mongodb.close();
+        console.log(user);
         err ? callback(err) : callback(null, user);
     });
 };
@@ -168,10 +201,9 @@ RegUser.getTen = function ( page, callback) {
                         return callback(err);
                     }
                     //解析markdown为html
-                    docs.forEach(function (doc) {
-                        doc.post = markdown.toHTML(doc.post);
-                    });
+
                     console.log("overcome"+total);
+                    console.log("docs :"+docs);
                     callback(null, docs, total);//成功！以数组形式查询结果
                 });
             });
@@ -182,7 +214,7 @@ RegUser.getTen = function ( page, callback) {
 
 
 //remove regUser
-RegUser.remove = function(name, email, telephone, callback) {
+RegUser.remove = function(email, callback) {
     //打开数据库
     mongodb.open(function (err, db) {
         if (err) {
@@ -196,19 +228,16 @@ RegUser.remove = function(name, email, telephone, callback) {
             }
             //
             collection.findOne({
-                "name": name,
-                "email": email,
-                "telephone": telephone
+                "email": email
             }, function (err, doc) {
                 if (err) {
                     mongodb.close();
                     return callback(err);
                 }
                 //删除转载来的文章所在的文档
+                console.log("find ok");
                 collection.remove({
-                    "name": name,
-                    "email": email,
-                    "telephone": telephone
+                    "email": email
                 }, {
                     w: 1
                 }, function (err) {
@@ -216,6 +245,7 @@ RegUser.remove = function(name, email, telephone, callback) {
                     if (err) {
                         return callback(err);
                     }
+                    console.log("remove ok");
                     callback(null);
                 });
             });
