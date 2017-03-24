@@ -2,10 +2,7 @@
 <%- include header %>
 <div style="width:90%;position: relative;left:5%;top: 1em;">
     <p>
-
-        <span><a class="edit" href="/regAdd/<%= regUser.email %>">添加</a></span>
-        <span><a class="edit" href="/regRemove/<%= regUser.email %>">删除</a></span>
-
+        <span><a class="edit" href="/person/edit">修改</a></span>
     </p>
 
     <table class="table table-bordered table-striped table-condensed">
@@ -18,15 +15,15 @@
         <tbody>
         <tr>
             <td>姓名<span class="necessary"> *</span></td>
-            <td class="td-value"><%= regUser.name %></td>
+            <td class="td-value"><%= currentUser.name %></td>
 
         </tr>
         <tr>
             <td>性别<span class="necessary"> *</span></td>
-            <td class="td-value"><%= regUser.sex %></td>
+            <td class="td-value"><%= currentUser.sex %></td>
         </tr>
 
-        <%  regUser.experience.forEach(function (experience, index) { %>
+        <%  currentUser.experience.forEach(function (experience, index) { %>
         <% var translate = {"undergraduate":"本科","master":"硕士","doctor":"博士","postdoctor":"博士后"}%>
         <% if (experience) { %>
         <tr>
@@ -43,35 +40,35 @@
 
         <tr>
             <td>所在国家<span class="necessary"> *</span></td>
-            <td class="td-value"><%= regUser.country %></td>
+            <td class="td-value"><%= currentUser.country %></td>
         </tr>
         <tr>
             <td>城市<span class="necessary"> *</span></td>
-            <td class="td-value"><%= regUser.city %></td>
+            <td class="td-value"><%= currentUser.city %></td>
         </tr>
         <tr>
             <td>工作单位<span class="necessary"> *</span></td>
-            <td class="td-value"><%= regUser.company %></td>
+            <td class="td-value"><%= currentUser.company %></td>
         </tr>
         <tr>
             <td>职位<span class="necessary"> *</span></td>
-            <td class="td-value"><%= regUser.position %></td>
+            <td class="td-value"><%= currentUser.position %></td>
         </tr>
         <tr>
             <td>手机<span class="necessary"> *</span></td>
-            <td class="td-value"><%= regUser.telephone %></td>
+            <td class="td-value"><%= currentUser.telephone %></td>
         </tr>
         <tr>
             <td>邮箱<span class="necessary"> *</span></td>
-            <td class="td-value"><%= regUser.email %></td>
+            <td class="td-value"><%= currentUser.email %></td>
         </tr>
         <tr>
             <td>所属地方校友会</td>
-            <td class="td-value"><%= regUser.xiaoHui %></td>
+            <td class="td-value"><%= currentUser.xiaoHui %></td>
         </tr>
         <tr>
             <td>校友会职务</td>
-            <td class="td-value"><%= regUser.xPosition %></td>
+            <td class="td-value"><%= currentUser.xPosition %></td>
         </tr>
 
         </tbody>

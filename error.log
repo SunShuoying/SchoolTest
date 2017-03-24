@@ -5857,3 +5857,143 @@ Cannot read property 'email' of null
     at D:\SchoolTest\models\regUser.js:172:31
     at D:\SchoolTest\node_modules\async\lib\async.js:52:16
     at D:\SchoolTest\node_modules\async\lib\async.js:1204:30
+[Fri Mar 24 2017 09:44:22 GMT+0800 (中国标准时间)] /reg/tinyScreen.css
+TypeError: D:\SchoolTest\views\reguser.ejs:6
+    4|     <p>
+    5|         <% if (user) { %>
+ >> 6|         <span><a class="edit" href="/regAdd/<%= regUser.email %>">添加</a></span>
+    7|         <span><a class="edit" href="/regRemove/<%= regUser.email %>">删除</a></span>
+    8|         <% } %>
+    9|     </p>
+
+Cannot read property 'email' of null
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:50:30)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:446:17
+    at D:\SchoolTest\models\regUser.js:172:31
+    at D:\SchoolTest\node_modules\async\lib\async.js:52:16
+    at D:\SchoolTest\node_modules\async\lib\async.js:1204:30
+[Fri Mar 24 2017 09:46:37 GMT+0800 (中国标准时间)] /reg/tinyScreen.css
+TypeError: D:\SchoolTest\views\reguser.ejs:6
+    4|     <p>
+    5|         <% if (user) { %>
+ >> 6|         <span><a class="edit" href="/regAdd/<%= regUser.email %>">添加</a></span>
+    7|         <span><a class="edit" href="/regRemove/<%= regUser.email %>">删除</a></span>
+    8|         <% } %>
+    9|     </p>
+
+Cannot read property 'email' of null
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:50:30)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:446:17
+    at D:\SchoolTest\models\regUser.js:172:31
+    at D:\SchoolTest\node_modules\async\lib\async.js:52:16
+    at D:\SchoolTest\node_modules\async\lib\async.js:1204:30
+[Fri Mar 24 2017 09:50:13 GMT+0800 (中国标准时间)] /reg/tinyScreen.css
+TypeError: D:\SchoolTest\views\reguser.ejs:6
+    4|     <p>
+    5|         <% if (user) { %>
+ >> 6|         <span><a class="edit" href="/regAdd/<%= regUser.email %>">添加</a></span>
+    7|         <span><a class="edit" href="/regRemove/<%= regUser.email %>">删除</a></span>
+    8|         <% } %>
+    9|     </p>
+
+Cannot read property 'email' of null
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:50:30)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:446:17
+    at D:\SchoolTest\models\regUser.js:172:31
+    at D:\SchoolTest\node_modules\async\lib\async.js:52:16
+    at D:\SchoolTest\node_modules\async\lib\async.js:1204:30
+[Fri Mar 24 2017 09:50:42 GMT+0800 (中国标准时间)] /reg/tinyScreen.css
+TypeError: D:\SchoolTest\views\reguser.ejs:6
+    4|     <p>
+    5|         <% if (user) { %>
+ >> 6|         <span><a class="edit" href="/regAdd/<%= regUser.email %>">添加</a></span>
+    7|         <span><a class="edit" href="/regRemove/<%= regUser.email %>">删除</a></span>
+    8|         <% } %>
+    9|     </p>
+
+Cannot read property 'email' of null
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:50:30)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:446:17
+    at D:\SchoolTest\models\regUser.js:172:31
+    at D:\SchoolTest\node_modules\async\lib\async.js:52:16
+    at D:\SchoolTest\node_modules\async\lib\async.js:1204:30
+[Fri Mar 24 2017 09:58:12 GMT+0800 (中国标准时间)] /reg/tinyScreen.css
+TypeError: D:\SchoolTest\views\reguser.ejs:6
+    4|     <p>
+    5|         
+ >> 6|         <span><a class="edit" href="/regAdd/<%= regUser.email %>">添加</a></span>
+    7|         <span><a class="edit" href="/regRemove/<%= regUser.email %>">删除</a></span>
+    8| 
+    9|     </p>
+
+Cannot read property 'email' of null
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:47:30)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:446:17
+    at D:\SchoolTest\models\regUser.js:172:31
+    at D:\SchoolTest\node_modules\async\lib\async.js:52:16
+    at D:\SchoolTest\node_modules\async\lib\async.js:1204:30
+[Fri Mar 24 2017 10:54:29 GMT+0800 (中国标准时间)] /reg/tinyScreen.css
+TypeError: D:\SchoolTest\views\reguser.ejs:6
+    4|     <p>
+    5| 
+ >> 6|         <span><a class="edit" href="/regAdd/<%= regUser.email %>">添加</a></span>
+    7|         <span><a class="edit" href="/regRemove/<%= regUser.email %>">删除</a></span>
+    8| 
+    9|     </p>
+
+Cannot read property 'email' of null
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:47:30)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:443:17
+    at D:\SchoolTest\models\regUser.js:172:31
+    at D:\SchoolTest\node_modules\async\lib\async.js:52:16
+    at D:\SchoolTest\node_modules\async\lib\async.js:1204:30
+[Fri Mar 24 2017 11:18:29 GMT+0800 (中国标准时间)] /reg/tinyScreen.css
+TypeError: D:\SchoolTest\views\reguser.ejs:6
+    4|     <p>
+    5| 
+ >> 6|         <span><a class="edit" href="/regAdd/<%= regUser.email %>">添加</a></span>
+    7|         <span><a class="edit" href="/regRemove/<%= regUser.email %>">删除</a></span>
+    8| 
+    9|     </p>
+
+Cannot read property 'email' of null
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:47:30)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:443:17
+    at D:\SchoolTest\models\regUser.js:172:31
+    at D:\SchoolTest\node_modules\async\lib\async.js:52:16
+    at D:\SchoolTest\node_modules\async\lib\async.js:1204:30

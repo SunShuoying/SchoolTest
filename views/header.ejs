@@ -61,6 +61,9 @@
                         <a class="navbar-brand nav-diy" title="上传" href="/upload">上传</a>
                     </li>
                     <li>
+                        <a class="navbar-brand nav-diy" title="个人中心" href="/person">个人中心</a>
+                    </li>
+                    <li>
                         <a class="navbar-brand nav-diy" title="登出" href="/logout">注销</a>
                     </li>
                     <% } else { %>
@@ -90,8 +93,8 @@
     </header>
 <article>
     <% if (success) { %>
-    <div><%= success %></div>
+    <div style="color: #449d44"><%= success %></div>
     <% } %>
     <% if (error) {%>
-    <div><%= error %></div>
+    <div style="color: red"><%= error %></div>
     <% } %>

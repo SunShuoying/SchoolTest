@@ -10,7 +10,7 @@ var  crypto = require('crypto'),
      fs = require('fs'),
      User = require('../models/user.js'),
      Post = require('../models/post.js'),
-    RegUser = require('../models/regUser.js'),
+       RegUser = require('../models/regUser.js'),
     FormalUser = require('../models/formalUser.js'),
     Comment = require('../models/comment.js');
 var exphbs = require('express3-handlebars');
@@ -102,72 +102,29 @@ module.exports=function(app) {
                 console.log("此邮箱已存在");
                 return res.redirect('/reg');//返回注册页
             }
-        });
-        RegUser.get(newRegUser.email, function (err, user) {
-            if (user) {
-                req.flash('error', '此邮箱已申请!');
-                console.log("此邮箱已申请");
-                return res.redirect('/reg');//返回注册页
-            }
-           //如果不存在则新增用户
-
-            //verifyUser(newUser);
-            newRegUser.save(function (err, user) {
-                if (err) {
-                    req.flash('error', err);
-                    console.log("error");
-                    return res.redirect('/reg');//注册失败返回主册页
+            RegUser.get(newRegUser.email, function (err, user) {
+                if (user) {
+                    req.flash('error', '此邮箱已申请!');
+                    console.log("此邮箱已申请");
+                    return res.redirect('/reg');//返回注册页
                 }
-                //req.session.user = user;//用户信息存入 session
-                req.flash('success', '注册申请成功，等待审核通过邮箱通知!');
-                console.log("success");
-                res.redirect('/');//注册成功后返回主页
+                //如果不存在则新增用户
+
+                //verifyUser(newUser);
+                newRegUser.save(function (err, user) {
+                    if (err) {
+                        req.flash('error', err);
+                        console.log("error");
+                        return res.redirect('/reg');//注册失败返回主册页
+                    }
+                    //req.session.user = user;//用户信息存入 session
+                    req.flash('success', '注册申请成功，等待审核通过邮箱通知!');
+                    console.log("success");
+                    res.redirect('/');//注册成功后返回主页
+                });
             });
         });
-        /*
-        var name = req.body.name,
-            studentID = req.body.studentID,
-            password = req.body.password,
-            password_re = req.body['password-repeat'];
-//检验用户两次输入的密码是否一致
-        if (password_re != password) {
-            req.flash('error', '两次输入的密码不一致!');
-            return res.redirect('/reg');//返回注册页
-        }
-//生成密码的 md5 值
-        var md5 = crypto.createHash('md5'),
-            password = md5.update(req.body.password).digest('hex');
-        var newUser = new User({
-            name: req.body.name,
-
-            password: password,
-            email: req.body.email
-        });
-//检查用户名是否已经存在
-        User.get(newUser.name, function (err, user) {
-            if (user) {
-                req.flash('error', '用户已存在!');
-                return res.redirect('/reg');//返回注册页
-            }
-//如果不存在则新增用户
-
-            //verifyUser(newUser);
-            newUser.save(function (err, user) {
-                if (err) {
-                    req.flash('error', err);
-                    return res.redirect('/reg');//注册失败返回主册页
-                }
-                req.session.user = user;//用户信息存入 session
-                req.flash('success', '注册成功!');
-                res.redirect('/');//注册成功后返回主页
-            });
-        });
-        */
     });
-
-    function verifyUser(newUser) {
-
-    }
 
     app.get('/login', checkNotLogin);
     app.get('/login', function (req, res) {
@@ -185,7 +142,7 @@ module.exports=function(app) {
         var md5 = crypto.createHash('md5'),
             password = md5.update(req.body.password).digest('hex');
 //检查用户是否存在
-        User.get(req.body.name, function (err, user) {
+        FormalUser.get(req.body.email, function (err, user) {
             if (!user) {
                 req.flash('error', '用户不存在!');
                 return res.redirect('/login');//用户不存在则跳转到登录页
@@ -233,6 +190,16 @@ module.exports=function(app) {
         });
     });
 
+    app.get('/person',function (req,res) {
+        var currentUser = req.session.user;
+        res.render('person', {
+            title:currentUser.email,
+            currentUser:currentUser,
+            user: req.session.user,
+            success:req.flash('success').toString(),
+            error:req.flash('error').toString()
+        });
+    });
 
     app.get('/logout', checkLogin);
     app.get('/logout', function (req, res) {
@@ -505,7 +472,7 @@ module.exports=function(app) {
             }
             req.flash('success','删除成功！');
             res.redirect('/verify');
-        })
+        });
     });
 
     app.get('/regAdd/:email',function (req,res) {
@@ -522,8 +489,15 @@ module.exports=function(app) {
                     console.log("error");
                     return res.redirect('/reg');//注册失败返回主册页
                 }
-                req.flash('success','删除成功！');
-                res.redirect('/verify');
+                RegUser.remove(req.params.email,function (err) {
+                    if (err) {
+                        req.flash('error',err);
+                        return res.redirect('back');
+                    }
+                    req.flash('success','添加成功！');
+                    res.redirect('/verify');
+                });
+
             });
         });
     });

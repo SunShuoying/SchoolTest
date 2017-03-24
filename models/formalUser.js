@@ -1,4 +1,7 @@
 /**
+ * Created by sunsh on 3/24/2017.
+ */
+/**
  * Created by sunsh on 3/22/2017.
  */
 
@@ -7,7 +10,7 @@ var mongodb = require('./db');
 var crypto = require('crypto');
 var async = require('async');
 function FormalUser(user) {
-     this.user = user;
+    this.user = user;
 
 };
 module.exports = FormalUser;
@@ -15,43 +18,43 @@ FormalUser.prototype.save = function(callback) {
 
     var user = this.user;
     /*
-    var exp = ["undergraduate","master","doctor","postdoctor"];
-    var unObj = {
-        experience:"undergraduate",
-        major:this.underMajor,
-        date:this.underDate,
-        class:this.underClass,
-        studentId:this.underStudentID
-    };
-    var maObj = {
-        experience:"master",
-        major:this.masterMajor,
-        date:this.masterDate,
-        class:this.masterClass,
-        studentId:this.masterStudentID
-    };
-    var doObj = {
-        experience:"doctor",
-        major:this.doctorMajor,
-        date:this.doctorDate,
-        class:this.doctorClass,
-        studentId:this.doctorStudentID
-    };
-    var poObj = {
-        experience:"postdoctor",
-        major:this.postMajor,
-        date:this.postDate,
-        class:this.postClass,
-        studentId:this.postStudentID
-    };
-    var ar = [unObj,maObj,doObj,poObj];
+     var exp = ["undergraduate","master","doctor","postdoctor"];
+     var unObj = {
+     experience:"undergraduate",
+     major:this.underMajor,
+     date:this.underDate,
+     class:this.underClass,
+     studentId:this.underStudentID
+     };
+     var maObj = {
+     experience:"master",
+     major:this.masterMajor,
+     date:this.masterDate,
+     class:this.masterClass,
+     studentId:this.masterStudentID
+     };
+     var doObj = {
+     experience:"doctor",
+     major:this.doctorMajor,
+     date:this.doctorDate,
+     class:this.doctorClass,
+     studentId:this.doctorStudentID
+     };
+     var poObj = {
+     experience:"postdoctor",
+     major:this.postMajor,
+     date:this.postDate,
+     class:this.postClass,
+     studentId:this.postStudentID
+     };
+     var ar = [unObj,maObj,doObj,poObj];
 
-    for(var i = 0;i<4;i++){
-        if(this.experience.indexOf(exp[i]) != -1){
-            user.experience.push(ar[i]);
-        }
-    }
-    */
+     for(var i = 0;i<4;i++){
+     if(this.experience.indexOf(exp[i]) != -1){
+     user.experience.push(ar[i]);
+     }
+     }
+     */
     /*
      if(this.experience.indexOf("undergraduate") != -1){
      user.experience.undergraduate = unObj;
