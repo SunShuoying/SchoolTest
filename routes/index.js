@@ -11,6 +11,7 @@ var  crypto = require('crypto'),
      User = require('../models/user.js'),
      Post = require('../models/post.js'),
     RegUser = require('../models/regUser.js'),
+    FormalUser = require('../models/formalUser.js'),
     Comment = require('../models/comment.js');
 var exphbs = require('express3-handlebars');
 var querystring = require('querystring');
@@ -95,13 +96,20 @@ module.exports=function(app) {
             email: req.body.email
         });
         console.log("get");
-        RegUser.get(newRegUser.email, function (err, user) {
+        FormalUser.get(newRegUser.email,function (err,user) {
             if (user) {
-                req.flash('error', '用户已存在!');
-                console.log("用户已存在");
+                req.flash('error', '此邮箱已存在!');
+                console.log("此邮箱已存在");
                 return res.redirect('/reg');//返回注册页
             }
-//如果不存在则新增用户
+        });
+        RegUser.get(newRegUser.email, function (err, user) {
+            if (user) {
+                req.flash('error', '此邮箱已申请!');
+                console.log("此邮箱已申请");
+                return res.redirect('/reg');//返回注册页
+            }
+           //如果不存在则新增用户
 
             //verifyUser(newUser);
             newRegUser.save(function (err, user) {
@@ -498,6 +506,26 @@ module.exports=function(app) {
             req.flash('success','删除成功！');
             res.redirect('/verify');
         })
+    });
+
+    app.get('/regAdd/:email',function (req,res) {
+        RegUser.get(req.params.email,function (err,user) {
+            if (err) {
+                req.flash('error',err);
+                return res.redirect('back');
+            }
+            var newFormalUser = new FormalUser(user);
+
+            newFormalUser.save(function (err, user) {
+                if (err) {
+                    req.flash('error', err);
+                    console.log("error");
+                    return res.redirect('/reg');//注册失败返回主册页
+                }
+                req.flash('success','删除成功！');
+                res.redirect('/verify');
+            });
+        });
     });
 
     app.post('/edit/:name/:day/:title',checkLogin);

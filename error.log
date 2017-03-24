@@ -5817,3 +5817,43 @@ Cannot read property 'email' of null
     at D:\SchoolTest\models\regUser.js:172:31
     at D:\SchoolTest\node_modules\async\lib\async.js:52:16
     at D:\SchoolTest\node_modules\async\lib\async.js:1204:30
+[Fri Mar 24 2017 09:11:02 GMT+0800 (中国标准时间)] /reg/tinyScreen.css
+TypeError: D:\SchoolTest\views\reguser.ejs:21
+    19|         <tr>
+    20|             <td>姓名<span class="necessary"> *</span></td>
+ >> 21|             <td class="td-value"><%= regUser.name %></td>
+    22| 
+    23|         </tr>
+    24|         <tr>
+
+Cannot read property 'name' of null
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:59:30)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:438:17
+    at D:\SchoolTest\models\regUser.js:172:31
+    at D:\SchoolTest\node_modules\async\lib\async.js:52:16
+    at D:\SchoolTest\node_modules\async\lib\async.js:1204:30
+[Fri Mar 24 2017 09:11:16 GMT+0800 (中国标准时间)] /reg/tinyScreen.css
+TypeError: D:\SchoolTest\views\reguser.ejs:6
+    4|     <p>
+    5|         <% if (user) { %>
+ >> 6|         <span><a class="edit" href="/regAdd/<%= regUser.email %>">添加</a></span>
+    7|         <span><a class="edit" href="/regRemove/<%= regUser.email %>">删除</a></span>
+    8|         <% } %>
+    9|     </p>
+
+Cannot read property 'email' of null
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:50:30)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:438:17
+    at D:\SchoolTest\models\regUser.js:172:31
+    at D:\SchoolTest\node_modules\async\lib\async.js:52:16
+    at D:\SchoolTest\node_modules\async\lib\async.js:1204:30
