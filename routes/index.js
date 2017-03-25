@@ -10,9 +10,10 @@ var  crypto = require('crypto'),
      fs = require('fs'),
      User = require('../models/user.js'),
      Post = require('../models/post.js'),
-       RegUser = require('../models/regUser.js'),
-    FormalUser = require('../models/formalUser.js'),
-    Comment = require('../models/comment.js');
+     RegUser = require('../models/regUser.js'),
+     FormalUser = require('../models/formalUser.js'),
+     Activity = require('../models/activity'),
+     Comment = require('../models/comment.js');
 var exphbs = require('express3-handlebars');
 var querystring = require('querystring');
 var http = require('http');
@@ -36,6 +37,28 @@ module.exports=function(app) {
             res.render('index', {
                 title: '主页',
                 posts: posts,
+                page :page,
+                isFirstPage:(page-1)==0,
+                isLastPage: ((page-1)*10+posts.length)==total,
+                user:req.session.user,
+                success: req.flash('success').toString(),
+                error: req.flash('error').toString()
+            });
+        });
+    });
+
+    app.get('/newIndex', function (req, res) {
+        //判断是否是第一页，并把请求的页数转换成number类型
+        var page = req.query.p?parseInt(req.query.p):1;
+        //查询并返回第page页的10篇文章
+        Activity.getTen( page ,function (err, activities, total) {
+            if (err) {
+                activities = [];
+            }
+
+            res.render('newIndex', {
+                title: 'new主页',
+                posts: activities,
                 page :page,
                 isFirstPage:(page-1)==0,
                 isLastPage: ((page-1)*10+posts.length)==total,
@@ -435,19 +458,6 @@ module.exports=function(app) {
             });
         });
     });
-
-
-
-    app.get('/links', function (req, res) {
-        res.render('links', {
-            title:'友情链接',
-            user:req.session.user,
-            success: req.flash('success').toString(),
-            error: req.flash('error').toString()
-        });
-    });
-
-
 
     app.get('/search', function (req, res) {
         Post.search(req.query.keyword, function (err, posts) {

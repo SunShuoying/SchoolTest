@@ -7125,3 +7125,183 @@ Cannot read property 'email' of null
     at D:\SchoolTest\models\regUser.js:172:31
     at D:\SchoolTest\node_modules\async\lib\async.js:52:16
     at D:\SchoolTest\node_modules\async\lib\async.js:1204:30
+[Sat Mar 25 2017 15:50:40 GMT+0800 (中国标准时间)] /u/sun1/2017-3-17/tinyScreen.css
+TypeError: D:\SchoolTest\views\article.ejs:4
+    2| <%- include header %>
+    3| <p>
+ >> 4|     <% if (user && (user.name == post.name)) { %>
+    5|     <span><a class="edit" href="/edit/<%= post.name %>/<%= post.time.day %>/<%= post.title %>">编辑</a></span>
+    6|     <span><a class="edit" href="/remove/<%= post.name %>/<%= post.time.day %>/<%= post.title %>">删除</a></span>
+    7|     <% } %>
+
+Cannot read property 'name' of null
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:47:38)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:508:17
+    at D:\SchoolTest\models\post.js:153:17
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\collection.js:1322:5
+[Sat Mar 25 2017 15:50:40 GMT+0800 (中国标准时间)] /u/sun1/2017-3-17/smallScreen.css
+TypeError: D:\SchoolTest\views\article.ejs:4
+    2| <%- include header %>
+    3| <p>
+ >> 4|     <% if (user && (user.name == post.name)) { %>
+    5|     <span><a class="edit" href="/edit/<%= post.name %>/<%= post.time.day %>/<%= post.title %>">编辑</a></span>
+    6|     <span><a class="edit" href="/remove/<%= post.name %>/<%= post.time.day %>/<%= post.title %>">删除</a></span>
+    7|     <% } %>
+
+Cannot read property 'name' of null
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:47:38)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:508:17
+    at D:\SchoolTest\models\post.js:153:17
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\collection.js:1322:5
+[Sat Mar 25 2017 15:51:02 GMT+0800 (中国标准时间)] /u/sun1/2017-3-17/tinyScreen.css
+TypeError: D:\SchoolTest\views\article.ejs:4
+    2| <%- include header %>
+    3| <p>
+ >> 4|     <% if (user && (user.name == post.name)) { %>
+    5|     <span><a class="edit" href="/edit/<%= post.name %>/<%= post.time.day %>/<%= post.title %>">编辑</a></span>
+    6|     <span><a class="edit" href="/remove/<%= post.name %>/<%= post.time.day %>/<%= post.title %>">删除</a></span>
+    7|     <% } %>
+
+Cannot read property 'name' of null
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:47:38)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:508:17
+    at D:\SchoolTest\models\post.js:153:17
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\collection.js:1322:5
+[Sat Mar 25 2017 15:51:02 GMT+0800 (中国标准时间)] /u/sun1/2017-3-17/smallScreen.css
+TypeError: D:\SchoolTest\views\article.ejs:4
+    2| <%- include header %>
+    3| <p>
+ >> 4|     <% if (user && (user.name == post.name)) { %>
+    5|     <span><a class="edit" href="/edit/<%= post.name %>/<%= post.time.day %>/<%= post.title %>">编辑</a></span>
+    6|     <span><a class="edit" href="/remove/<%= post.name %>/<%= post.time.day %>/<%= post.title %>">删除</a></span>
+    7|     <% } %>
+
+Cannot read property 'name' of null
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:47:38)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:508:17
+    at D:\SchoolTest\models\post.js:153:17
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\collection.js:1322:5
+[Sat Mar 25 2017 16:30:39 GMT+0800 (中国标准时间)] /u/sun1/2017-3-17/tinyScreen.css
+TypeError: D:\SchoolTest\views\article.ejs:4
+    2| <%- include header %>
+    3| <p>
+ >> 4|     <% if (user && (user.name == post.name)) { %>
+    5|     <span><a class="edit" href="/edit/<%= post.name %>/<%= post.time.day %>/<%= post.title %>">编辑</a></span>
+    6|     <span><a class="edit" href="/remove/<%= post.name %>/<%= post.time.day %>/<%= post.title %>">删除</a></span>
+    7|     <% } %>
+
+Cannot read property 'name' of null
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:47:38)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:508:17
+    at D:\SchoolTest\models\post.js:153:17
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\collection.js:1322:5
+[Sat Mar 25 2017 16:30:39 GMT+0800 (中国标准时间)] /u/sun1/2017-3-17/smallScreen.css
+TypeError: D:\SchoolTest\views\article.ejs:4
+    2| <%- include header %>
+    3| <p>
+ >> 4|     <% if (user && (user.name == post.name)) { %>
+    5|     <span><a class="edit" href="/edit/<%= post.name %>/<%= post.time.day %>/<%= post.title %>">编辑</a></span>
+    6|     <span><a class="edit" href="/remove/<%= post.name %>/<%= post.time.day %>/<%= post.title %>">删除</a></span>
+    7|     <% } %>
+
+Cannot read property 'name' of null
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:47:38)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:508:17
+    at D:\SchoolTest\models\post.js:153:17
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\collection.js:1322:5
+[Sat Mar 25 2017 16:31:18 GMT+0800 (中国标准时间)] /u/%E5%BC%A0%E4%B8%89/2017-3-25/tinyScreen.css
+TypeError: D:\SchoolTest\views\article.ejs:4
+    2| <%- include header %>
+    3| <p>
+ >> 4|     <% if (user && (user.name == post.name)) { %>
+    5|     <span><a class="edit" href="/edit/<%= post.name %>/<%= post.time.day %>/<%= post.title %>">编辑</a></span>
+    6|     <span><a class="edit" href="/remove/<%= post.name %>/<%= post.time.day %>/<%= post.title %>">删除</a></span>
+    7|     <% } %>
+
+Cannot read property 'name' of null
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:47:38)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:508:17
+    at D:\SchoolTest\models\post.js:153:17
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\collection.js:1322:5
+[Sat Mar 25 2017 16:31:18 GMT+0800 (中国标准时间)] /u/%E5%BC%A0%E4%B8%89/2017-3-25/smallScreen.css
+TypeError: D:\SchoolTest\views\article.ejs:4
+    2| <%- include header %>
+    3| <p>
+ >> 4|     <% if (user && (user.name == post.name)) { %>
+    5|     <span><a class="edit" href="/edit/<%= post.name %>/<%= post.time.day %>/<%= post.title %>">编辑</a></span>
+    6|     <span><a class="edit" href="/remove/<%= post.name %>/<%= post.time.day %>/<%= post.title %>">删除</a></span>
+    7|     <% } %>
+
+Cannot read property 'name' of null
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:47:38)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:508:17
+    at D:\SchoolTest\models\post.js:153:17
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\collection.js:1322:5
+[Sat Mar 25 2017 16:31:26 GMT+0800 (中国标准时间)] /edit/%E5%BC%A0%E4%B8%89/2017-3-25/tinyScreen.css
+TypeError: D:\SchoolTest\views\edit.ejs:4
+    2| <form method="post">
+    3|     标题：<br />
+ >> 4|     <input type="text" name="title" value="<%= post.title %>" disabled="disabled"/><br />
+    5|     标签：<br />
+    6|     <input type="text" name="tag1" value="<%= post.tags[0] %>" disabled="disabled" />
+    7|     <input type="text" name="tag2" value="<%= post.tags[1] %>" disabled="disabled" />
+
+Cannot read property 'title' of null
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:45:27)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:569:17
+    at D:\SchoolTest\models\post.js:182:17
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\collection.js:1322:5

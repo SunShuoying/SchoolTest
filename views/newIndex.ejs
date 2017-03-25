@@ -1,0 +1,30 @@
+<%- include header %>
+<% activities.forEach(function (activitie, index) { %>
+<p><h3><a href="/u/<%= activitie.name %>/<%= activitie.time.day %>/<%= activitie.title %>"><%= activitie.title %></a></h3>
+
+<p class="info">
+    作者：<a href="/u/<%= activitie.name %>"><%= activitie.name %></a> |
+    日期：<%= activitie.time.minute %> |
+    标签：<% activitie.tags.forEach(function (tag, index) { %>
+    <% if (tag) { %>
+    <a class="tag" href="/tags/<%= tag %>"><%= tag %></a>
+    <% } %>
+    <% }) %>
+    <% if ( activitie.reprint_info.reprint_from) { %>
+    <br /><a href="/u/<%= activitie.reprint_info.reprint_from.name %>/<%= activitie.reprint_info.reprint_from.day %>/<%= activitie.reprint_info.reprint_from.title %>">ԭ������</a>
+    <% } %>
+</p>
+<p><%- activitie.activitie %></p>
+<p class="info">
+    阅读：<%= activitie.pv %> |
+    评论：<%= activitie.comments.length %>
+    转载：
+    <% if ( activitie.reprint_info.reprint_to) { %>
+    <%= activitie.reprint_info.reprint_to.length %>
+    <% } else { %>
+    <%= 0 %>
+    <% } %>
+</p>
+<% }) %>
+<%- include paging %>
+<%- include footer %>
