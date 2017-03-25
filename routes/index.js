@@ -193,12 +193,124 @@ module.exports=function(app) {
     app.get('/person',function (req,res) {
         var currentUser = req.session.user;
         res.render('person', {
-            title:currentUser.email,
+            title:"个人信息",
             currentUser:currentUser,
-            user: req.session.user,
+            user: currentUser,
             success:req.flash('success').toString(),
             error:req.flash('error').toString()
         });
+    });
+
+    app.get('/person/edit',function (req,res) {
+        var user = req.session.user,
+            experienceSum = user.experience.length,
+            exp=[];
+        for(var i = 0;i<experienceSum;i++){
+            exp[i] = user.experience[i];
+        }
+        for(var i = experienceSum;i<4;i++){
+            exp[i] = {
+                experience:"",
+                major:"",
+                date:"",
+                class:"",
+                studentId:""
+            }
+        }
+        console.log(experienceSum);
+        res.render('personEdit', {
+            title: '修改个人信息',
+            sum:experienceSum,
+            exp1:exp[0],
+            exp2:exp[1],
+            exp3:exp[2],
+            exp4:exp[3],
+            user: user,
+            success: req.flash('success').toString(),
+            error: req.flash('error').toString()
+        });
+    });
+
+    app.post('/person/edit',function (req,res) {
+        var currentUser = req.session.user;
+        var newEditUser = {
+            time:currentUser.time,
+            name: req.body.name,
+            sex: req.body.sex,
+            experience:[],
+            country: req.body.country,
+            city: req.body.city,
+            company: req.body.company,
+            position: req.body.position,
+            telephone: req.body.telephone,
+            xiaoHui: req.body.xiaoHui,
+            xPosition: req.body.xPosition,
+        };
+        var exp = ["undergraduate","master","doctor","postdoctor"];
+        var unObj = {
+            experience:"undergraduate",
+            major:req.body.underMajor,
+            date:req.body.underDate,
+            class:req.body.underClass,
+            studentId:req.body.underStudentID
+        };
+        var maObj = {
+            experience:"master",
+            major:req.body.masterMajor,
+            date:req.body.masterDate,
+            class:req.body.masterClass,
+            studentId:req.body.masterStudentID
+        };
+        var doObj = {
+            experience:"doctor",
+            major:req.body.doctorMajor,
+            date:req.body.doctorDate,
+            class:req.body.doctorClass,
+            studentId:req.body.doctorStudentID
+        };
+        var poObj = {
+            experience:"postdoctor",
+            major:req.body.postMajor,
+            date:req.body.postDate,
+            class:req.body.postClass,
+            studentId:req.body.postStudentID
+        };
+        var ar = [unObj,maObj,doObj,poObj];
+
+        for(var i = 0;i<4;i++){
+            if(req.body.experience.indexOf(exp[i]) != -1){
+                newEditUser.experience.push(ar[i]);
+            }
+        }
+        for(var i in currentUser){
+            if(newEditUser[i] == currentUser[i]){
+                delete newEditUser[i];
+                //console.log(i+"new:"+newEditUser[i]+"user:"+currentUser[i]);
+            }
+            if(i == "experience" && newEditUser[i].toString() == currentUser[i].toString()){
+                delete newEditUser[i];
+            }
+
+        }
+        for(var i in newEditUser){
+            console.log(i+":"+newEditUser[i]);
+        }
+        FormalUser.update(currentUser.email,newEditUser,function (err) {
+           if(err){
+               req.flash('error', err);
+               return res.redirect('/person/edit');//出错，返回
+           }
+           FormalUser.get(currentUser.email,function (err,user) {
+              if(err){
+                  req.flash('error', err);
+                  return res.redirect('/person/edit');
+              }
+               req.session.user = user;
+               req.flash('success', '修改成功！');
+               res.redirect('/person');
+           });
+        });
+
     });
 
     app.get('/logout', checkLogin);

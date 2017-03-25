@@ -200,3 +200,32 @@ FormalUser.remove = function(email, callback) {
         });
     });
 };
+
+FormalUser.update = function(email,newEditUser, callback) {
+    //打开数据库
+    mongodb.open(function (err, db) {
+        if (err) {
+            return callback(err);
+        }
+        //读取posts集合
+        db.collection('formalUsers', function (err, collection) {
+            if (err) {
+                mongodb.close();
+                return callback(err);
+
+            }
+            //更新文章内容
+            collection.update({
+                "email":email
+            },{
+                $set: newEditUser
+            },function (err) {
+                mongodb.close();
+                if (err) {
+                    return callback(err);
+                }
+                callback(null);
+            });
+        });
+    });
+};
