@@ -12,7 +12,7 @@ var  crypto = require('crypto'),
      Post = require('../models/post.js'),
      RegUser = require('../models/regUser.js'),
      FormalUser = require('../models/formalUser.js'),
-     Activity = require('../models/activity'),
+       Activity = require('../models/activity.js'),
      Comment = require('../models/comment.js');
 var exphbs = require('express3-handlebars');
 var querystring = require('querystring');
@@ -158,17 +158,51 @@ module.exports=function(app) {
             error: req.flash('error').toString()});
     });
 
-    app.get('/activity/:title/:postTime',function (req,res) {
-        Activity.getOne(req.body.postTime,req.body.title,function (err,activity) {
+    app.get('/activity/:minute/:title',function (req,res) {
+        if(req.session.user == null){
+            req.flash('error', '请先登入!');
+            res.redirect('/newIndex');
+        }
+        Activity.getOne(req.params.minute,req.params.title,function (err,activity) {
             if(err){
                req.flash('error', '网络错误请重试!');
                return res.redirect('/newIndex');
             }
+            console.log(req.params.minute);
             res.render('activity',{
-                title:'活动'
+                title:'活动报名/签到页面',
+                activity:activity,
+                user:req.session.user,
+                success:req.flash('success').toString(),
+                error:req.flash('error').toString()
             })
         });
 
+    });
+
+    app.get('/enter/:minute/:title',function (req,res) {
+       Activity.getOne(req.params.minute,req.params.title,function (err,activity) {
+         if(err){
+             req.flash('error', '错误请重试!');
+             return res.redirect('/newIndex');
+         }
+           var newEdit = {
+             enters:activity.enters
+           };
+         //create update object;
+           newEdit.enters.push(req.session.user.email);
+           Activity.update(req.params.minute, req.params.title,newEdit, function (err,activity) {
+               if(err){
+                   req.flash('error', '网络错误请重试!');
+                   return res.redirect('/newIndex');
+               }
+
+               req.flash('success', '报名成功!');
+               res.redirect('/newIndex');
+
+           });
+
+       });
     });
 
     app.post('/login', checkNotLogin);
@@ -323,6 +357,9 @@ module.exports=function(app) {
                 //console.log(i+"new:"+newEditUser[i]+"user:"+currentUser[i]);
             }
             if(i == "experience" && newEditUser[i].toString() == currentUser[i].toString()){
+                delete newEditUser[i];
+            }
+            if(i == "activities" && newEditUser[i].toString() == currentUser[i].toString()){
                 delete newEditUser[i];
             }
 
@@ -598,6 +635,23 @@ module.exports=function(app) {
         });
     });
 
+    app.get('/activityEdit/:minute/:title',function (req,res) {
+       Activity.edit(req.params.minute,req.params.title,function (err,activity) {
+           if(err){
+               req.flash('error', err);
+               return res.redirect('back');
+           }
+           res.render('activityEdit',{
+               title:"活动修改",
+               activity:activity,
+               user:req.session.user,
+               success: req.flash('success').toString(),
+               error: req.flash('error').toString()
+           })
+       });
+    });
+
+
     app.get('/regRemove/:email',function (req,res) {
         RegUser.remove(req.params.email,function (err) {
             if (err) {
@@ -607,6 +661,17 @@ module.exports=function(app) {
             req.flash('success','删除成功！');
             res.redirect('/verify');
         });
+    });
+
+    app.get('/activityRemove/:minute/:title',function (req,res) {
+       Activity.remove(req.params.minute,req.params.title,function (err) {
+           if(err){
+               req.flash('error',err);
+               return res.redirect('back');
+           }
+           req.flash('success','删除成功！');
+           res.redirect('/newIndex');
+       }) ;
     });
 
     app.get('/regAdd/:email',function (req,res) {
@@ -651,6 +716,22 @@ module.exports=function(app) {
         });
     });
 
+    app.post('/activityEdit/:minute/:title',function (req,res) {
+        var newEdit = {
+            actTime:req.body.actTime,
+            content:req.body.content
+        };
+        var url = '/newIndex';
+        console.log(url);
+       Activity.update(req.params.minute,req.params.title,newEdit,function (err) {
+            if(err){
+                req.flash('error', "修改失败！");
+                return res.redirect(url);
+            }
+           req.flash('success', "修改成功！");
+           res.redirect(url);
+       });
+    });
 
     app.get('/remove/:name/:day/:title', checkLogin);
     app.get('/remove/:name/:day/:title', function (req, res) {

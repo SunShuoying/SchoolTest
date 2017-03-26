@@ -10,7 +10,7 @@ nav a:hover{background-color:#ff0000;color:#f9f9f9;-webkit-transition:color .2s 
 article{font-size:16px;padding-top:.5em;}
 article a{text-decoration:none;}
 article a:hover{color:#333333;text-decoration:underline;}
-.info{font-size:1em;}
+.info{font-size:1.2em;}
 .info span{color: red}
 .nav-diy{font-size: 1.8em; font-weight: 500;font-family: inherit;}
 input{width: auto;}

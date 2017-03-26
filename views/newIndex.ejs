@@ -1,53 +1,23 @@
 <%- include header %>
 <% activities.forEach(function (activitie, index) { %>
-<div class="panel panel-primary">
+<div class="panel panel-info">
     <div class="panel-heading act-title-div">
-        <h2 class="act-title"><a href="/u/<%= activitie.title %>/<%= activitie.postTime.day %>"><%= activitie.title %></a></h2>
+        <h2 class="act-title"><%= activitie.title %></h2>
     </div>
     <div class="panel-body">
         <p class="info">
-            活动日期：<%= activitie.actTime %> |
+            活动日期：<span style="color: #0275d8"><%= activitie.actTime %></span> |
             标签：<% activitie.tags.forEach(function (tag, index) { %>
             <% if (tag) { %>
-            <a class="tag" href="/tags/<%= tag %>"><%= tag %></a>
+            <a class="btn btn-info" href="/tags/<%= tag %>"><%= tag %></a>
             <% } %>
             <% }) %>
         </p>
         <p><%- activitie.content %></p>
         <div class="panel-footer">
-            <button type="button" class="btn btn-success">报名参加</button>
-            <button type="button" class="btn btn-success">签到</button>
-            <a class="btn btn-success" href="/enter">报名参加</a>
-            <!-- 按钮触发模态框 -->
-            <button class="btn btn-success" data-toggle="modal" data-target="#enter">报名参加</button>
-            <!-- 模态框（Modal） -->
-            <div class="modal fade" id="enter" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                            <h4 class="modal-title" id="enterLabel">请确认您的报名！</h4>
-                        </div>
-                        <div class="modal-body">您将报名参加
-                            <span class="activity-time">
-                                <%=activitie.actTime%>
-                            </span>
-                            的
-                            <span class="activity-title">
-                                <%=activitie.title%>
-                            </span>
-                            活动！
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">取消报名</button>
-                            <button type="button" class="btn btn-primary" >确定报名</button>
-                        </div>
-                    </div><!-- /.modal-content -->
-                </div><!-- /.modal -->
-            </div>
+            <a class="btn btn-success" href="/activity/<%= activitie.postTime.minute %>/<%= activitie.title %>">进入报名页面</a>
+            <span>已有<%=activitie.enters.length %>人报名</span>
         </div>
-
-
     </div>
 </div>
     <p><h3></h3>

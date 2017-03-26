@@ -1,23 +1,28 @@
 <%- include header %>
-<div class="panel panel-primary">
+<p>
+    <span><input class="btn btn-primary"  type="button" onclick="window.history.go(-1);" value="返回" /></span>
+    <% if (user && (user.email == "admin")) { %>
+    <span><a class="btn btn-info" href="/activityEdit/<%= activity.postTime.minute %>/<%= activity.title %>">编辑</a></span>
+    <span><a class="btn btn-danger" href="/activityRemove/<%= activity.postTime.minute %>/<%= activity.title %>">删除</a></span>
+    <% } %>
+</p>
+<div class="panel panel-info">
     <div class="panel-heading act-title-div">
-        <h2 class="act-title"><a href="/u/<%= activitie.title %>/<%= activitie.postTime.day %>"><%= activitie.title %></a></h2>
+        <h2 class="act-title"><%= activity.title %></h2>
     </div>
     <div class="panel-body">
         <p class="info">
-            活动日期：<%= activitie.actTime %> |
-            标签：<% activitie.tags.forEach(function (tag, index) { %>
+            活动日期：<%= activity.actTime %> |
+            标签：<% activity.tags.forEach(function (tag, index) { %>
             <% if (tag) { %>
-            <a class="tag" href="/tags/<%= tag %>"><%= tag %></a>
+            <a class="btn btn-info" href="/tags/<%= tag %>"><%= tag %></a>
             <% } %>
             <% }) %>
         </p>
-        <p><%- activitie.content %></p>
+        <p><%- activity.content %></p>
         <div class="panel-footer">
-            <button type="button" class="btn btn-success">报名参加</button>
-            <button type="button" class="btn btn-success">签到</button>
-            <a class="btn btn-success" href="/enter">报名参加</a>
             <!-- 按钮触发模态框 -->
+
             <button class="btn btn-success" data-toggle="modal" data-target="#enter">报名参加</button>
             <!-- 模态框（Modal） -->
             <div class="modal fade" id="enter" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -29,17 +34,17 @@
                         </div>
                         <div class="modal-body">您将报名参加
                             <span class="activity-time">
-                                <%=activitie.actTime%>
+                                <%=activity.actTime%>
                             </span>
                             的
                             <span class="activity-title">
-                                <%=activitie.title%>
+                                <%=activity.title%>
                             </span>
                             活动！
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-default" data-dismiss="modal">取消报名</button>
-                            <button type="button" class="btn btn-primary" >确定报名</button>
+                            <a class="btn btn-success" href="/enter/<%= activity.postTime.minute %>/<%= activity.title %>">确认报名</a>
                         </div>
                     </div><!-- /.modal-content -->
                 </div><!-- /.modal -->

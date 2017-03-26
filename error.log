@@ -7851,3 +7851,1063 @@ Cannot read property 'name' of null
     at D:\SchoolTest\models\post.js:153:17
     at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
     at D:\SchoolTest\node_modules\mongodb\lib\collection.js:1322:5
+[Sun Mar 26 2017 19:07:30 GMT+0800 (中国标准时间)] /activity/%E8%BF%94%E6%A0%A1/2017-3-26
+TypeError: D:\SchoolTest\views\activity.ejs:4
+    2| <div class="panel panel-primary">
+    3|     <div class="panel-heading act-title-div">
+ >> 4|         <h2 class="act-title"><a href="/u/<%= activity.title %>/<%= activity.postTime.day %>"><%= activity.title %></a></h2>
+    5|     </div>
+    6|     <div class="panel-body">
+    7|         <p class="info">
+
+Cannot read property 'title' of null
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:45:31)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:167:17
+    at D:\SchoolTest\models\activity.js:132:17
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\collection.js:1322:5
+[Sun Mar 26 2017 19:07:41 GMT+0800 (中国标准时间)] /activity/%E8%BF%94%E6%A0%A1/2017-3-26
+TypeError: D:\SchoolTest\views\activity.ejs:4
+    2| <div class="panel panel-primary">
+    3|     <div class="panel-heading act-title-div">
+ >> 4|         <h2 class="act-title"><a href="/u/<%= activity.title %>/<%= activity.postTime.day %>"><%= activity.title %></a></h2>
+    5|     </div>
+    6|     <div class="panel-body">
+    7|         <p class="info">
+
+Cannot read property 'title' of null
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:45:31)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:167:17
+    at D:\SchoolTest\models\activity.js:132:17
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\collection.js:1322:5
+[Sun Mar 26 2017 19:08:46 GMT+0800 (中国标准时间)] /activity/%E8%BF%94%E6%A0%A1/2017-3-26
+TypeError: D:\SchoolTest\views\activity.ejs:4
+    2| <div class="panel panel-primary">
+    3|     <div class="panel-heading act-title-div">
+ >> 4|         <h2 class="act-title"><a href="/u/<%= activity.title %>/<%= activity.postTime.day %>"><%= activity.title %></a></h2>
+    5|     </div>
+    6|     <div class="panel-body">
+    7|         <p class="info">
+
+Cannot read property 'title' of null
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:45:31)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:168:17
+    at D:\SchoolTest\models\activity.js:132:17
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\collection.js:1322:5
+[Sun Mar 26 2017 19:15:10 GMT+0800 (中国标准时间)] /activity/%E8%BF%94%E6%A0%A1/2017-3-26
+TypeError: D:\SchoolTest\views\activity.ejs:4
+    2| <div class="panel panel-primary">
+    3|     <div class="panel-heading act-title-div">
+ >> 4|         <h2 class="act-title"><a href="/u/<%= activity.title %>/<%= activity.postTime.day %>"><%= activity.title %></a></h2>
+    5|     </div>
+    6|     <div class="panel-body">
+    7|         <p class="info">
+
+Cannot read property 'title' of null
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:45:31)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:168:17
+    at D:\SchoolTest\models\activity.js:131:17
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\collection.js:1322:5
+[Sun Mar 26 2017 19:15:23 GMT+0800 (中国标准时间)] /activity/%E8%BF%94%E6%A0%A1/2017-3-26
+TypeError: D:\SchoolTest\views\activity.ejs:4
+    2| <div class="panel panel-primary">
+    3|     <div class="panel-heading act-title-div">
+ >> 4|         <h2 class="act-title"><a href="/u/<%= activity.title %>/<%= activity.postTime.day %>"><%= activity.title %></a></h2>
+    5|     </div>
+    6|     <div class="panel-body">
+    7|         <p class="info">
+
+Cannot read property 'title' of null
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:45:31)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:168:17
+    at D:\SchoolTest\models\activity.js:131:17
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\collection.js:1322:5
+[Sun Mar 26 2017 19:26:39 GMT+0800 (中国标准时间)] /activity/2017-3-26%2016:52/%E8%BF%94%E6%A0%A1
+TypeError: D:\SchoolTest\views\activity.ejs:4
+    2| <div class="panel panel-primary">
+    3|     <div class="panel-heading act-title-div">
+ >> 4|         <h2 class="act-title"><a href="/u/<%= activity.title %>/<%= activity.postTime.day %>"><%= activity.title %></a></h2>
+    5|     </div>
+    6|     <div class="panel-body">
+    7|         <p class="info">
+
+Cannot read property 'title' of null
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:45:31)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:168:17
+    at D:\SchoolTest\models\activity.js:131:17
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\collection.js:1322:5
+[Sun Mar 26 2017 19:27:30 GMT+0800 (中国标准时间)] /activity/2017-3-26%2016:52/%E8%BF%94%E6%A0%A1
+TypeError: D:\SchoolTest\views\activity.ejs:4
+    2| <div class="panel panel-primary">
+    3|     <div class="panel-heading act-title-div">
+ >> 4|         <h2 class="act-title"><a href="/u/<%= activity.title %>/<%= activity.postTime.day %>"><%= activity.title %></a></h2>
+    5|     </div>
+    6|     <div class="panel-body">
+    7|         <p class="info">
+
+Cannot read property 'title' of null
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:45:31)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:168:17
+    at D:\SchoolTest\models\activity.js:131:17
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\collection.js:1322:5
+[Sun Mar 26 2017 19:28:03 GMT+0800 (中国标准时间)] /activity/2017-3-26%2016:52/%E8%BF%94%E6%A0%A1
+TypeError: D:\SchoolTest\views\activity.ejs:4
+    2| <div class="panel panel-primary">
+    3|     <div class="panel-heading act-title-div">
+ >> 4|         <h2 class="act-title"><a href="/u/<%= activity.title %>/<%= activity.postTime.day %>"><%= activity.title %></a></h2>
+    5|     </div>
+    6|     <div class="panel-body">
+    7|         <p class="info">
+
+Cannot read property 'title' of null
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:45:31)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:168:17
+    at D:\SchoolTest\models\activity.js:131:17
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\collection.js:1322:5
+[Sun Mar 26 2017 19:29:14 GMT+0800 (中国标准时间)] /activity/2017-3-26%2016:52/%E8%BF%94%E6%A0%A1
+TypeError: D:\SchoolTest\views\activity.ejs:4
+    2| <div class="panel panel-primary">
+    3|     <div class="panel-heading act-title-div">
+ >> 4|         <h2 class="act-title"><a href="/u/<%= activity.title %>/<%= activity.postTime.day %>"><%= activity.title %></a></h2>
+    5|     </div>
+    6|     <div class="panel-body">
+    7|         <p class="info">
+
+Cannot read property 'title' of null
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:45:31)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:168:17
+    at D:\SchoolTest\models\activity.js:131:17
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\collection.js:1322:5
+[Sun Mar 26 2017 19:29:21 GMT+0800 (中国标准时间)] /activity/2017-3-26%2016:52/%E8%BF%94%E6%A0%A1
+TypeError: D:\SchoolTest\views\activity.ejs:4
+    2| <div class="panel panel-primary">
+    3|     <div class="panel-heading act-title-div">
+ >> 4|         <h2 class="act-title"><a href="/u/<%= activity.title %>/<%= activity.postTime.day %>"><%= activity.title %></a></h2>
+    5|     </div>
+    6|     <div class="panel-body">
+    7|         <p class="info">
+
+Cannot read property 'title' of null
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:45:31)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:168:17
+    at D:\SchoolTest\models\activity.js:131:17
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\collection.js:1322:5
+[Sun Mar 26 2017 19:29:40 GMT+0800 (中国标准时间)] /activity/2017-3-26%2016:52/%E8%BF%94%E6%A0%A1
+TypeError: D:\SchoolTest\views\activity.ejs:4
+    2| <div class="panel panel-primary">
+    3|     <div class="panel-heading act-title-div">
+ >> 4|         <h2 class="act-title"><a href="/u/<%= activity.title %>/<%= activity.postTime.day %>"><%= activity.title %></a></h2>
+    5|     </div>
+    6|     <div class="panel-body">
+    7|         <p class="info">
+
+Cannot read property 'title' of null
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:45:31)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:168:17
+    at D:\SchoolTest\models\activity.js:131:17
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\collection.js:1322:5
+[Sun Mar 26 2017 19:30:30 GMT+0800 (中国标准时间)] /activity/2017-3-26%2016:52/tinyScreen.css
+TypeError: D:\SchoolTest\views\activity.ejs:4
+    2| <div class="panel panel-primary">
+    3|     <div class="panel-heading act-title-div">
+ >> 4|         <h2 class="act-title"><a href="/u/<%= activity.title %>/<%= activity.postTime.day %>"><%= activity.title %></a></h2>
+    5|     </div>
+    6|     <div class="panel-body">
+    7|         <p class="info">
+
+Cannot read property 'title' of null
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:45:31)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:168:17
+    at D:\SchoolTest\models\activity.js:131:17
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\collection.js:1322:5
+[Sun Mar 26 2017 19:30:30 GMT+0800 (中国标准时间)] /activity/2017-3-26%2016:52/smallScreen.css
+TypeError: D:\SchoolTest\views\activity.ejs:4
+    2| <div class="panel panel-primary">
+    3|     <div class="panel-heading act-title-div">
+ >> 4|         <h2 class="act-title"><a href="/u/<%= activity.title %>/<%= activity.postTime.day %>"><%= activity.title %></a></h2>
+    5|     </div>
+    6|     <div class="panel-body">
+    7|         <p class="info">
+
+Cannot read property 'title' of null
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:45:31)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:168:17
+    at D:\SchoolTest\models\activity.js:131:17
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\collection.js:1322:5
+[Sun Mar 26 2017 19:32:28 GMT+0800 (中国标准时间)] /activity/2017-3-26%2016:52/tinyScreen.css
+TypeError: D:\SchoolTest\views\activity.ejs:4
+    2| <div class="panel panel-primary">
+    3|     <div class="panel-heading act-title-div">
+ >> 4|         <h2 class="act-title"><a href="/u/<%= activity.title %>/<%= activity.postTime.day %>"><%= activity.title %></a></h2>
+    5|     </div>
+    6|     <div class="panel-body">
+    7|         <p class="info">
+
+Cannot read property 'title' of null
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:45:31)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:168:17
+    at D:\SchoolTest\models\activity.js:131:17
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\collection.js:1322:5
+[Sun Mar 26 2017 19:32:28 GMT+0800 (中国标准时间)] /activity/2017-3-26%2016:52/smallScreen.css
+TypeError: D:\SchoolTest\views\activity.ejs:4
+    2| <div class="panel panel-primary">
+    3|     <div class="panel-heading act-title-div">
+ >> 4|         <h2 class="act-title"><a href="/u/<%= activity.title %>/<%= activity.postTime.day %>"><%= activity.title %></a></h2>
+    5|     </div>
+    6|     <div class="panel-body">
+    7|         <p class="info">
+
+Cannot read property 'title' of null
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:45:31)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:168:17
+    at D:\SchoolTest\models\activity.js:131:17
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\collection.js:1322:5
+[Sun Mar 26 2017 19:33:15 GMT+0800 (中国标准时间)] /activity/2017-3-26%2016:52/tinyScreen.css
+TypeError: D:\SchoolTest\views\activity.ejs:4
+    2| <div class="panel panel-primary">
+    3|     <div class="panel-heading act-title-div">
+ >> 4|         <h2 class="act-title"><%= activity.title %></h2>
+    5|     </div>
+    6|     <div class="panel-body">
+    7|         <p class="info">
+
+Cannot read property 'title' of null
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:45:31)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:168:17
+    at D:\SchoolTest\models\activity.js:131:17
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\collection.js:1322:5
+[Sun Mar 26 2017 19:33:15 GMT+0800 (中国标准时间)] /activity/2017-3-26%2016:52/smallScreen.css
+TypeError: D:\SchoolTest\views\activity.ejs:4
+    2| <div class="panel panel-primary">
+    3|     <div class="panel-heading act-title-div">
+ >> 4|         <h2 class="act-title"><%= activity.title %></h2>
+    5|     </div>
+    6|     <div class="panel-body">
+    7|         <p class="info">
+
+Cannot read property 'title' of null
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:45:31)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:168:17
+    at D:\SchoolTest\models\activity.js:131:17
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\collection.js:1322:5
+[Sun Mar 26 2017 19:38:21 GMT+0800 (中国标准时间)] /activity/2017-3-26%2016:52/tinyScreen.css
+TypeError: D:\SchoolTest\views\activity.ejs:4
+    2| <div class="panel panel-primary">
+    3|     <div class="panel-heading act-title-div">
+ >> 4|         <h2 class="act-title"><%= activity.title %></h2>
+    5|     </div>
+    6|     <div class="panel-body">
+    7|         <p class="info">
+
+Cannot read property 'title' of null
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:45:31)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:168:17
+    at D:\SchoolTest\models\activity.js:131:17
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\collection.js:1322:5
+[Sun Mar 26 2017 19:38:21 GMT+0800 (中国标准时间)] /activity/2017-3-26%2016:52/smallScreen.css
+TypeError: D:\SchoolTest\views\activity.ejs:4
+    2| <div class="panel panel-primary">
+    3|     <div class="panel-heading act-title-div">
+ >> 4|         <h2 class="act-title"><%= activity.title %></h2>
+    5|     </div>
+    6|     <div class="panel-body">
+    7|         <p class="info">
+
+Cannot read property 'title' of null
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:45:31)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:168:17
+    at D:\SchoolTest\models\activity.js:131:17
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\collection.js:1322:5
+[Sun Mar 26 2017 19:39:07 GMT+0800 (中国标准时间)] /activity/2017-3-26%2016:52/tinyScreen.css
+TypeError: D:\SchoolTest\views\activity.ejs:4
+    2| <div class="panel panel-primary">
+    3|     <div class="panel-heading act-title-div">
+ >> 4|         <h2 class="act-title"><%= activity.title %></h2>
+    5|     </div>
+    6|     <div class="panel-body">
+    7|         <p class="info">
+
+Cannot read property 'title' of null
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:45:31)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:168:17
+    at D:\SchoolTest\models\activity.js:131:17
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\collection.js:1322:5
+[Sun Mar 26 2017 19:39:07 GMT+0800 (中国标准时间)] /activity/2017-3-26%2016:52/smallScreen.css
+TypeError: D:\SchoolTest\views\activity.ejs:4
+    2| <div class="panel panel-primary">
+    3|     <div class="panel-heading act-title-div">
+ >> 4|         <h2 class="act-title"><%= activity.title %></h2>
+    5|     </div>
+    6|     <div class="panel-body">
+    7|         <p class="info">
+
+Cannot read property 'title' of null
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:45:31)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:168:17
+    at D:\SchoolTest\models\activity.js:131:17
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\collection.js:1322:5
+[Sun Mar 26 2017 19:39:14 GMT+0800 (中国标准时间)] /activity/2017-3-26%2016:52/tinyScreen.css
+TypeError: D:\SchoolTest\views\activity.ejs:4
+    2| <div class="panel panel-primary">
+    3|     <div class="panel-heading act-title-div">
+ >> 4|         <h2 class="act-title"><%= activity.title %></h2>
+    5|     </div>
+    6|     <div class="panel-body">
+    7|         <p class="info">
+
+Cannot read property 'title' of null
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:45:31)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:168:17
+    at D:\SchoolTest\models\activity.js:131:17
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\collection.js:1322:5
+[Sun Mar 26 2017 19:39:14 GMT+0800 (中国标准时间)] /activity/2017-3-26%2016:52/smallScreen.css
+TypeError: D:\SchoolTest\views\activity.ejs:4
+    2| <div class="panel panel-primary">
+    3|     <div class="panel-heading act-title-div">
+ >> 4|         <h2 class="act-title"><%= activity.title %></h2>
+    5|     </div>
+    6|     <div class="panel-body">
+    7|         <p class="info">
+
+Cannot read property 'title' of null
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:45:31)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:168:17
+    at D:\SchoolTest\models\activity.js:131:17
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\collection.js:1322:5
+[Sun Mar 26 2017 19:39:26 GMT+0800 (中国标准时间)] /activity/2017-3-26%2016:52/tinyScreen.css
+TypeError: D:\SchoolTest\views\activity.ejs:4
+    2| <div class="panel panel-primary">
+    3|     <div class="panel-heading act-title-div">
+ >> 4|         <h2 class="act-title"><%= activity.title %></h2>
+    5|     </div>
+    6|     <div class="panel-body">
+    7|         <p class="info">
+
+Cannot read property 'title' of null
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:45:31)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:168:17
+    at D:\SchoolTest\models\activity.js:131:17
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\collection.js:1322:5
+[Sun Mar 26 2017 19:39:26 GMT+0800 (中国标准时间)] /activity/2017-3-26%2016:52/smallScreen.css
+TypeError: D:\SchoolTest\views\activity.ejs:4
+    2| <div class="panel panel-primary">
+    3|     <div class="panel-heading act-title-div">
+ >> 4|         <h2 class="act-title"><%= activity.title %></h2>
+    5|     </div>
+    6|     <div class="panel-body">
+    7|         <p class="info">
+
+Cannot read property 'title' of null
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:45:31)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:168:17
+    at D:\SchoolTest\models\activity.js:131:17
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\collection.js:1322:5
+[Sun Mar 26 2017 19:44:55 GMT+0800 (中国标准时间)] /activity/2017-3-26%2016:52/tinyScreen.css
+TypeError: D:\SchoolTest\views\activity.ejs:4
+    2| <div class="panel panel-primary">
+    3|     <div class="panel-heading act-title-div">
+ >> 4|         <h2 class="act-title"><%= activity.title %></h2>
+    5|     </div>
+    6|     <div class="panel-body">
+    7|         <p class="info">
+
+Cannot read property 'title' of null
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:45:31)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:168:17
+    at D:\SchoolTest\models\activity.js:134:17
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\collection.js:1322:5
+[Sun Mar 26 2017 19:44:55 GMT+0800 (中国标准时间)] /activity/2017-3-26%2016:52/smallScreen.css
+TypeError: D:\SchoolTest\views\activity.ejs:4
+    2| <div class="panel panel-primary">
+    3|     <div class="panel-heading act-title-div">
+ >> 4|         <h2 class="act-title"><%= activity.title %></h2>
+    5|     </div>
+    6|     <div class="panel-body">
+    7|         <p class="info">
+
+Cannot read property 'title' of null
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:45:31)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:168:17
+    at D:\SchoolTest\models\activity.js:134:17
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\collection.js:1322:5
+[Sun Mar 26 2017 19:44:59 GMT+0800 (中国标准时间)] /activity/2017-3-26%2016:52/tinyScreen.css
+TypeError: D:\SchoolTest\views\activity.ejs:4
+    2| <div class="panel panel-primary">
+    3|     <div class="panel-heading act-title-div">
+ >> 4|         <h2 class="act-title"><%= activity.title %></h2>
+    5|     </div>
+    6|     <div class="panel-body">
+    7|         <p class="info">
+
+Cannot read property 'title' of null
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:45:31)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:168:17
+    at D:\SchoolTest\models\activity.js:134:17
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\collection.js:1322:5
+[Sun Mar 26 2017 19:44:59 GMT+0800 (中国标准时间)] /activity/2017-3-26%2016:52/smallScreen.css
+TypeError: D:\SchoolTest\views\activity.ejs:4
+    2| <div class="panel panel-primary">
+    3|     <div class="panel-heading act-title-div">
+ >> 4|         <h2 class="act-title"><%= activity.title %></h2>
+    5|     </div>
+    6|     <div class="panel-body">
+    7|         <p class="info">
+
+Cannot read property 'title' of null
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:45:31)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:168:17
+    at D:\SchoolTest\models\activity.js:134:17
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\collection.js:1322:5
+[Sun Mar 26 2017 19:45:00 GMT+0800 (中国标准时间)] /activity/2017-3-26%2016:52/tinyScreen.css
+TypeError: D:\SchoolTest\views\activity.ejs:4
+    2| <div class="panel panel-primary">
+    3|     <div class="panel-heading act-title-div">
+ >> 4|         <h2 class="act-title"><%= activity.title %></h2>
+    5|     </div>
+    6|     <div class="panel-body">
+    7|         <p class="info">
+
+Cannot read property 'title' of null
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:45:31)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:168:17
+    at D:\SchoolTest\models\activity.js:134:17
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\collection.js:1322:5
+[Sun Mar 26 2017 19:45:00 GMT+0800 (中国标准时间)] /activity/2017-3-26%2016:52/smallScreen.css
+TypeError: D:\SchoolTest\views\activity.ejs:4
+    2| <div class="panel panel-primary">
+    3|     <div class="panel-heading act-title-div">
+ >> 4|         <h2 class="act-title"><%= activity.title %></h2>
+    5|     </div>
+    6|     <div class="panel-body">
+    7|         <p class="info">
+
+Cannot read property 'title' of null
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:45:31)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:168:17
+    at D:\SchoolTest\models\activity.js:134:17
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\collection.js:1322:5
+[Sun Mar 26 2017 19:45:01 GMT+0800 (中国标准时间)] /activity/2017-3-26%2016:52/tinyScreen.css
+TypeError: D:\SchoolTest\views\activity.ejs:4
+    2| <div class="panel panel-primary">
+    3|     <div class="panel-heading act-title-div">
+ >> 4|         <h2 class="act-title"><%= activity.title %></h2>
+    5|     </div>
+    6|     <div class="panel-body">
+    7|         <p class="info">
+
+Cannot read property 'title' of null
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:45:31)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:168:17
+    at D:\SchoolTest\models\activity.js:134:17
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\collection.js:1322:5
+[Sun Mar 26 2017 19:45:01 GMT+0800 (中国标准时间)] /activity/2017-3-26%2016:52/smallScreen.css
+TypeError: D:\SchoolTest\views\activity.ejs:4
+    2| <div class="panel panel-primary">
+    3|     <div class="panel-heading act-title-div">
+ >> 4|         <h2 class="act-title"><%= activity.title %></h2>
+    5|     </div>
+    6|     <div class="panel-body">
+    7|         <p class="info">
+
+Cannot read property 'title' of null
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:45:31)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:168:17
+    at D:\SchoolTest\models\activity.js:134:17
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\collection.js:1322:5
+[Sun Mar 26 2017 19:45:16 GMT+0800 (中国标准时间)] /activity/2017-3-26%2016:52/tinyScreen.css
+TypeError: D:\SchoolTest\views\activity.ejs:4
+    2| <div class="panel panel-primary">
+    3|     <div class="panel-heading act-title-div">
+ >> 4|         <h2 class="act-title"><%= activity.title %></h2>
+    5|     </div>
+    6|     <div class="panel-body">
+    7|         <p class="info">
+
+Cannot read property 'title' of null
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:45:31)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:168:17
+    at D:\SchoolTest\models\activity.js:134:17
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\collection.js:1322:5
+[Sun Mar 26 2017 19:45:16 GMT+0800 (中国标准时间)] /activity/2017-3-26%2016:52/smallScreen.css
+TypeError: D:\SchoolTest\views\activity.ejs:4
+    2| <div class="panel panel-primary">
+    3|     <div class="panel-heading act-title-div">
+ >> 4|         <h2 class="act-title"><%= activity.title %></h2>
+    5|     </div>
+    6|     <div class="panel-body">
+    7|         <p class="info">
+
+Cannot read property 'title' of null
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:45:31)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:168:17
+    at D:\SchoolTest\models\activity.js:134:17
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\collection.js:1322:5
+[Sun Mar 26 2017 19:45:28 GMT+0800 (中国标准时间)] /activity/2017-3-26%2016:52/tinyScreen.css
+TypeError: D:\SchoolTest\views\activity.ejs:4
+    2| <div class="panel panel-primary">
+    3|     <div class="panel-heading act-title-div">
+ >> 4|         <h2 class="act-title"><%= activity.title %></h2>
+    5|     </div>
+    6|     <div class="panel-body">
+    7|         <p class="info">
+
+Cannot read property 'title' of null
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:45:31)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:168:17
+    at D:\SchoolTest\models\activity.js:134:17
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\collection.js:1322:5
+[Sun Mar 26 2017 19:45:28 GMT+0800 (中国标准时间)] /activity/2017-3-26%2016:52/smallScreen.css
+TypeError: D:\SchoolTest\views\activity.ejs:4
+    2| <div class="panel panel-primary">
+    3|     <div class="panel-heading act-title-div">
+ >> 4|         <h2 class="act-title"><%= activity.title %></h2>
+    5|     </div>
+    6|     <div class="panel-body">
+    7|         <p class="info">
+
+Cannot read property 'title' of null
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:45:31)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:168:17
+    at D:\SchoolTest\models\activity.js:134:17
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\collection.js:1322:5
+[Sun Mar 26 2017 19:46:11 GMT+0800 (中国标准时间)] /activity/2017-3-26%2016:52/tinyScreen.css
+TypeError: D:\SchoolTest\views\activity.ejs:4
+    2| <div class="panel panel-primary">
+    3|     <div class="panel-heading act-title-div">
+ >> 4|         <h2 class="act-title"><%= activity.title %></h2>
+    5|     </div>
+    6|     <div class="panel-body">
+    7|         <p class="info">
+
+Cannot read property 'title' of null
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:45:31)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:168:17
+    at D:\SchoolTest\models\activity.js:134:17
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\collection.js:1322:5
+[Sun Mar 26 2017 19:46:12 GMT+0800 (中国标准时间)] /activity/2017-3-26%2016:52/smallScreen.css
+TypeError: D:\SchoolTest\views\activity.ejs:4
+    2| <div class="panel panel-primary">
+    3|     <div class="panel-heading act-title-div">
+ >> 4|         <h2 class="act-title"><%= activity.title %></h2>
+    5|     </div>
+    6|     <div class="panel-body">
+    7|         <p class="info">
+
+Cannot read property 'title' of null
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:45:31)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:168:17
+    at D:\SchoolTest\models\activity.js:134:17
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\collection.js:1322:5
+[Sun Mar 26 2017 19:46:25 GMT+0800 (中国标准时间)] /activity/2017-3-26%2016:52/tinyScreen.css
+TypeError: D:\SchoolTest\views\activity.ejs:4
+    2| <div class="panel panel-primary">
+    3|     <div class="panel-heading act-title-div">
+ >> 4|         <h2 class="act-title"><%= activity.title %></h2>
+    5|     </div>
+    6|     <div class="panel-body">
+    7|         <p class="info">
+
+Cannot read property 'title' of null
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:45:31)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:168:17
+    at D:\SchoolTest\models\activity.js:134:17
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\collection.js:1322:5
+[Sun Mar 26 2017 19:46:25 GMT+0800 (中国标准时间)] /activity/2017-3-26%2016:52/smallScreen.css
+TypeError: D:\SchoolTest\views\activity.ejs:4
+    2| <div class="panel panel-primary">
+    3|     <div class="panel-heading act-title-div">
+ >> 4|         <h2 class="act-title"><%= activity.title %></h2>
+    5|     </div>
+    6|     <div class="panel-body">
+    7|         <p class="info">
+
+Cannot read property 'title' of null
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:45:31)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:168:17
+    at D:\SchoolTest\models\activity.js:134:17
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\collection.js:1322:5
+[Sun Mar 26 2017 19:47:08 GMT+0800 (中国标准时间)] /activity/2017-3-26%2016:52/tinyScreen.css
+TypeError: D:\SchoolTest\views\activity.ejs:4
+    2| <div class="panel panel-primary">
+    3|     <div class="panel-heading act-title-div">
+ >> 4|         <h2 class="act-title"><%= activity.title %></h2>
+    5|     </div>
+    6|     <div class="panel-body">
+    7|         <p class="info">
+
+Cannot read property 'title' of null
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:45:31)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:168:17
+    at D:\SchoolTest\models\activity.js:134:17
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\collection.js:1322:5
+[Sun Mar 26 2017 19:47:08 GMT+0800 (中国标准时间)] /activity/2017-3-26%2016:52/smallScreen.css
+TypeError: D:\SchoolTest\views\activity.ejs:4
+    2| <div class="panel panel-primary">
+    3|     <div class="panel-heading act-title-div">
+ >> 4|         <h2 class="act-title"><%= activity.title %></h2>
+    5|     </div>
+    6|     <div class="panel-body">
+    7|         <p class="info">
+
+Cannot read property 'title' of null
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:45:31)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:168:17
+    at D:\SchoolTest\models\activity.js:134:17
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\collection.js:1322:5
+[Sun Mar 26 2017 19:48:15 GMT+0800 (中国标准时间)] /activity/2017-3-26%2016:52/smallScreen.css
+TypeError: D:\SchoolTest\views\activity.ejs:4
+    2| <div class="panel panel-primary">
+    3|     <div class="panel-heading act-title-div">
+ >> 4|         <h2 class="act-title"><%= activity.title %></h2>
+    5|     </div>
+    6|     <div class="panel-body">
+    7|         <p class="info">
+
+Cannot read property 'title' of null
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:45:31)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:168:17
+    at D:\SchoolTest\models\activity.js:134:17
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\collection.js:1322:5
+[Sun Mar 26 2017 19:48:15 GMT+0800 (中国标准时间)] /activity/2017-3-26%2016:52/tinyScreen.css
+TypeError: D:\SchoolTest\views\activity.ejs:4
+    2| <div class="panel panel-primary">
+    3|     <div class="panel-heading act-title-div">
+ >> 4|         <h2 class="act-title"><%= activity.title %></h2>
+    5|     </div>
+    6|     <div class="panel-body">
+    7|         <p class="info">
+
+Cannot read property 'title' of null
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:45:31)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:168:17
+    at D:\SchoolTest\models\activity.js:134:17
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\collection.js:1322:5
+[Sun Mar 26 2017 20:21:05 GMT+0800 (中国标准时间)] /activity/2017-3-26%2016:52/%E8%BF%94%E6%A0%A1
+ReferenceError: D:\SchoolTest\views\activity.ejs:39
+    37|                         <div class="modal-footer">
+    38|                             <button type="button" class="btn btn-default" data-dismiss="modal">取消报名</button>
+ >> 39|                             <a class="btn btn-success" href="/enter/<%= activitie.postTime.minute %>/<%= activitie.title %>">确认报名</a>
+    40|                         </div>
+    41|                     </div><!-- /.modal-content -->
+    42|                 </div><!-- /.modal -->
+
+activitie is not defined
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:77:23)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:168:17
+    at D:\SchoolTest\models\activity.js:134:17
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\collection.js:1322:5
+[Sun Mar 26 2017 20:22:35 GMT+0800 (中国标准时间)] /activity/2017-3-26%2016:52/%E8%BF%94%E6%A0%A1
+ReferenceError: D:\SchoolTest\views\activity.ejs:39
+    37|                         <div class="modal-footer">
+    38|                             <button type="button" class="btn btn-default" data-dismiss="modal">取消报名</button>
+ >> 39|                             <a class="btn btn-success" href="/enter/<%= activitie.postTime.minute %>/<%= activitie.title %>">确认报名</a>
+    40|                         </div>
+    41|                     </div><!-- /.modal-content -->
+    42|                 </div><!-- /.modal -->
+
+activitie is not defined
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:77:23)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:168:17
+    at D:\SchoolTest\models\activity.js:134:17
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\collection.js:1322:5
+[Sun Mar 26 2017 20:23:31 GMT+0800 (中国标准时间)] /activity/2017-3-26%2016:52/%E8%BF%94%E6%A0%A1
+ReferenceError: D:\SchoolTest\views\activity.ejs:39
+    37|                         <div class="modal-footer">
+    38|                             <button type="button" class="btn btn-default" data-dismiss="modal">取消报名</button>
+ >> 39|                             <a class="btn btn-success" href="/enter/<%= activitie.postTime.minute %>/<%= activitie.title %>">确认报名</a>
+    40|                         </div>
+    41|                     </div><!-- /.modal-content -->
+    42|                 </div><!-- /.modal -->
+
+activitie is not defined
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:77:23)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:168:17
+    at D:\SchoolTest\models\activity.js:134:17
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\collection.js:1322:5
+[Sun Mar 26 2017 20:24:55 GMT+0800 (中国标准时间)] /activity/2017-3-26%2016:52/%E8%BF%94%E6%A0%A1
+ReferenceError: D:\SchoolTest\views\activity.ejs:39
+    37|                         <div class="modal-footer">
+    38|                             <button type="button" class="btn btn-default" data-dismiss="modal">取消报名</button>
+ >> 39|                             <a class="btn btn-success" href="/enter/<%= activitie.postTime.minute %>/<%= activity.title %>">确认报名</a>
+    40|                         </div>
+    41|                     </div><!-- /.modal-content -->
+    42|                 </div><!-- /.modal -->
+
+activitie is not defined
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:77:23)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:168:17
+    at D:\SchoolTest\models\activity.js:134:17
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\collection.js:1322:5
+[Sun Mar 26 2017 20:24:57 GMT+0800 (中国标准时间)] /activity/2017-3-26%2016:52/%E8%BF%94%E6%A0%A1
+ReferenceError: D:\SchoolTest\views\activity.ejs:39
+    37|                         <div class="modal-footer">
+    38|                             <button type="button" class="btn btn-default" data-dismiss="modal">取消报名</button>
+ >> 39|                             <a class="btn btn-success" href="/enter/<%= activitie.postTime.minute %>/<%= activity.title %>">确认报名</a>
+    40|                         </div>
+    41|                     </div><!-- /.modal-content -->
+    42|                 </div><!-- /.modal -->
+
+activitie is not defined
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:77:23)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:168:17
+    at D:\SchoolTest\models\activity.js:134:17
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\collection.js:1322:5
+[Sun Mar 26 2017 20:25:02 GMT+0800 (中国标准时间)] /activity/2017-3-26%2016:52/%E8%BF%94%E6%A0%A1
+ReferenceError: D:\SchoolTest\views\activity.ejs:39
+    37|                         <div class="modal-footer">
+    38|                             <button type="button" class="btn btn-default" data-dismiss="modal">取消报名</button>
+ >> 39|                             <a class="btn btn-success" href="/enter/<%= activitie.postTime.minute %>/<%= activity.title %>">确认报名</a>
+    40|                         </div>
+    41|                     </div><!-- /.modal-content -->
+    42|                 </div><!-- /.modal -->
+
+activitie is not defined
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:77:23)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:168:17
+    at D:\SchoolTest\models\activity.js:134:17
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\collection.js:1322:5
+[Sun Mar 26 2017 21:25:00 GMT+0800 (中国标准时间)] /person
+TypeError: D:\SchoolTest\views\person.ejs:26
+    24|         </tr>
+    25| 
+ >> 26|         <%  currentUser.experience.forEach(function (experience, index) { %>
+    27|         <% var translate = {"undergraduate":"本科","master":"硕士","doctor":"博士","postdoctor":"博士后"}%>
+    28|         <% if (experience) { %>
+    29|         <tr>
+
+Cannot read property 'forEach' of undefined
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:53:31)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:264:13
+    at callbacks (D:\SchoolTest\node_modules\express\lib\router\index.js:164:37)
+    at param (D:\SchoolTest\node_modules\express\lib\router\index.js:138:11)
+    at pass (D:\SchoolTest\node_modules\express\lib\router\index.js:145:5)
+[Sun Mar 26 2017 22:20:32 GMT+0800 (中国标准时间)] /activity/2017-3-2621:41/%E8%81%9A%E4%BC%9A
+TypeError: D:\SchoolTest\views\activity.ejs:5
+    3|     <span><input class="btn btn-primary"  type="button" onclick="window.history.go(-1);" value="返回" /></span>
+    4|     <% if (user && (user.email == "admin")) { %>
+ >> 5|     <span><a class="btn btn-info" href="/activityEdit/<%= activity.postTime.minute %>/<%= activity.title %>">编辑</a></span>
+    6|     <span><a class="btn btn-danger" href="/activityRemove/<%= activity.postTime.minute %>/<%= activity.title %>">删除</a></span>
+    7|     <% } %>
+    8| </p>
+
+Cannot read property 'postTime' of null
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:54:31)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:172:17
+    at D:\SchoolTest\models\activity.js:134:17
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\collection.js:1322:5

@@ -85,7 +85,6 @@
 
             //check telephone
             data = $("input:text[name='telephone']").val();
-            alert(data);
             var mobilevalid = /^1[3458]\d{9}$/;
             if (!mobilevalid.test(data)) {
                 alert('请输入正确的手机号码！');

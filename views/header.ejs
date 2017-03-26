@@ -10,8 +10,7 @@
     <link rel="stylesheet" href="https://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css"media="screen and (max-device-width:400px)"href="tinyScreen.css" />
-    <link rel="stylesheet" type="text/css"media="screen and (min-width: 400px)and (max-device-width: 600px)"href="smallScreen.css" />
+
     <!--[if lt IE 9]>
     <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
     <![endif]-->
@@ -60,9 +59,11 @@
                     <li>
                         <a class="navbar-brand nav-diy" title="上传" href="/upload">上传</a>
                     </li>
+                    <% if(user.email != "admin"){ %>
                     <li>
                         <a class="navbar-brand nav-diy" title="个人中心" href="/person">个人中心</a>
                     </li>
+                    <% } %>
                     <li>
                         <a class="navbar-brand nav-diy" title="登出" href="/logout">注销</a>
                     </li>

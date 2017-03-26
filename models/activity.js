@@ -105,7 +105,7 @@ Activity.getTen = function ( page, callback) {
     });
 };
 
-Activity.getOne = function( postTime, title, callback){
+Activity.getOne = function( minute, title, callback){
     //打开数据库
     mongodb.open(function (err,db) {
         if (err) {
@@ -121,14 +121,16 @@ Activity.getOne = function( postTime, title, callback){
             }
             //根据用户名、发表日期及文章名进行查询
             collection.findOne({
-                "postTime": postTime,
+                "postTime.minute": minute,
                 "title": title
             },function(err, doc) {
-
                 if (err) {
                     mongodb.close();
                     return callback(err);
                 }
+               // console.log(doc.content);
+                if(doc != null)
+                    doc.content = markdown.toHTML(doc.content);
                 callback(null, doc);//返回查询的一篇文章
             });
         });
@@ -136,7 +138,7 @@ Activity.getOne = function( postTime, title, callback){
 };
 
 
-Activity.edit = function(postTime, title, callback) {
+Activity.edit = function(minute, title, callback) {
     //打开数据库
     mongodb.open(function (err, db) {
         if (err) {
@@ -150,7 +152,7 @@ Activity.edit = function(postTime, title, callback) {
             }
             //根据用户名、发表日期及文章名进行查询
             collection.findOne({
-                "postTime": postTime,
+                "postTime.minute": minute,
                 "title": title
             },function (err, doc) {
                 mongodb.close();
@@ -164,7 +166,7 @@ Activity.edit = function(postTime, title, callback) {
 };
 
 
-Activity.update = function(postTime,title,newEdit, callback) {
+Activity.update = function(minute,title,newEdit, callback) {
     //打开数据库
     mongodb.open(function (err, db) {
         if (err) {
@@ -179,7 +181,7 @@ Activity.update = function(postTime,title,newEdit, callback) {
             }
             //更新文章内容
             collection.update({
-                "postTime":postTime,
+                "postTime.minute":minute,
                 "title":title
             },{
                 $set: newEdit
@@ -196,7 +198,7 @@ Activity.update = function(postTime,title,newEdit, callback) {
 
 
 //删除一篇文章
-Activity.remove = function(postTime, title, callback) {
+Activity.remove = function(minute, title, callback) {
 //打开数据库
     mongodb.open(function (err, db) {
         if (err) {
@@ -210,7 +212,7 @@ Activity.remove = function(postTime, title, callback) {
             }
 //查询要删除的文档
             collection.findOne({
-                "postTime": postTime,
+                "postTime.minute": minute,
                 "title": title
             }, function (err, doc) {
                 if (err) {
@@ -218,7 +220,7 @@ Activity.remove = function(postTime, title, callback) {
                     return callback(err);
                 }
                 collection.remove({
-                    "postTime": postTime,
+                    "postTime.minute": minute,
                     "title": title
                 }, {
                     w: 1

@@ -66,6 +66,7 @@ RegUser.prototype.save = function(callback) {
         xPosition: this.xPosition,
         password: this.password,
         email: this.email,
+        activities:[]
        // head: head
     };
 

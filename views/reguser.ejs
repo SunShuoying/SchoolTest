@@ -2,9 +2,9 @@
 <%- include header %>
 <div style="width:90%;position: relative;left:5%;top: 1em;">
     <p>
-
-        <span><a class="edit" href="/regAdd/<%= regUser.email %>">添加</a></span>
-        <span><a class="edit" href="/regRemove/<%= regUser.email %>">删除</a></span>
+        <span><input class="btn btn-primary"  type="button" onclick="window.history.go(-1);" value="返回" /></span>
+        <span><a class="btn btn-success" href="/regAdd/<%= regUser.email %>">添加</a></span>
+        <span><a class="btn btn-danger" href="/regRemove/<%= regUser.email %>">删除</a></span>
 
     </p>
 
