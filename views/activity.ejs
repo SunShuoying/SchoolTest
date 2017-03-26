@@ -1,5 +1,4 @@
 <%- include header %>
-<% activities.forEach(function (activitie, index) { %>
 <div class="panel panel-primary">
     <div class="panel-heading act-title-div">
         <h2 class="act-title"><a href="/u/<%= activitie.title %>/<%= activitie.postTime.day %>"><%= activitie.title %></a></h2>
@@ -50,10 +49,4 @@
 
     </div>
 </div>
-    <p><h3></h3>
-
-
-
-<% }) %>
-<%- include paging %>
 <%- include footer %>

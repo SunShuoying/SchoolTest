@@ -7305,3 +7305,549 @@ Cannot read property 'title' of null
     at D:\SchoolTest\models\post.js:182:17
     at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
     at D:\SchoolTest\node_modules\mongodb\lib\collection.js:1322:5
+[Sun Mar 26 2017 08:13:23 GMT+0800 (中国标准时间)] /u/sun1/2017-3-17/tinyScreen.css
+TypeError: D:\SchoolTest\views\article.ejs:4
+    2| <%- include header %>
+    3| <p>
+ >> 4|     <% if (user && (user.name == post.name)) { %>
+    5|     <span><a class="edit" href="/edit/<%= post.name %>/<%= post.time.day %>/<%= post.title %>">编辑</a></span>
+    6|     <span><a class="edit" href="/remove/<%= post.name %>/<%= post.time.day %>/<%= post.title %>">删除</a></span>
+    7|     <% } %>
+
+Cannot read property 'name' of null
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:47:38)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:508:17
+    at D:\SchoolTest\models\post.js:153:17
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\collection.js:1322:5
+[Sun Mar 26 2017 08:13:24 GMT+0800 (中国标准时间)] /u/sun1/2017-3-17/smallScreen.css
+TypeError: D:\SchoolTest\views\article.ejs:4
+    2| <%- include header %>
+    3| <p>
+ >> 4|     <% if (user && (user.name == post.name)) { %>
+    5|     <span><a class="edit" href="/edit/<%= post.name %>/<%= post.time.day %>/<%= post.title %>">编辑</a></span>
+    6|     <span><a class="edit" href="/remove/<%= post.name %>/<%= post.time.day %>/<%= post.title %>">删除</a></span>
+    7|     <% } %>
+
+Cannot read property 'name' of null
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:47:38)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:508:17
+    at D:\SchoolTest\models\post.js:153:17
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\collection.js:1322:5
+[Sun Mar 26 2017 08:19:11 GMT+0800 (中国标准时间)] /u/%E5%BC%A0%E4%B8%89/2017-3-25/tinyScreen.css
+TypeError: D:\SchoolTest\views\article.ejs:4
+    2| <%- include header %>
+    3| <p>
+ >> 4|     <% if (user && (user.name == post.name)) { %>
+    5|     <span><a class="edit" href="/edit/<%= post.name %>/<%= post.time.day %>/<%= post.title %>">编辑</a></span>
+    6|     <span><a class="edit" href="/remove/<%= post.name %>/<%= post.time.day %>/<%= post.title %>">删除</a></span>
+    7|     <% } %>
+
+Cannot read property 'name' of null
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:47:38)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:508:17
+    at D:\SchoolTest\models\post.js:153:17
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\collection.js:1322:5
+[Sun Mar 26 2017 08:19:11 GMT+0800 (中国标准时间)] /u/%E5%BC%A0%E4%B8%89/2017-3-25/smallScreen.css
+TypeError: D:\SchoolTest\views\article.ejs:4
+    2| <%- include header %>
+    3| <p>
+ >> 4|     <% if (user && (user.name == post.name)) { %>
+    5|     <span><a class="edit" href="/edit/<%= post.name %>/<%= post.time.day %>/<%= post.title %>">编辑</a></span>
+    6|     <span><a class="edit" href="/remove/<%= post.name %>/<%= post.time.day %>/<%= post.title %>">删除</a></span>
+    7|     <% } %>
+
+Cannot read property 'name' of null
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:47:38)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:508:17
+    at D:\SchoolTest\models\post.js:153:17
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\collection.js:1322:5
+[Sun Mar 26 2017 15:50:40 GMT+0800 (中国标准时间)] /newIndex
+ReferenceError: D:\SchoolTest\views\newIndex.ejs:2
+    1| <%- include header %>
+ >> 2| <% activities.forEach(function (activitie, index) { %>
+    3| <p><h3><a href="/u/<%= activitie.name %>/<%= activitie.time.day %>/<%= activitie.title %>"><%= activitie.title %></a></h3>
+    4| 
+    5| <p class="info">
+
+activities is not defined
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:45:8)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:59:17
+    at D:\SchoolTest\models\activity.js:101:21
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\cursor.js:842:16
+[Sun Mar 26 2017 15:52:11 GMT+0800 (中国标准时间)] /newIndex
+ReferenceError: D:\SchoolTest\views\newIndex.ejs:2
+    1| <%- include header %>
+ >> 2| <% activities.forEach(function (activitie, index) { %>
+    3| <p><h3><a href="/u/<%= activitie.name %>/<%= activitie.time.day %>/<%= activitie.title %>"><%= activitie.title %></a></h3>
+    4| 
+    5| <p class="info">
+
+activities is not defined
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:45:8)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:59:17
+    at D:\SchoolTest\models\activity.js:101:21
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\cursor.js:842:16
+[Sun Mar 26 2017 15:54:31 GMT+0800 (中国标准时间)] /newIndex
+ReferenceError: D:\SchoolTest\views\newIndex.ejs:2
+    1| <%- include header %>
+ >> 2| <% activities.forEach(function (activitie, index) { %>
+    3| <p><h3><a href="/u/<%= activitie.name %>/<%= activitie.time.day %>/<%= activitie.title %>"><%= activitie.title %></a></h3>
+    4| 
+    5| <p class="info">
+
+activities is not defined
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:45:8)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:59:17
+    at D:\SchoolTest\models\activity.js:101:21
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\cursor.js:842:16
+[Sun Mar 26 2017 15:54:54 GMT+0800 (中国标准时间)] /newIndex
+ReferenceError: D:\SchoolTest\views\newIndex.ejs:2
+    1| <%- include header %>
+ >> 2| <% activities.forEach(function (activitie, index) { %>
+    3| <p><h3><a href="/u/<%= activitie.name %>/<%= activitie.time.day %>/<%= activitie.title %>"><%= activitie.title %></a></h3>
+    4| 
+    5| <p class="info">
+
+activities is not defined
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:45:8)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:59:17
+    at D:\SchoolTest\models\activity.js:101:21
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\cursor.js:842:16
+[Sun Mar 26 2017 15:54:56 GMT+0800 (中国标准时间)] /newIndex
+ReferenceError: D:\SchoolTest\views\newIndex.ejs:2
+    1| <%- include header %>
+ >> 2| <% activities.forEach(function (activitie, index) { %>
+    3| <p><h3><a href="/u/<%= activitie.name %>/<%= activitie.time.day %>/<%= activitie.title %>"><%= activitie.title %></a></h3>
+    4| 
+    5| <p class="info">
+
+activities is not defined
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:45:8)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:59:17
+    at D:\SchoolTest\models\activity.js:101:21
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\cursor.js:842:16
+[Sun Mar 26 2017 15:54:58 GMT+0800 (中国标准时间)] /newIndex
+ReferenceError: D:\SchoolTest\views\newIndex.ejs:2
+    1| <%- include header %>
+ >> 2| <% activities.forEach(function (activitie, index) { %>
+    3| <p><h3><a href="/u/<%= activitie.name %>/<%= activitie.time.day %>/<%= activitie.title %>"><%= activitie.title %></a></h3>
+    4| 
+    5| <p class="info">
+
+activities is not defined
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:45:8)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:59:17
+    at D:\SchoolTest\models\activity.js:101:21
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\cursor.js:842:16
+[Sun Mar 26 2017 15:55:23 GMT+0800 (中国标准时间)] /newIndex
+ReferenceError: D:\SchoolTest\views\newIndex.ejs:2
+    1| <%- include header %>
+ >> 2| <% activities.forEach(function (activitie, index) { %>
+    3| <p><h3><a href="/u/<%= activitie.name %>/<%= activitie.time.day %>/<%= activitie.title %>"><%= activitie.title %></a></h3>
+    4| 
+    5| <p class="info">
+
+activities is not defined
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:45:8)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:59:17
+    at D:\SchoolTest\models\activity.js:101:21
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\cursor.js:842:16
+[Sun Mar 26 2017 15:55:25 GMT+0800 (中国标准时间)] /newIndex
+ReferenceError: D:\SchoolTest\views\newIndex.ejs:2
+    1| <%- include header %>
+ >> 2| <% activities.forEach(function (activitie, index) { %>
+    3| <p><h3><a href="/u/<%= activitie.name %>/<%= activitie.time.day %>/<%= activitie.title %>"><%= activitie.title %></a></h3>
+    4| 
+    5| <p class="info">
+
+activities is not defined
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:45:8)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:59:17
+    at D:\SchoolTest\models\activity.js:101:21
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\cursor.js:842:16
+[Sun Mar 26 2017 15:55:26 GMT+0800 (中国标准时间)] /newIndex
+ReferenceError: D:\SchoolTest\views\newIndex.ejs:2
+    1| <%- include header %>
+ >> 2| <% activities.forEach(function (activitie, index) { %>
+    3| <p><h3><a href="/u/<%= activitie.name %>/<%= activitie.time.day %>/<%= activitie.title %>"><%= activitie.title %></a></h3>
+    4| 
+    5| <p class="info">
+
+activities is not defined
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:45:8)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:59:17
+    at D:\SchoolTest\models\activity.js:101:21
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\cursor.js:842:16
+[Sun Mar 26 2017 15:55:36 GMT+0800 (中国标准时间)] /newIndex
+ReferenceError: D:\SchoolTest\views\newIndex.ejs:2
+    1| <%- include header %>
+ >> 2| <% activities.forEach(function (activitie, index) { %>
+    3| <p><h3><a href="/u/<%= activitie.name %>/<%= activitie.time.day %>/<%= activitie.title %>"><%= activitie.title %></a></h3>
+    4| 
+    5| <p class="info">
+
+activities is not defined
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:45:8)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:59:17
+    at D:\SchoolTest\models\activity.js:101:21
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\cursor.js:842:16
+[Sun Mar 26 2017 15:56:28 GMT+0800 (中国标准时间)] /newIndex
+TypeError: D:\SchoolTest\views\newIndex.ejs:3
+    1| <%- include header %>
+    2| <% activities.forEach(function (activitie, index) { %>
+ >> 3| <p><h3><a href="/u/<%= activitie.name %>/<%= activitie.time.day %>/<%= activitie.title %>"><%= activitie.title %></a></h3>
+    4| 
+    5| <p class="info">
+    6|     作者：<a href="/u/<%= activitie.name %>"><%= activitie.name %></a> |
+
+Cannot read property 'day' of undefined
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:50:37)
+    at Array.forEach (native)
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:45:19)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:59:17
+    at D:\SchoolTest\models\activity.js:101:21
+[Sun Mar 26 2017 15:56:31 GMT+0800 (中国标准时间)] /newIndex
+TypeError: D:\SchoolTest\views\newIndex.ejs:3
+    1| <%- include header %>
+    2| <% activities.forEach(function (activitie, index) { %>
+ >> 3| <p><h3><a href="/u/<%= activitie.name %>/<%= activitie.time.day %>/<%= activitie.title %>"><%= activitie.title %></a></h3>
+    4| 
+    5| <p class="info">
+    6|     作者：<a href="/u/<%= activitie.name %>"><%= activitie.name %></a> |
+
+Cannot read property 'day' of undefined
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:50:37)
+    at Array.forEach (native)
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:45:19)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:59:17
+    at D:\SchoolTest\models\activity.js:101:21
+[Sun Mar 26 2017 15:56:35 GMT+0800 (中国标准时间)] /newIndex
+TypeError: D:\SchoolTest\views\newIndex.ejs:3
+    1| <%- include header %>
+    2| <% activities.forEach(function (activitie, index) { %>
+ >> 3| <p><h3><a href="/u/<%= activitie.name %>/<%= activitie.time.day %>/<%= activitie.title %>"><%= activitie.title %></a></h3>
+    4| 
+    5| <p class="info">
+    6|     作者：<a href="/u/<%= activitie.name %>"><%= activitie.name %></a> |
+
+Cannot read property 'day' of undefined
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:50:37)
+    at Array.forEach (native)
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:45:19)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:59:17
+    at D:\SchoolTest\models\activity.js:101:21
+[Sun Mar 26 2017 15:56:47 GMT+0800 (中国标准时间)] /newIndex
+TypeError: D:\SchoolTest\views\newIndex.ejs:3
+    1| <%- include header %>
+    2| <% activities.forEach(function (activitie, index) { %>
+ >> 3| <p><h3><a href="/u/<%= activitie.name %>/<%= activitie.time.day %>/<%= activitie.title %>"><%= activitie.title %></a></h3>
+    4| 
+    5| <p class="info">
+    6|     作者：<a href="/u/<%= activitie.name %>"><%= activitie.name %></a> |
+
+Cannot read property 'day' of undefined
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:50:37)
+    at Array.forEach (native)
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:45:19)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:59:17
+    at D:\SchoolTest\models\activity.js:101:21
+[Sun Mar 26 2017 16:03:27 GMT+0800 (中国标准时间)] /u/%E5%BC%A0%E4%B8%89/2017-3-26/%E8%BF%94%E6%A0%A1,2017%E5%B9%B44%E6%9C%888%E5%8F%B7
+TypeError: D:\SchoolTest\views\article.ejs:4
+    2| <%- include header %>
+    3| <p>
+ >> 4|     <% if (user && (user.name == post.name)) { %>
+    5|     <span><a class="edit" href="/edit/<%= post.name %>/<%= post.time.day %>/<%= post.title %>">编辑</a></span>
+    6|     <span><a class="edit" href="/remove/<%= post.name %>/<%= post.time.day %>/<%= post.title %>">删除</a></span>
+    7|     <% } %>
+
+Cannot read property 'name' of null
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:47:38)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:518:17
+    at D:\SchoolTest\models\post.js:153:17
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\collection.js:1322:5
+[Sun Mar 26 2017 17:09:46 GMT+0800 (中国标准时间)] /newIndex
+ReferenceError: D:\SchoolTest\views\newIndex.ejs:21
+    19|             <button type="button" class="btn btn-success">签到</button>
+    20|             <!-- 按钮触发模态框 -->
+ >> 21|             <button class="btn btn-success" data-toggle="modal" data-target="#enter"+<%=postTime%>>报名参加</button>
+    22|             <!-- 模态框（Modal） -->
+    23|             <div class="modal fade" id="enter" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    24|                 <div class="modal-dialog">
+
+postTime is not defined
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:78:23)
+    at Array.forEach (native)
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:45:19)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:59:17
+    at D:\SchoolTest\models\activity.js:101:21
+[Sun Mar 26 2017 17:12:24 GMT+0800 (中国标准时间)] /newIndex
+ReferenceError: D:\SchoolTest\views\newIndex.ejs:23
+    21|             <button class="btn btn-success" data-toggle="modal" data-target="#enter">报名参加</button>
+    22|             <!-- 模态框（Modal） -->
+ >> 23|             <div class="modal fade" id=<%=postTime%> tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    24|                 <div class="modal-dialog">
+    25|                     <div class="modal-content">
+    26|                         <div class="modal-header">
+
+postTime is not defined
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:78:23)
+    at Array.forEach (native)
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:45:19)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:59:17
+    at D:\SchoolTest\models\activity.js:101:21
+[Sun Mar 26 2017 17:12:42 GMT+0800 (中国标准时间)] /newIndex
+ReferenceError: D:\SchoolTest\views\newIndex.ejs:23
+    21|             <button class="btn btn-success" data-toggle="modal" data-target="#enter">报名参加</button>
+    22|             <!-- 模态框（Modal） -->
+ >> 23|             <div class="modal fade" id=""+<%=postTime%> tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    24|                 <div class="modal-dialog">
+    25|                     <div class="modal-content">
+    26|                         <div class="modal-header">
+
+postTime is not defined
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:78:23)
+    at Array.forEach (native)
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:45:19)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:59:17
+    at D:\SchoolTest\models\activity.js:101:21
+[Sun Mar 26 2017 17:53:08 GMT+0800 (中国标准时间)] /enter
+ReferenceError: response is not defined
+    at D:\SchoolTest\routes\index.js:163:9
+    at callbacks (D:\SchoolTest\node_modules\express\lib\router\index.js:164:37)
+    at param (D:\SchoolTest\node_modules\express\lib\router\index.js:138:11)
+    at pass (D:\SchoolTest\node_modules\express\lib\router\index.js:145:5)
+    at Router._dispatch (D:\SchoolTest\node_modules\express\lib\router\index.js:173:5)
+    at Object.router (D:\SchoolTest\node_modules\express\lib\router\index.js:33:10)
+    at next (D:\SchoolTest\node_modules\connect\lib\proto.js:193:15)
+    at next (D:\SchoolTest\node_modules\connect\lib\middleware\session.js:318:9)
+    at D:\SchoolTest\node_modules\connect\lib\middleware\session.js:342:9
+    at D:\SchoolTest\node_modules\connect-mongo\lib\connect-mongo.js:305:11
+[Sun Mar 26 2017 17:53:13 GMT+0800 (中国标准时间)] /enter
+ReferenceError: response is not defined
+    at D:\SchoolTest\routes\index.js:163:9
+    at callbacks (D:\SchoolTest\node_modules\express\lib\router\index.js:164:37)
+    at param (D:\SchoolTest\node_modules\express\lib\router\index.js:138:11)
+    at pass (D:\SchoolTest\node_modules\express\lib\router\index.js:145:5)
+    at Router._dispatch (D:\SchoolTest\node_modules\express\lib\router\index.js:173:5)
+    at Object.router (D:\SchoolTest\node_modules\express\lib\router\index.js:33:10)
+    at next (D:\SchoolTest\node_modules\connect\lib\proto.js:193:15)
+    at next (D:\SchoolTest\node_modules\connect\lib\middleware\session.js:318:9)
+    at D:\SchoolTest\node_modules\connect\lib\middleware\session.js:342:9
+    at D:\SchoolTest\node_modules\connect-mongo\lib\connect-mongo.js:305:11
+[Sun Mar 26 2017 17:54:06 GMT+0800 (中国标准时间)] /enter
+ReferenceError: alert is not defined
+    at D:\SchoolTest\routes\index.js:163:19
+    at callbacks (D:\SchoolTest\node_modules\express\lib\router\index.js:164:37)
+    at param (D:\SchoolTest\node_modules\express\lib\router\index.js:138:11)
+    at pass (D:\SchoolTest\node_modules\express\lib\router\index.js:145:5)
+    at Router._dispatch (D:\SchoolTest\node_modules\express\lib\router\index.js:173:5)
+    at Object.router (D:\SchoolTest\node_modules\express\lib\router\index.js:33:10)
+    at next (D:\SchoolTest\node_modules\connect\lib\proto.js:193:15)
+    at next (D:\SchoolTest\node_modules\connect\lib\middleware\session.js:318:9)
+    at D:\SchoolTest\node_modules\connect\lib\middleware\session.js:342:9
+    at D:\SchoolTest\node_modules\connect-mongo\lib\connect-mongo.js:305:11
+[Sun Mar 26 2017 18:03:47 GMT+0800 (中国标准时间)] /u/sun1/2017-3-17/tinyScreen.css
+TypeError: D:\SchoolTest\views\article.ejs:4
+    2| <%- include header %>
+    3| <p>
+ >> 4|     <% if (user && (user.name == post.name)) { %>
+    5|     <span><a class="edit" href="/edit/<%= post.name %>/<%= post.time.day %>/<%= post.title %>">编辑</a></span>
+    6|     <span><a class="edit" href="/remove/<%= post.name %>/<%= post.time.day %>/<%= post.title %>">删除</a></span>
+    7|     <% } %>
+
+Cannot read property 'name' of null
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:47:38)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:523:17
+    at D:\SchoolTest\models\post.js:153:17
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\collection.js:1322:5
+[Sun Mar 26 2017 18:03:47 GMT+0800 (中国标准时间)] /u/sun1/2017-3-17/smallScreen.css
+TypeError: D:\SchoolTest\views\article.ejs:4
+    2| <%- include header %>
+    3| <p>
+ >> 4|     <% if (user && (user.name == post.name)) { %>
+    5|     <span><a class="edit" href="/edit/<%= post.name %>/<%= post.time.day %>/<%= post.title %>">编辑</a></span>
+    6|     <span><a class="edit" href="/remove/<%= post.name %>/<%= post.time.day %>/<%= post.title %>">删除</a></span>
+    7|     <% } %>
+
+Cannot read property 'name' of null
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:47:38)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:523:17
+    at D:\SchoolTest\models\post.js:153:17
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\collection.js:1322:5
+[Sun Mar 26 2017 18:46:56 GMT+0800 (中国标准时间)] /u/sun1/2017-3-17/tinyScreen.css
+TypeError: D:\SchoolTest\views\article.ejs:4
+    2| <%- include header %>
+    3| <p>
+ >> 4|     <% if (user && (user.name == post.name)) { %>
+    5|     <span><a class="edit" href="/edit/<%= post.name %>/<%= post.time.day %>/<%= post.title %>">编辑</a></span>
+    6|     <span><a class="edit" href="/remove/<%= post.name %>/<%= post.time.day %>/<%= post.title %>">删除</a></span>
+    7|     <% } %>
+
+Cannot read property 'name' of null
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:47:38)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:523:17
+    at D:\SchoolTest\models\post.js:153:17
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\collection.js:1322:5
+[Sun Mar 26 2017 18:46:56 GMT+0800 (中国标准时间)] /u/sun1/2017-3-17/smallScreen.css
+TypeError: D:\SchoolTest\views\article.ejs:4
+    2| <%- include header %>
+    3| <p>
+ >> 4|     <% if (user && (user.name == post.name)) { %>
+    5|     <span><a class="edit" href="/edit/<%= post.name %>/<%= post.time.day %>/<%= post.title %>">编辑</a></span>
+    6|     <span><a class="edit" href="/remove/<%= post.name %>/<%= post.time.day %>/<%= post.title %>">删除</a></span>
+    7|     <% } %>
+
+Cannot read property 'name' of null
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:47:38)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:523:17
+    at D:\SchoolTest\models\post.js:153:17
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\collection.js:1322:5

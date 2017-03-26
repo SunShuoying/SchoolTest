@@ -58,10 +58,10 @@ module.exports=function(app) {
 
             res.render('newIndex', {
                 title: 'new主页',
-                posts: activities,
+                activities: activities,
                 page :page,
                 isFirstPage:(page-1)==0,
-                isLastPage: ((page-1)*10+posts.length)==total,
+                isLastPage: ((page-1)*10+activities.length)==total,
                 user:req.session.user,
                 success: req.flash('success').toString(),
                 error: req.flash('error').toString()
@@ -158,6 +158,18 @@ module.exports=function(app) {
             error: req.flash('error').toString()});
     });
 
+    app.get('/activity/:title/:postTime',function (req,res) {
+        Activity.getOne(req.body.postTime,req.body.title,function (err,activity) {
+            if(err){
+               req.flash('error', '网络错误请重试!');
+               return res.redirect('/newIndex');
+            }
+            res.render('activity',{
+                title:'活动'
+            })
+        });
+
+    });
 
     app.post('/login', checkNotLogin);
     app.post('/login', function (req, res) {
@@ -202,14 +214,14 @@ module.exports=function(app) {
     app.post('/post', function (req, res) {
         var currentUser = req.session.user,
             tags = [req.body.tag1, req.body.tag2, req.body.tag3],
-            post = new Post(currentUser.name, currentUser.head, req.body.title, tags, req.body.post);
-        post.save(function (err) {
+            newActivity = new Activity(req.body.title,  tags, req.body.content, req.body.actTime);
+        newActivity.save(function (err) {
             if (err) {
                 req.flash('error', err);
                 return res.redirect('/');
             }
             req.flash('success', '发布成功！');
-            res.redirect('/');//发布成功跳转到主页
+            res.redirect('/newIndex');//发布成功跳转到主页
         });
     });
 

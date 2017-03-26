@@ -35,7 +35,7 @@ Activity.prototype.save = function(callback) {
         tags:this.tags,
         content: this.content,
         enters: [],
-        sign:[],
+        signs:[],
     };
     //打开数据库
     mongodb.open(function (err, db) {
@@ -91,8 +91,12 @@ Activity.getTen = function ( page, callback) {
                         return callback(err);
                     }
                     //解析markdown为html
+
                     docs.forEach(function (doc) {
-                        doc.post = markdown.toHTML(doc.post);
+                        if(doc.content != null)
+                            doc.content = markdown.toHTML(doc.content);
+                        else
+                            console.log("content is null");
                     });
                     callback(null, docs, total);//成功！以数组形式查询结果
                 });
