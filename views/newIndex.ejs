@@ -9,7 +9,7 @@
             活动日期：<span style="color: #0275d8"><%= activitie.actTime %></span> |
             标签：<% activitie.tags.forEach(function (tag, index) { %>
             <% if (tag) { %>
-            <a class="btn btn-info" href="/tags/<%= tag %>"><%= tag %></a>
+            <a class="btn btn-info btn-sm tag" href="/tags/<%= tag %>"><%= tag %></a>
             <% } %>
             <% }) %>
         </p>

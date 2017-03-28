@@ -8911,3 +8911,269 @@ Cannot read property 'postTime' of null
     at D:\SchoolTest\models\activity.js:134:17
     at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
     at D:\SchoolTest\node_modules\mongodb\lib\collection.js:1322:5
+[Sun Mar 26 2017 22:37:02 GMT+0800 (中国标准时间)] /reg/234545@qq.com
+ReferenceError: D:\SchoolTest\views\reguser.ejs:96
+    94|                 <div class="modal-footer">
+    95|                     <button type="button" class="btn btn-default" data-dismiss="modal">取消报名</button>
+ >> 96|                     <a class="btn btn-success" href="/enter/<%= activity.postTime.minute %>/<%= activity.title %>">确认报名</a>
+    97|                 </div>
+    98|             </div><!-- /.modal-content -->
+    99|         </div><!-- /.modal -->
+
+activity is not defined
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:122:23)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:584:17
+    at D:\SchoolTest\models\regUser.js:173:31
+    at D:\SchoolTest\node_modules\async\lib\async.js:52:16
+    at D:\SchoolTest\node_modules\async\lib\async.js:1204:30
+[Tue Mar 28 2017 19:58:50 GMT+0800 (中国标准时间)] /login
+SyntaxError: Unexpected token else in D:\SchoolTest\views\login.ejs while compiling ejs
+    at Object.compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12)
+    at Object.compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:288:16)
+    at handleCache (D:\SchoolTest\node_modules\ejs\lib\ejs.js:147:16)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:14)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:132:13
+    at callbacks (D:\SchoolTest\node_modules\express\lib\router\index.js:164:37)
+    at param (D:\SchoolTest\node_modules\express\lib\router\index.js:138:11)
+[Tue Mar 28 2017 19:58:55 GMT+0800 (中国标准时间)] /login
+SyntaxError: Unexpected token else in D:\SchoolTest\views\login.ejs while compiling ejs
+    at Object.compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12)
+    at Object.compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:288:16)
+    at handleCache (D:\SchoolTest\node_modules\ejs\lib\ejs.js:147:16)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:14)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:132:13
+    at callbacks (D:\SchoolTest\node_modules\express\lib\router\index.js:164:37)
+    at param (D:\SchoolTest\node_modules\express\lib\router\index.js:138:11)
+[Tue Mar 28 2017 19:59:33 GMT+0800 (中国标准时间)] /login
+SyntaxError: Unexpected token else in D:\SchoolTest\views\login.ejs while compiling ejs
+    at Object.compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12)
+    at Object.compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:288:16)
+    at handleCache (D:\SchoolTest\node_modules\ejs\lib\ejs.js:147:16)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:14)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:132:13
+    at callbacks (D:\SchoolTest\node_modules\express\lib\router\index.js:164:37)
+    at param (D:\SchoolTest\node_modules\express\lib\router\index.js:138:11)
+[Tue Mar 28 2017 19:59:40 GMT+0800 (中国标准时间)] /login
+SyntaxError: Unexpected token else in D:\SchoolTest\views\login.ejs while compiling ejs
+    at Object.compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12)
+    at Object.compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:288:16)
+    at handleCache (D:\SchoolTest\node_modules\ejs\lib\ejs.js:147:16)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:14)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:132:13
+    at callbacks (D:\SchoolTest\node_modules\express\lib\router\index.js:164:37)
+    at param (D:\SchoolTest\node_modules\express\lib\router\index.js:138:11)
+[Tue Mar 28 2017 19:59:44 GMT+0800 (中国标准时间)] /
+SyntaxError: Unexpected token else in D:\SchoolTest\views\newIndex.ejs while compiling ejs
+    at Object.compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12)
+    at Object.compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:288:16)
+    at handleCache (D:\SchoolTest\node_modules\ejs\lib\ejs.js:147:16)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:14)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:37:17
+    at D:\SchoolTest\models\activity.js:101:21
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+[Tue Mar 28 2017 19:59:48 GMT+0800 (中国标准时间)] /
+SyntaxError: Unexpected token else in D:\SchoolTest\views\newIndex.ejs while compiling ejs
+    at Object.compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12)
+    at Object.compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:288:16)
+    at handleCache (D:\SchoolTest\node_modules\ejs\lib\ejs.js:147:16)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:14)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:37:17
+    at D:\SchoolTest\models\activity.js:101:21
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+[Tue Mar 28 2017 19:59:50 GMT+0800 (中国标准时间)] /
+SyntaxError: Unexpected token else in D:\SchoolTest\views\newIndex.ejs while compiling ejs
+    at Object.compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12)
+    at Object.compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:288:16)
+    at handleCache (D:\SchoolTest\node_modules\ejs\lib\ejs.js:147:16)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:14)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:37:17
+    at D:\SchoolTest\models\activity.js:101:21
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+[Tue Mar 28 2017 20:00:16 GMT+0800 (中国标准时间)] /
+SyntaxError: Unexpected token else in D:\SchoolTest\views\newIndex.ejs while compiling ejs
+    at Object.compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12)
+    at Object.compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:288:16)
+    at handleCache (D:\SchoolTest\node_modules\ejs\lib\ejs.js:147:16)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:14)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:37:17
+    at D:\SchoolTest\models\activity.js:101:21
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+[Tue Mar 28 2017 20:01:19 GMT+0800 (中国标准时间)] /
+SyntaxError: Unexpected token else in D:\SchoolTest\views\newIndex.ejs while compiling ejs
+    at Object.compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12)
+    at Object.compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:288:16)
+    at handleCache (D:\SchoolTest\node_modules\ejs\lib\ejs.js:147:16)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:14)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:37:17
+    at D:\SchoolTest\models\activity.js:101:21
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+[Tue Mar 28 2017 20:01:21 GMT+0800 (中国标准时间)] /
+SyntaxError: Unexpected token else in D:\SchoolTest\views\newIndex.ejs while compiling ejs
+    at Object.compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12)
+    at Object.compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:288:16)
+    at handleCache (D:\SchoolTest\node_modules\ejs\lib\ejs.js:147:16)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:14)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:37:17
+    at D:\SchoolTest\models\activity.js:101:21
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+[Tue Mar 28 2017 20:02:05 GMT+0800 (中国标准时间)] /
+SyntaxError: Unexpected token else in D:\SchoolTest\views\newIndex.ejs while compiling ejs
+    at Object.compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12)
+    at Object.compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:288:16)
+    at handleCache (D:\SchoolTest\node_modules\ejs\lib\ejs.js:147:16)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:14)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:37:17
+    at D:\SchoolTest\models\activity.js:101:21
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+[Tue Mar 28 2017 20:04:42 GMT+0800 (中国标准时间)] /
+SyntaxError: Unexpected token else in D:\SchoolTest\views\newIndex.ejs while compiling ejs
+    at Object.compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12)
+    at Object.compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:288:16)
+    at handleCache (D:\SchoolTest\node_modules\ejs\lib\ejs.js:147:16)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:14)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:37:17
+    at D:\SchoolTest\models\activity.js:101:21
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+[Tue Mar 28 2017 20:08:13 GMT+0800 (中国标准时间)] /
+SyntaxError: Unexpected token ) in D:\SchoolTest\views\newIndex.ejs while compiling ejs
+    at Object.compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12)
+    at Object.compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:288:16)
+    at handleCache (D:\SchoolTest\node_modules\ejs\lib\ejs.js:147:16)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:14)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:37:17
+    at D:\SchoolTest\models\activity.js:101:21
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+[Tue Mar 28 2017 21:11:41 GMT+0800 (中国标准时间)] /
+ReferenceError: D:\SchoolTest\views\newIndex.ejs:93
+
+
+activity is not defined
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:30:23)
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:62:9)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:37:17
+    at D:\SchoolTest\models\activity.js:101:21
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+[Tue Mar 28 2017 21:13:33 GMT+0800 (中国标准时间)] /
+ReferenceError: D:\SchoolTest\views\newIndex.ejs:98
+
+
+activity is not defined
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:33:23)
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:62:9)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:37:17
+    at D:\SchoolTest\models\activity.js:101:21
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+[Tue Mar 28 2017 21:13:34 GMT+0800 (中国标准时间)] /login
+ReferenceError: D:\SchoolTest\views\login.ejs:98
+
+
+activity is not defined
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:33:23)
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:62:9)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:132:13
+    at callbacks (D:\SchoolTest\node_modules\express\lib\router\index.js:164:37)
+    at param (D:\SchoolTest\node_modules\express\lib\router\index.js:138:11)
+[Tue Mar 28 2017 21:13:45 GMT+0800 (中国标准时间)] /
+ReferenceError: D:\SchoolTest\views\newIndex.ejs:98
+
+
+activity is not defined
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:33:23)
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:62:9)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:37:17
+    at D:\SchoolTest\models\activity.js:101:21
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+[Tue Mar 28 2017 21:14:47 GMT+0800 (中国标准时间)] /
+ReferenceError: D:\SchoolTest\views\newIndex.ejs:47
+
+
+activity is not defined
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:12:23)
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:62:9)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:37:17
+    at D:\SchoolTest\models\activity.js:101:21
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+[Tue Mar 28 2017 21:14:48 GMT+0800 (中国标准时间)] /
+ReferenceError: D:\SchoolTest\views\newIndex.ejs:47
+
+
+activity is not defined
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:12:23)
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:62:9)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:37:17
+    at D:\SchoolTest\models\activity.js:101:21
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)

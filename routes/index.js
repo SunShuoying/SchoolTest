@@ -29,28 +29,6 @@ module.exports=function(app) {
         //判断是否是第一页，并把请求的页数转换成number类型
         var page = req.query.p?parseInt(req.query.p):1;
         //查询并返回第page页的10篇文章
-        Post.getTen(null, page ,function (err, posts, total) {
-            if (err) {
-                posts = [];
-            }
-
-            res.render('index', {
-                title: '主页',
-                posts: posts,
-                page :page,
-                isFirstPage:(page-1)==0,
-                isLastPage: ((page-1)*10+posts.length)==total,
-                user:req.session.user,
-                success: req.flash('success').toString(),
-                error: req.flash('error').toString()
-            });
-        });
-    });
-
-    app.get('/newIndex', function (req, res) {
-        //判断是否是第一页，并把请求的页数转换成number类型
-        var page = req.query.p?parseInt(req.query.p):1;
-        //查询并返回第page页的10篇文章
         Activity.getTen( page ,function (err, activities, total) {
             if (err) {
                 activities = [];
@@ -158,19 +136,21 @@ module.exports=function(app) {
             error: req.flash('error').toString()});
     });
 
+    app.get('/activity/:minute/:title', checkLogin);
     app.get('/activity/:minute/:title',function (req,res) {
-        if(req.session.user == null){
-            req.flash('error', '请先登入!');
-            res.redirect('/newIndex');
-        }
+        console.log(req.session.user);
         Activity.getOne(req.params.minute,req.params.title,function (err,activity) {
             if(err){
                req.flash('error', '网络错误请重试!');
-               return res.redirect('/newIndex');
+                return res.redirect('back');;
             }
-            console.log(req.params.minute);
+            var isEnter = false;
+            if(activity.enters.indexOf(req.session.user.email) >= 0){
+                isEnter = true;
+            }
             res.render('activity',{
                 title:'活动报名/签到页面',
+                isEnter:isEnter,
                 activity:activity,
                 user:req.session.user,
                 success:req.flash('success').toString(),
@@ -184,7 +164,7 @@ module.exports=function(app) {
        Activity.getOne(req.params.minute,req.params.title,function (err,activity) {
          if(err){
              req.flash('error', '错误请重试!');
-             return res.redirect('/newIndex');
+             return res.redirect('/');
          }
            var newEdit = {
              enters:activity.enters
@@ -194,11 +174,10 @@ module.exports=function(app) {
            Activity.update(req.params.minute, req.params.title,newEdit, function (err,activity) {
                if(err){
                    req.flash('error', '网络错误请重试!');
-                   return res.redirect('/newIndex');
+                   return res.redirect('/');
                }
-
                req.flash('success', '报名成功!');
-               res.redirect('/newIndex');
+               res.redirect('/');
 
            });
 
@@ -255,7 +234,7 @@ module.exports=function(app) {
                 return res.redirect('/');
             }
             req.flash('success', '发布成功！');
-            res.redirect('/newIndex');//发布成功跳转到主页
+            res.redirect('/');//发布成功跳转到主页
         });
     });
 
@@ -431,7 +410,7 @@ module.exports=function(app) {
                 return res.redirect('/');
             }
             res.render('archive', {
-                title:'存档',
+                title:'存档查看',
                 posts: posts,
                 user: req.session.user,
                 success: req.flash('success').toString(),
@@ -462,7 +441,7 @@ module.exports=function(app) {
           //console.log("enter");
             console.log("regUser"+typeof regUsers);
             res.render('verify', {
-                title: '验证',
+                title: '验证用户',
                 regUsers: regUsers,
                 page :page,
                 isFirstPage:(page-1)==0,
@@ -670,7 +649,7 @@ module.exports=function(app) {
                return res.redirect('back');
            }
            req.flash('success','删除成功！');
-           res.redirect('/newIndex');
+           res.redirect('/');
        }) ;
     });
 
@@ -721,7 +700,7 @@ module.exports=function(app) {
             actTime:req.body.actTime,
             content:req.body.content
         };
-        var url = '/newIndex';
+        var url = '/';
         console.log(url);
        Activity.update(req.params.minute,req.params.title,newEdit,function (err) {
             if(err){

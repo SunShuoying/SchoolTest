@@ -1,9 +1,13 @@
 <%- include header %>
+<script>
+
+    alert($("#a").text());
+</script>
 <p>
-    <span><input class="btn btn-primary"  type="button" onclick="window.history.go(-1);" value="返回" /></span>
+    <span><input class="btn btn-primary enter"  type="button" onclick="window.history.go(-1);" value="返回" /></span>
     <% if (user && (user.email == "admin")) { %>
     <span><a class="btn btn-info" href="/activityEdit/<%= activity.postTime.minute %>/<%= activity.title %>">编辑</a></span>
-    <span><button class="btn btn-success" data-toggle="modal" data-target="#remove">删除</button></span>
+    <span><button class="btn btn-danger" data-toggle="modal" data-target="#remove">删除</button></span>
     <% } %>
 </p>
 <div class="panel panel-info">
@@ -23,7 +27,7 @@
         <div class="panel-footer">
             <!-- 按钮触发模态框 -->
 
-            <button class="btn btn-success" data-toggle="modal" data-target="#enter">报名参加</button>
+            <button class="btn btn-success enterButton" data-toggle="modal" data-target="#enter">报名参加</button>
             <!-- 模态框（Modal） -->
             <div class="modal fade" id="enter" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
@@ -69,7 +73,7 @@
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-default" data-dismiss="modal">取消删除</button>
-                            <a class="btn btn-success" href="/activityRemove/<%= activity.postTime.minute %>/<%= activity.title %>">确认删除</a>
+                            <a class="btn btn-danger" href="/activityRemove/<%= activity.postTime.minute %>/<%= activity.title %>">确认删除</a>
                         </div>
                     </div><!-- /.modal-content -->
                 </div><!-- /.modal -->

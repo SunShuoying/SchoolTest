@@ -4,7 +4,7 @@
     <p>
         <span><input class="btn btn-primary"  type="button" onclick="window.history.go(-1);" value="返回" /></span>
         <span><button class="btn btn-success" data-toggle="modal" data-target="#add">添加</button></span>
-        <span><button class="btn btn-success" data-toggle="modal" data-target="#remove">删除</button></span>
+        <span><button class="btn btn-danger" data-toggle="modal" data-target="#remove">删除</button></span>
     </p>
 
     <table class="table table-bordered table-striped table-condensed">
@@ -113,7 +113,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">取消删除</button>
-                    <a class="btn btn-success" href="/regRemove/<%= regUser.email %>">确认删除</a>
+                    <a class="btn btn-danger" href="/regRemove/<%= regUser.email %>">确认删除</a>
                 </div>
             </div><!-- /.modal-content -->
         </div><!-- /.modal -->
