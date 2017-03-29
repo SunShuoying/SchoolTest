@@ -8,10 +8,11 @@ var mongodb = require('./db')
 markdown = require('markdown').markdown;
 
 
-function Activity(title, tags, content, actTime) {
+function Activity(title, tags, content, actTime,signCode) {
     this.title = title;
     this.tags = tags;
     this.content = content;
+    this.signCode = signCode;
     this.actTime = actTime;
 }
 module.exports = Activity;
@@ -33,6 +34,7 @@ Activity.prototype.save = function(callback) {
         actTime:this.actTime,
         title: this.title,
         tags:this.tags,
+        signCode:this.signCode,
         content: this.content,
         enters: [],
         signs:[],

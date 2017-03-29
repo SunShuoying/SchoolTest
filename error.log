@@ -9177,3 +9177,15 @@ activity is not defined
     at D:\SchoolTest\routes\index.js:37:17
     at D:\SchoolTest\models\activity.js:101:21
     at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+[Wed Mar 29 2017 12:54:18 GMT+0800 (中国标准时间)] /activity/2017-3-29%2010:40/%E6%A0%A1%E5%BA%86
+ReferenceError: utils is not defined
+    at ServerResponse.res.setHeader (D:\SchoolTest\node_modules\connect\lib\patch.js:83:19)
+    at ServerResponse.res.set.res.header (D:\SchoolTest\node_modules\express\lib\response.js:526:10)
+    at ServerResponse.res.contentType.res.type (D:\SchoolTest\node_modules\express\lib\response.js:395:15)
+    at ServerResponse.res.send (D:\SchoolTest\node_modules\express\lib\response.js:111:14)
+    at fn (D:\SchoolTest\node_modules\express\lib\response.js:797:10)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:355:10)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:152:21

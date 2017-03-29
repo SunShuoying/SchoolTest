@@ -1,13 +1,25 @@
 <%- include header %>
 <script>
+    $(function () {
+        if('<%= isEnter %>' == 'true'){
+            $("#enterButton").attr('disabled',true);
+        }
+        $("#signConfirm").click(function() {
+            if($('#signCode').val() == ''){
+                alert('签到码不能为空');
+                return false;
+            }
+        });
+    })
 
-    alert($("#a").text());
 </script>
 <p>
-    <span><input class="btn btn-primary enter"  type="button" onclick="window.history.go(-1);" value="返回" /></span>
+    <span><input class="btn btn-primary"  type="button" onclick="window.history.go(-1);" value="返回" /></span>
     <% if (user && (user.email == "admin")) { %>
-    <span><a class="btn btn-info" href="/activityEdit/<%= activity.postTime.minute %>/<%= activity.title %>">编辑</a></span>
+    <span><a class="btn btn-info" href="/activity/<%= activity.postTime.minute %>/<%= activity.title %>/edit">编辑</a></span>
     <span><button class="btn btn-danger" data-toggle="modal" data-target="#remove">删除</button></span>
+    <span><button class="btn btn-success" href="/activity/<%= activity.postTime.minute %>/<%= activity.title %>/enterState">报名状态</button></span>
+    <span><button class="btn btn-success" href="/activity/<%= activity.postTime.minute %>/<%= activity.title %>/signState">签到状态</button></span>
     <% } %>
 </p>
 <div class="panel panel-info">
@@ -26,8 +38,10 @@
         <p><%- activity.content %></p>
         <div class="panel-footer">
             <!-- 按钮触发模态框 -->
-
-            <button class="btn btn-success enterButton" data-toggle="modal" data-target="#enter">报名参加</button>
+            <% if (user && (user.email != "admin")) { %>
+            <button id="enterButton" class="btn btn-success " data-toggle="modal" data-target="#enter">报名参加</button>
+            <button id="signButton" class="btn btn-success " data-toggle="modal" data-target="#sign">签到</button>
+            <% }%>
             <!-- 模态框（Modal） -->
             <div class="modal fade" id="enter" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
@@ -53,6 +67,27 @@
                     </div><!-- /.modal-content -->
                 </div><!-- /.modal -->
             </div>
+            <!-- sign -->
+            <form method="post">
+                <div class="modal fade" id="sign" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h4 class="modal-title" id="signLabel">请输入签到码！</h4>
+                            </div>
+                            <div class="modal-body">
+                                <input type="text" class="form-control" name="signCode" id="signCode" placeholder="请输入签到码！"/>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">取消签到</button>
+                                <input type="submit" id="signConfirm" class="btn btn-success" value="确认签到"/>
+                            </div>
+                        </div><!-- /.modal-content -->
+                    </div><!-- /.modal -->
+                </div>
+            </form>
+
             <!-- remove-->
             <div class="modal fade" id="remove" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
@@ -78,6 +113,7 @@
                     </div><!-- /.modal-content -->
                 </div><!-- /.modal -->
             </div>
+
         </div>
 
 

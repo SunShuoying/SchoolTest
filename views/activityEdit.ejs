@@ -1,4 +1,7 @@
 <%- include header %>
+<p>
+    <span><input class="btn btn-primary"  type="button" onclick="window.history.go(-1);" value="返回" /></span>
+</p>
 <form method="post">
 
     <div class="form-group">
@@ -13,12 +16,16 @@
         <input type="text" class="form-control input-length" name="tag3"  disabled="disabled" value="<%= activity.tags[2] %>"/>
     </div>
     <div class="form-group">
+        <label>签到码：</label>
+        <input type="text" class="form-control input-length" name="signCode"   value="<%= activity.signCode %>"/>
+    </div>
+    <div class="form-group">
         <label>活动时间：</label>
-        <input type="text" class="form-control input-length" name="actTime" placeholder="请输入活动时间" value="<%= activity.actTime %>"/>
+        <input type="text" class="form-control input-length" name="actTime"  value="<%= activity.actTime %>"/>
     </div>
     正文：<br />
     <textarea name="content" rows="20" cols="100" ><%= activity.content %></textarea><br />
-    <input class="btn btn-primary"  type="button" onclick="window.history.go(-1);" value="返回" />
+
     <input class="btn btn-success"  type="submit" value="提交" />
 </form>
 <%- include footer %>

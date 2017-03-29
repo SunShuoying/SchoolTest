@@ -119,7 +119,7 @@ module.exports=function(app) {
                         return res.redirect('/reg');//注册失败返回主册页
                     }
                     //req.session.user = user;//用户信息存入 session
-                    req.flash('success', '注册申请成功，等待审核通过邮箱通知!');
+                    req.flash('success', '注册申请成功，等待审核通过短信或者邮箱通知!');
                     console.log("success");
                     res.redirect('/');//注册成功后返回主页
                 });
@@ -138,49 +138,123 @@ module.exports=function(app) {
 
     app.get('/activity/:minute/:title', checkLogin);
     app.get('/activity/:minute/:title',function (req,res) {
-        console.log(req.session.user);
-        Activity.getOne(req.params.minute,req.params.title,function (err,activity) {
-            if(err){
-               req.flash('error', '网络错误请重试!');
-                return res.redirect('back');;
-            }
-            var isEnter = false;
-            if(activity.enters.indexOf(req.session.user.email) >= 0){
-                isEnter = true;
-            }
-            res.render('activity',{
-                title:'活动报名/签到页面',
-                isEnter:isEnter,
-                activity:activity,
-                user:req.session.user,
-                success:req.flash('success').toString(),
-                error:req.flash('error').toString()
-            })
-        });
 
+        if(req.session.user){
+            Activity.getOne(req.params.minute,req.params.title,function (err,activity) {
+                if(err){
+                    req.flash('error', '网络错误请重试!');
+                    return res.redirect('back');
+                }
+                var isEnter = 'false';
+                var enters = activity.enters;
+                for(var i = 0;i<enters.length;i++){
+                    if(enters[i].email == req.session.user.email){
+                        isEnter = 'true';
+                        break;
+                    }
+                }
+                res.render('activity',{
+                    title:'活动报名/签到页面',
+                    isEnter:isEnter,
+                    activity:activity,
+                    user:req.session.user,
+                    success:req.flash('success').toString(),
+                    error:req.flash('error').toString()
+                })
+            });
+        }
+    });
+
+    app.get('/activity/:minute/:title/enterState',function (req,res) {
+       Activity.getOne(req.params.minute,req.params.title,function (err,activity) {
+           if(err){
+               req.flash('error','出现异常，请重试！');
+               return res.redirect('back');
+           }
+           var enters= [];
+           var getError = [];
+           activity.enters.forEach(function (email,index) {
+              FormalUser.get(email,function (err,user) {
+                  if(err){
+                      getError.push({email:email,index:index});
+                      enters.push({});
+                  }else {
+                      enters.push(user);
+                  }
+              })
+           });
+            res.render('enterState',{
+                title: '发表',
+                enters:activity.enters,
+                total:activity.enters.length,
+                user: req.session.user,
+                success: req.flash('success').toString(),
+                error: req.flash('error').toString()
+           });
+       }) ;
     });
 
     app.get('/enter/:minute/:title',function (req,res) {
+        var url = 'back';
        Activity.getOne(req.params.minute,req.params.title,function (err,activity) {
          if(err){
              req.flash('error', '错误请重试!');
-             return res.redirect('/');
+             return res.redirect(url);
          }
            var newEdit = {
              enters:activity.enters
            };
          //create update object;
-           newEdit.enters.push(req.session.user.email);
-           Activity.update(req.params.minute, req.params.title,newEdit, function (err,activity) {
+           var user = req.session.user;
+           var enterUser = {
+               name:user.name,
+               sex:user.sex,
+               experience:user.experience[0],
+               telephone:user.telephone,
+               email:user.email
+           };
+           newEdit.enters.push(enterUser);
+           Activity.update(req.params.minute, req.params.title,newEdit, function (err) {
                if(err){
                    req.flash('error', '网络错误请重试!');
-                   return res.redirect('/');
+                   return res.redirect(url);
                }
                req.flash('success', '报名成功!');
-               res.redirect('/');
-
+               res.redirect(url);
            });
+       });
+    });
 
+    app.post('/activity/:minute/:title',function (req,res) {
+       var signCode = req.body.signCode;
+       var currentUser = req.session.user;
+       console.log(signCode);
+       var url = 'back';
+       Activity.getOne(req.params.minute,req.params.title,function (err,activity) {
+           if(err){
+               req.flash('error','签到未成功，请重试！');
+               return res.redirect(url);
+           }
+           if(activity.enters.indexOf(currentUser.email) < 0){
+               req.flash('error','您未报名，请先报名！');
+               return res.redirect(url);
+           }
+           if(signCode != activity.signCode){
+               req.flash('error','签到码错误，请检查签到码！');
+               return res.redirect(url);
+           }
+           var newEdit = {
+               signs:activity.signs
+           };
+           newEdit.signs.push(currentUser.email)
+           Activity.update(req.params.minute,req.params.title,newEdit,function (err) {
+               if(err){
+                   req.flash('error','签到未成功，请重试！');
+                   return res.redirect(url);
+               }
+               req.flash('success','签到成功！');
+               res.redirect('back');
+           })
        });
     });
 
@@ -221,13 +295,11 @@ module.exports=function(app) {
     });
 
 
-
-
     app.post('/post', checkLogin);
     app.post('/post', function (req, res) {
         var currentUser = req.session.user,
             tags = [req.body.tag1, req.body.tag2, req.body.tag3],
-            newActivity = new Activity(req.body.title,  tags, req.body.content, req.body.actTime);
+            newActivity = new Activity(req.body.title,  tags, req.body.content, req.body.actTime,req.body.signCode);
         newActivity.save(function (err) {
             if (err) {
                 req.flash('error', err);
@@ -614,7 +686,7 @@ module.exports=function(app) {
         });
     });
 
-    app.get('/activityEdit/:minute/:title',function (req,res) {
+    app.get('/activity/:minute/:title/edit',function (req,res) {
        Activity.edit(req.params.minute,req.params.title,function (err,activity) {
            if(err){
                req.flash('error', err);
@@ -695,12 +767,13 @@ module.exports=function(app) {
         });
     });
 
-    app.post('/activityEdit/:minute/:title',function (req,res) {
+    app.post('/activity/:minute/:title/edit',function (req,res) {
         var newEdit = {
+            signCode:req.body.signCode,
             actTime:req.body.actTime,
             content:req.body.content
         };
-        var url = '/';
+        var url = 'back';
         console.log(url);
        Activity.update(req.params.minute,req.params.title,newEdit,function (err) {
             if(err){
@@ -708,7 +781,7 @@ module.exports=function(app) {
                 return res.redirect(url);
             }
            req.flash('success', "修改成功！");
-           res.redirect(url);
+           res.redirect('../');
        });
     });
 
