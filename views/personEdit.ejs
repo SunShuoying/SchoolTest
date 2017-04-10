@@ -92,18 +92,20 @@
                 alert("在校经历为必选项");
                 return false;
             }
+            var isError = false;
             $('input[name="experience"]:checked').each(function(){
                 var val = $(this).val();
-                result += "/experience :"
                 for(var i = 0;i<3;i++){
                     data = $("#"+val+"-div").find("input").eq(i).val();
                     if(data == ""){
-                        alert(val+":"+i+" is null");
+                        alert('您的在校经历不完整');
+                        isError = true;
                         return false;
                     }
-                    result += data + ":";
                 }
             });
+            if(isError)
+                return false;
             //check country;
             data = $("input:text[name='country']").val();
             if(data == ""){

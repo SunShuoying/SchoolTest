@@ -23,7 +23,7 @@
             $("#postdoctor-div").toggle(200);
         });
 
-        if("male" == '<%= user.sex %>'){
+        if("male" == '<%= regUser.sex %>'){
             $("#male").attr("checked",true);
         }
         else
@@ -92,18 +92,20 @@
                 alert("在校经历为必选项");
                 return false;
             }
+            var isError = false;
             $('input[name="experience"]:checked').each(function(){
                 var val = $(this).val();
-                result += "/experience :"
                 for(var i = 0;i<3;i++){
                     data = $("#"+val+"-div").find("input").eq(i).val();
                     if(data == ""){
-                        alert(val+":"+i+" is null");
+                        alert('您的在校经历不完整');
+                        isError = true;
                         return false;
                     }
-                    result += data + ":";
                 }
             });
+            if(isError)
+                return false;
             //check country;
             data = $("input:text[name='country']").val();
             if(data == ""){
@@ -161,82 +163,82 @@
     <div style="width:50%;position: relative;left:20%;top: 1em;">
         <div class="form-group">
             <label>姓名<span class="necessary"> *</span>：</label>
-            <input type="text" class="form-control" name="name" id="name" disabled="disabled" value="<%=user.name%>"/>
+            <input type="text" class="form-control" name="name" id="name" value="<%=regUser.name%>"/>
         </div>
         <div class="form-group">
             <label>性别<span class="necessary"> *</span>：</label><br />
-            <label><input name="sex"  id="male" type="radio" disabled="disabled" value="male" />男 </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <label><input name="sex"  id="female" type="radio" disabled="disabled" value="female" />女 </label>
+            <label><input name="sex"  id="male" type="radio" value="male" />男 </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label><input name="sex"  id="female" type="radio"  value="female" />女 </label>
         </div>
         <div class="form-group">
             <label>在校经历<span class="necessary"> *</span>：</label>
             <div >
-                <label><input id="checkbox-undergraduate" name="experience" disabled="disabled" type="checkbox" value="undergraduate" />本科 </label>
+                <label><input id="checkbox-undergraduate" name="experience"  type="checkbox" value="undergraduate" />本科 </label>
                 <div id = "undergraduate-div" class="checkbox-edu" >
-                    <span><label>专业<span class="necessary"> *</span>：</label><input type="text" class="form-control major"  name="underMajor" disabled="disabled"/> </span>
-                    <span><label>入学年份<span class="necessary"> *</span>：</label><input type="date" class="form-control date" name="underDate" disabled="disabled"/> </span>
-                    <span><label>班级<span class="necessary"> *</span>：</label><input type="text" class="form-control class" name="underClass" disabled="disabled"/> </span>
-                    <span><label>学号：</label><input type="text" class="form-control studentID" name="underStudentID" disabled="disabled"/> </span>
+                    <span><label>专业<span class="necessary"> *</span>：</label><input type="text" class="form-control major"  name="underMajor" /> </span>
+                    <span><label>入学年份<span class="necessary"> *</span>：</label><input type="date" class="form-control date" name="underDate" /> </span>
+                    <span><label>班级<span class="necessary"> *</span>：</label><input type="text" class="form-control class" name="underClass" /> </span>
+                    <span><label>学号：</label><input type="text" class="form-control studentID" name="underStudentID" /> </span>
                 </div>
             </div>
             <div >
-                <label><input id="checkbox-master" name="experience" type="checkbox" disabled="disabled" value="master" />硕士 </label>
+                <label><input id="checkbox-master" name="experience" type="checkbox"  value="master" />硕士 </label>
                 <div id="master-div" class="checkbox-edu">
-                    <span><label>专业<span class="necessary"> *</span>：</label><input type="text" class="form-control major"  name="masterMajor" disabled="disabled"/> </span>
-                    <span><label>入学年份<span class="necessary"> *</span>：</label><input type="date" class="form-control date" name="masterDate" disabled="disabled"/> </span>
-                    <span><label>班级<span class="necessary"> *</span>：</label><input type="text" class="form-control class" name="masterClass" disabled="disabled"/> </span>
-                    <span><label>学号：</label><input type="text" class="form-control" name="masterStudentID studentID" disabled="disabled"/> </span>
+                    <span><label>专业<span class="necessary"> *</span>：</label><input type="text" class="form-control major"  name="masterMajor" /> </span>
+                    <span><label>入学年份<span class="necessary"> *</span>：</label><input type="date" class="form-control date" name="masterDate" /> </span>
+                    <span><label>班级<span class="necessary"> *</span>：</label><input type="text" class="form-control class" name="masterClass" /> </span>
+                    <span><label>学号：</label><input type="text" class="form-control" name="masterStudentID studentID" /> </span>
                 </div>
 
             </div>
             <div >
-                <label><input id="checkbox-doctor" name="experience" type="checkbox" disabled="disabled" value="doctor" />博士 </label>
+                <label><input id="checkbox-doctor" name="experience" type="checkbox"  value="doctor" />博士 </label>
                 <div id="doctor-div" class="checkbox-edu">
-                    <span><label>专业<span class="necessary"> *</span>：</label><input type="text" class="form-control major"  name="doctorMajor" disabled="disabled"/> </span>
-                    <span><label>入学年份<span class="necessary"> *</span>：</label><input type="date" class="form-control date" name="doctorDate" disabled="disabled"/> </span>
-                    <span><label>班级<span class="necessary"> *</span>：</label><input type="text" class="form-control class" name="doctorClass" disabled="disabled"/> </span>
-                    <span><label>学号：</label><input type="text" class="form-control" name="doctorStudentID studentID" disabled="disabled"/> </span>
+                    <span><label>专业<span class="necessary"> *</span>：</label><input type="text" class="form-control major"  name="doctorMajor" /> </span>
+                    <span><label>入学年份<span class="necessary"> *</span>：</label><input type="date" class="form-control date" name="doctorDate" /> </span>
+                    <span><label>班级<span class="necessary"> *</span>：</label><input type="text" class="form-control class" name="doctorClass" /> </span>
+                    <span><label>学号：</label><input type="text" class="form-control" name="doctorStudentID studentID" /> </span>
                 </div>
 
             </div>
             <div >
-                <label><input id="checkbox-postdoctor" name="experience" type="checkbox" disabled="disabled" value="postdoctor" />博士后 </label>
+                <label><input id="checkbox-postdoctor" name="experience" type="checkbox"  value="postdoctor" />博士后 </label>
                 <div id="postdoctor-div" class="checkbox-edu">
-                    <span><label>专业<span class="necessary"> *</span>：</label><input type="text" class="form-control major"  name="postMajor" disabled="disabled"/> </span>
-                    <span><label>入学年份<span class="necessary"> *</span>：</label><input type="date" class="form-control date" name="postDate" disabled="disabled"/> </span>
-                    <span><label>班级<span class="necessary"> *</span>：</label><input type="text" class="form-control class" name="postClass" disabled="disabled"/> </span>
-                    <span><label>学号：</label><input type="text" class="form-control" name="postStudentID studentID" disabled="disabled"/> </span>
+                    <span><label>专业<span class="necessary"> *</span>：</label><input type="text" class="form-control major"  name="postMajor" /> </span>
+                    <span><label>入学年份<span class="necessary"> *</span>：</label><input type="date" class="form-control date" name="postDate" /> </span>
+                    <span><label>班级<span class="necessary"> *</span>：</label><input type="text" class="form-control class" name="postClass" /> </span>
+                    <span><label>学号：</label><input type="text" class="form-control" name="postStudentID studentID" /> </span>
                 </div>
             </div>
         </div>
         <div class="form-group">
             <label>所在国家<span class="necessary"> *</span>：</label>
-            <input type="text" class="form-control" name="country" placeholder="请输入国家" value="<%= user.country%>"/>
+            <input type="text" class="form-control" name="country" placeholder="请输入国家" value="<%= regUser.country%>"/>
         </div>
         <div class="form-group">
             <label>城市<span class="necessary"> *</span>：</label>
-            <input type="text" class="form-control" name="city" placeholder="请输入城市" value="<%= user.city%>"/>
+            <input type="text" class="form-control" name="city" placeholder="请输入城市" value="<%= regUser.city%>"/>
         </div>
         <div class="form-group">
             <label>工作单位<span class="necessary"> *</span>：</label>
-            <input type="text" class="form-control" name="company" placeholder="请输入工作单位" value="<%= user.company%>"/>
+            <input type="text" class="form-control" name="company" placeholder="请输入工作单位" value="<%= regUser.company%>"/>
         </div>
         <div class="form-group">
             <label>职位<span class="necessary"> *</span>：</label>
-            <input type="text" class="form-control" name="position" placeholder="请输入职位" value="<%= user.position%>"/>
+            <input type="text" class="form-control" name="position" placeholder="请输入职位" value="<%= regUser.position%>"/>
         </div>
         <div class="form-group">
             <label>手机<span class="necessary"> *</span>：</label>
-            <input type="text" class="form-control" name="telephone" placeholder="请输入手机" value="<%= user.telephone%>"/>
+            <input type="text" class="form-control" name="telephone" placeholder="请输入手机" value="<%= regUser.telephone%>"/>
         </div>
 
         <div class="form-group">
             <label>所属地方校友会：</label>
-            <input type="text" class="form-control" name="xiaoHui" placeholder="请输入校友会（选填）" value="<%= user.xiaoHui%>"/>
+            <input type="text" class="form-control" name="xiaoHui" placeholder="请输入校友会（选填）" value="<%= regUser.xiaoHui%>"/>
         </div>
         <div class="form-group">
             <label>校友会职务：</label>
-            <input type="text" class="form-control" name="xPosition" placeholder="请输入校友会职务（选填）" value="<%= user.xPosition%>"/>
+            <input type="text" class="form-control" name="xPosition" placeholder="请输入校友会职务（选填）" value="<%= regUser.xPosition%>"/>
         </div>
         <br/>
         <div class="form-group">

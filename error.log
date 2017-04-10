@@ -9329,3 +9329,43 @@ enters is not defined
     at D:\SchoolTest\models\activity.js:136:17
     at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
     at D:\SchoolTest\node_modules\mongodb\lib\collection.js:1322:5
+[Mon Apr 10 2017 14:56:38 GMT+0800 (中国标准时间)] /reg/5665555526@qq.com/edit
+ReferenceError: D:\SchoolTest\views\reguserEdit.ejs:31
+    29|         else
+    30|             $("#female").attr("checked",true);
+ >> 31|         var sum = '<%= sum %>';
+    32|         var exp ;
+    33|         if(sum >= 1){
+    34|             exp =['<%= exp1.experience %>','<%= exp1.major %>','<%= exp1.date %>','<%= exp1.class %>','<%= exp1.studentId %>'];
+
+sum is not defined
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:57:23)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:675:17
+    at D:\SchoolTest\models\regUser.js:171:31
+    at D:\SchoolTest\node_modules\async\lib\async.js:52:16
+    at D:\SchoolTest\node_modules\async\lib\async.js:1204:30
+[Mon Apr 10 2017 15:01:30 GMT+0800 (中国标准时间)] /reg/5665555526@qq.com/edit
+ReferenceError: D:\SchoolTest\views\reguseredit.ejs:31
+    29|         else
+    30|             $("#female").attr("checked",true);
+ >> 31|         var sum = '<%= sum %>';
+    32|         var exp ;
+    33|         if(sum >= 1){
+    34|             exp =['<%= exp1.experience %>','<%= exp1.major %>','<%= exp1.date %>','<%= exp1.class %>','<%= exp1.studentId %>'];
+
+sum is not defined
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:57:23)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:675:17
+    at D:\SchoolTest\models\regUser.js:171:31
+    at D:\SchoolTest\node_modules\async\lib\async.js:52:16
+    at D:\SchoolTest\node_modules\async\lib\async.js:1204:30

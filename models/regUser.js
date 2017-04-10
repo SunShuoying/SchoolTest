@@ -120,7 +120,6 @@ RegUser.prototype.save = function(callback) {
         user.experience.postdoctor = poObj;
     }
     */
-    console.log(user);
 
     async.waterfall([
         function (cb) {
@@ -147,7 +146,6 @@ RegUser.prototype.save = function(callback) {
 
 };
 RegUser.get = function(email, callback) {
-    console.log("begin");
     async.waterfall([
         function (cb) {
             mongodb.open(function (err, db) {
@@ -169,7 +167,7 @@ RegUser.get = function(email, callback) {
         }
     ], function (err, user) {
         mongodb.close();
-        console.log(user);
+
         err ? callback(err) : callback(null, user);
     });
 };
@@ -202,9 +200,6 @@ RegUser.getTen = function ( page, callback) {
                         return callback(err);
                     }
                     //解析markdown为html
-
-                    console.log("overcome"+total);
-                    console.log("docs :"+docs);
                     callback(null, docs, total);//成功！以数组形式查询结果
                 });
             });
@@ -236,7 +231,6 @@ RegUser.remove = function(email, callback) {
                     return callback(err);
                 }
                 //删除转载来的文章所在的文档
-                console.log("find ok");
                 collection.remove({
                     "email": email
                 }, {
@@ -246,9 +240,37 @@ RegUser.remove = function(email, callback) {
                     if (err) {
                         return callback(err);
                     }
-                    console.log("remove ok");
                     callback(null);
                 });
+            });
+        });
+    });
+};
+
+RegUser.update = function(email,newEditUser, callback) {
+    //打开数据库
+    mongodb.open(function (err, db) {
+        if (err) {
+            return callback(err);
+        }
+        //读取regUsers集合
+        db.collection('regUsers', function (err, collection) {
+            if (err) {
+                mongodb.close();
+                return callback(err);
+
+            }
+            //更新文章内容
+            collection.update({
+                "email":email
+            },{
+                $set: newEditUser
+            },function (err) {
+                mongodb.close();
+                if (err) {
+                    return callback(err);
+                }
+                callback(null);
             });
         });
     });
