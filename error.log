@@ -9189,3 +9189,143 @@ ReferenceError: utils is not defined
     at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
     at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
     at D:\SchoolTest\routes\index.js:152:21
+[Sun Apr 09 2017 15:56:59 GMT+0800 (中国标准时间)] /activity/2017-3-29%2010:33/%E6%A0%A1%E5%BA%86/enterState
+TypeError: D:\SchoolTest\views\enterState.ejs:25
+    23|             <td><%= enter.name %></td>
+    24|             <td><%= enter.sex %></td>
+ >> 25|             <td><%= enter.experience[0].experience %></td>
+    26|             <td><%= enter.experience[0].major %></td>
+    27|             <td><%= enter.experience[0].date %></td>
+    28|             <td><%= enter.experience[0].studentId %></td>
+
+Cannot read property 'experience' of undefined
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:66:42)
+    at Array.forEach (native)
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:54:15)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:177:17
+    at D:\SchoolTest\models\activity.js:136:17
+[Sun Apr 09 2017 15:57:58 GMT+0800 (中国标准时间)] /activity/2017-3-29%2010:33/%E6%A0%A1%E5%BA%86/enterState
+TypeError: D:\SchoolTest\views\enterState.ejs:25
+    23|             <td><%= enter.name %></td>
+    24|             <td><%= enter.sex %></td>
+ >> 25|             <td><%= enter.experience[0].experience %></td>
+    26|             <td><%= enter.experience[0].major %></td>
+    27|             <td><%= enter.experience[0].date %></td>
+    28|             <td><%= enter.experience[0].studentId %></td>
+
+Cannot read property 'experience' of undefined
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:66:42)
+    at Array.forEach (native)
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:54:15)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:175:17
+    at D:\SchoolTest\models\activity.js:136:17
+[Sun Apr 09 2017 15:59:25 GMT+0800 (中国标准时间)] /activity/2017-3-29%2010:33/%E6%A0%A1%E5%BA%86/enterState
+TypeError: D:\SchoolTest\views\enterState.ejs:25
+    23|             <td><%= enter.name %></td>
+    24|             <td><%= enter.sex %></td>
+ >> 25|             <td><%= enter.experience[0].experience %></td>
+    26|             <td><%= enter.experience[0].major %></td>
+    27|             <td><%= enter.experience[0].date %></td>
+    28|             <td><%= enter.experience[0].studentId %></td>
+
+Cannot read property 'experience' of undefined
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:66:42)
+    at Array.forEach (native)
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:54:15)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:175:17
+    at D:\SchoolTest\models\activity.js:136:17
+[Sun Apr 09 2017 15:59:34 GMT+0800 (中国标准时间)] /activity/2017-3-29%2010:33/%E6%A0%A1%E5%BA%86/enterState
+TypeError: D:\SchoolTest\views\enterState.ejs:25
+    23|             <td><%= enter.name %></td>
+    24|             <td><%= enter.sex %></td>
+ >> 25|             <td><%= enter.experience[0].experience %></td>
+    26|             <td><%= enter.experience[0].major %></td>
+    27|             <td><%= enter.experience[0].date %></td>
+    28|             <td><%= enter.experience[0].studentId %></td>
+
+Cannot read property 'experience' of undefined
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:66:42)
+    at Array.forEach (native)
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:54:15)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:175:17
+    at D:\SchoolTest\models\activity.js:136:17
+[Sun Apr 09 2017 16:01:41 GMT+0800 (中国标准时间)] /activity/2017-3-29%2010:33/%E6%A0%A1%E5%BA%86/enterState
+TypeError: D:\SchoolTest\views\enterState.ejs:25
+    23|             <td><%= enter.name %></td>
+    24|             <td><%= enter.sex %></td>
+ >> 25|             <td><%= enter.experience[0].experience %></td>
+    26|             <td><%= enter.experience[0].major %></td>
+    27|             <td><%= enter.experience[0].date %></td>
+    28|             <td><%= enter.experience[0].studentId %></td>
+
+Cannot read property 'experience' of undefined
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:66:42)
+    at Array.forEach (native)
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:54:15)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:176:17
+    at D:\SchoolTest\models\activity.js:136:17
+[Sun Apr 09 2017 16:39:23 GMT+0800 (中国标准时间)] /activity/2017-3-29%2010:33/%E6%A0%A1%E5%BA%86
+ReferenceError: D:\SchoolTest\views\activity.ejs:7
+    5|             $("#enterButton").attr('disabled',true);
+    6|         }
+ >> 7|         if('<%= isEnter%>' != 'true' || '<%= isSign%>' == 'true'){
+    8|             $("#signButton").attr('disabled',true);
+    9|         }
+    10|         $("#signConfirm").click(function() {
+
+isSign is not defined
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:59:23)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:166:21
+    at D:\SchoolTest\models\activity.js:136:17
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\collection.js:1322:5
+[Sun Apr 09 2017 16:40:48 GMT+0800 (中国标准时间)] /activity/2017-3-29%2010:33/%E6%A0%A1%E5%BA%86/signState
+ReferenceError: D:\SchoolTest\views\signState.ejs:20
+    18|         </thead>
+    19|         <tbody>
+ >> 20|         <% enters.forEach(function (enter,index) {%>
+    21|         <tr>
+    22|             <td><%= index+1 %></td>
+    23|             <td><%= enter.name %></td>
+
+enters is not defined
+    at eval (eval at compile (D:\SchoolTest\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:54:8)
+    at returnedFn (D:\SchoolTest\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (D:\SchoolTest\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (D:\SchoolTest\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (D:\SchoolTest\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (D:\SchoolTest\node_modules\express\lib\response.js:801:7)
+    at D:\SchoolTest\routes\index.js:204:17
+    at D:\SchoolTest\models\activity.js:136:17
+    at handleCallback (D:\SchoolTest\node_modules\mongodb\lib\utils.js:96:12)
+    at D:\SchoolTest\node_modules\mongodb\lib\collection.js:1322:5

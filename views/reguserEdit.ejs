@@ -1,0 +1,254 @@
+<%- include header %>
+
+<script type="text/javascript" language="javascript">
+    $(document).ready(function () {
+        $("#undergraduate-div").hide();
+        $("#master-div").hide();
+        $("#doctor-div").hide();
+        $("#postdoctor-div").hide();
+        $("#checkbox-undergraduate").change(function () {
+            // alert("undergraduate");
+            $("#undergraduate-div").toggle(200);
+        });
+        $("#checkbox-master").change(function () {
+            // alert("undergraduate");
+            $("#master-div").toggle(200);
+        });
+        $("#checkbox-doctor").change(function () {
+            // alert("undergraduate");
+            $("#doctor-div").toggle(200);
+        });
+        $("#checkbox-postdoctor").change(function () {
+            // alert("undergraduate");
+            $("#postdoctor-div").toggle(200);
+        });
+
+        if("male" == '<%= user.sex %>'){
+            $("#male").attr("checked",true);
+        }
+        else
+            $("#female").attr("checked",true);
+        var sum = '<%= sum %>';
+        var exp ;
+        if(sum >= 1){
+            exp =['<%= exp1.experience %>','<%= exp1.major %>','<%= exp1.date %>','<%= exp1.class %>','<%= exp1.studentId %>'];
+            $("#checkbox-"+exp[0]).attr("checked",true);
+            var expdiv = $("#"+exp[0]+"-div");
+            expdiv.show();
+            expdiv.find(".major").val(exp[1]);
+            expdiv.find(".date").val(exp[2]);
+            expdiv.find(".class").val(exp[3]);
+            expdiv.find(".studentID").val(exp[4]);
+        }
+        if(sum >= 2){
+            exp =['<%= exp2.experience %>','<%= exp2.major %>','<%= exp2.date %>','<%= exp2.class %>','<%= exp2.studentId %>'];
+            $("#checkbox-"+exp[0]).attr("checked",true);
+            var expdiv = $("#"+exp[0]+"-div");
+            expdiv.show();
+            expdiv.find(".major").val(exp[1]);
+            expdiv.find(".date").val(exp[2]);
+            expdiv.find(".class").val(exp[3]);
+            expdiv.find(".studentID").val(exp[4]);
+        }
+        if(sum >= 3){
+            exp =['<%= exp3.experience %>','<%= exp3.major %>','<%= exp3.date %>','<%= exp3.class %>','<%= exp3.studentId %>'];
+            $("#checkbox-"+exp[0]).attr("checked",true);
+            var expdiv = $("#"+exp[0]+"-div");
+            expdiv.show();
+            expdiv.find(".major").val(exp[1]);
+            expdiv.find(".date").val(exp[2]);
+            expdiv.find(".class").val(exp[3]);
+            expdiv.find(".studentID").val(exp[4]);
+        }
+        if(sum >= 4){
+            exp =['<%= exp4.experience %>','<%= exp4.major %>','<%= exp4.date %>','<%= exp4.class %>','<%= exp4.studentId %>'];
+            $("#checkbox-"+exp[0]).attr("checked",true);
+            var expdiv = $("#"+exp[0]+"-div");
+            expdiv.show();
+            expdiv.find(".major").val(exp[1]);
+            expdiv.find(".date").val(exp[2]);
+            expdiv.find(".class").val(exp[3]);
+            expdiv.find(".studentID").val(exp[4]);
+        }
+    });
+    $(function () {
+        $("#regSubmit").click(function() {
+            var result;
+            var data = $("input:text[name='name']").val();
+
+            if(data == ""){
+                alert("姓名为必填项");
+                return false;
+            }
+            result += "/name :"+data;
+            data = $('input:radio[name="sex"]:checked').val();
+            if(data == null){
+                alert("性别为必选项");
+                return false;
+            }
+            result += "/sex :"+data;
+            //check复选框
+            if($('input[name="experience"]:checked').length == 0){
+                alert("在校经历为必选项");
+                return false;
+            }
+            $('input[name="experience"]:checked').each(function(){
+                var val = $(this).val();
+                result += "/experience :"
+                for(var i = 0;i<3;i++){
+                    data = $("#"+val+"-div").find("input").eq(i).val();
+                    if(data == ""){
+                        alert(val+":"+i+" is null");
+                        return false;
+                    }
+                    result += data + ":";
+                }
+            });
+            //check country;
+            data = $("input:text[name='country']").val();
+            if(data == ""){
+                alert("所在国家为必填项");
+                return false;
+            }
+            data = $("input:text[name='city']").val();
+            if(data == ""){
+                alert("所在城市为必填项");
+                return false;
+            }
+            data = $("input:text[name='company']").val();
+            if(data == ""){
+                alert("工作单位为必填项");
+                return false;
+            }
+            //check position
+            data = $("input:text[name='position']").val();
+
+            if(data == ""){
+                alert("职位为必填项");
+                return false;
+            }
+
+            //check telephone
+            data = $("input:text[name='telephone']").val();
+           // alert(data);
+            var mobilevalid = /^1[3458]\d{9}$/;
+            if (!mobilevalid.test(data)) {
+                alert('请输入正确的手机号码！');
+                //  $(obj).val("");
+                return false;
+            }
+
+            //check password
+            data = $("input:password[name='password']").val();
+            if(data == "" ){
+                alert("请输入密码");
+                return false;
+            }
+            else if(data != $("input:password[name='password-repeat']").val()){
+                alert("两次密码不一致");
+                return false;
+            }
+
+            $('input[name="experience"]:checked').each(function(){
+                var val = $(this).val();
+                result += val;
+            });
+        });
+
+    });
+</script>
+<form method="post">
+    <div style="width:50%;position: relative;left:20%;top: 1em;">
+        <div class="form-group">
+            <label>姓名<span class="necessary"> *</span>：</label>
+            <input type="text" class="form-control" name="name" id="name" disabled="disabled" value="<%=user.name%>"/>
+        </div>
+        <div class="form-group">
+            <label>性别<span class="necessary"> *</span>：</label><br />
+            <label><input name="sex"  id="male" type="radio" disabled="disabled" value="male" />男 </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label><input name="sex"  id="female" type="radio" disabled="disabled" value="female" />女 </label>
+        </div>
+        <div class="form-group">
+            <label>在校经历<span class="necessary"> *</span>：</label>
+            <div >
+                <label><input id="checkbox-undergraduate" name="experience" disabled="disabled" type="checkbox" value="undergraduate" />本科 </label>
+                <div id = "undergraduate-div" class="checkbox-edu" >
+                    <span><label>专业<span class="necessary"> *</span>：</label><input type="text" class="form-control major"  name="underMajor" disabled="disabled"/> </span>
+                    <span><label>入学年份<span class="necessary"> *</span>：</label><input type="date" class="form-control date" name="underDate" disabled="disabled"/> </span>
+                    <span><label>班级<span class="necessary"> *</span>：</label><input type="text" class="form-control class" name="underClass" disabled="disabled"/> </span>
+                    <span><label>学号：</label><input type="text" class="form-control studentID" name="underStudentID" disabled="disabled"/> </span>
+                </div>
+            </div>
+            <div >
+                <label><input id="checkbox-master" name="experience" type="checkbox" disabled="disabled" value="master" />硕士 </label>
+                <div id="master-div" class="checkbox-edu">
+                    <span><label>专业<span class="necessary"> *</span>：</label><input type="text" class="form-control major"  name="masterMajor" disabled="disabled"/> </span>
+                    <span><label>入学年份<span class="necessary"> *</span>：</label><input type="date" class="form-control date" name="masterDate" disabled="disabled"/> </span>
+                    <span><label>班级<span class="necessary"> *</span>：</label><input type="text" class="form-control class" name="masterClass" disabled="disabled"/> </span>
+                    <span><label>学号：</label><input type="text" class="form-control" name="masterStudentID studentID" disabled="disabled"/> </span>
+                </div>
+
+            </div>
+            <div >
+                <label><input id="checkbox-doctor" name="experience" type="checkbox" disabled="disabled" value="doctor" />博士 </label>
+                <div id="doctor-div" class="checkbox-edu">
+                    <span><label>专业<span class="necessary"> *</span>：</label><input type="text" class="form-control major"  name="doctorMajor" disabled="disabled"/> </span>
+                    <span><label>入学年份<span class="necessary"> *</span>：</label><input type="date" class="form-control date" name="doctorDate" disabled="disabled"/> </span>
+                    <span><label>班级<span class="necessary"> *</span>：</label><input type="text" class="form-control class" name="doctorClass" disabled="disabled"/> </span>
+                    <span><label>学号：</label><input type="text" class="form-control" name="doctorStudentID studentID" disabled="disabled"/> </span>
+                </div>
+
+            </div>
+            <div >
+                <label><input id="checkbox-postdoctor" name="experience" type="checkbox" disabled="disabled" value="postdoctor" />博士后 </label>
+                <div id="postdoctor-div" class="checkbox-edu">
+                    <span><label>专业<span class="necessary"> *</span>：</label><input type="text" class="form-control major"  name="postMajor" disabled="disabled"/> </span>
+                    <span><label>入学年份<span class="necessary"> *</span>：</label><input type="date" class="form-control date" name="postDate" disabled="disabled"/> </span>
+                    <span><label>班级<span class="necessary"> *</span>：</label><input type="text" class="form-control class" name="postClass" disabled="disabled"/> </span>
+                    <span><label>学号：</label><input type="text" class="form-control" name="postStudentID studentID" disabled="disabled"/> </span>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label>所在国家<span class="necessary"> *</span>：</label>
+            <input type="text" class="form-control" name="country" placeholder="请输入国家" value="<%= user.country%>"/>
+        </div>
+        <div class="form-group">
+            <label>城市<span class="necessary"> *</span>：</label>
+            <input type="text" class="form-control" name="city" placeholder="请输入城市" value="<%= user.city%>"/>
+        </div>
+        <div class="form-group">
+            <label>工作单位<span class="necessary"> *</span>：</label>
+            <input type="text" class="form-control" name="company" placeholder="请输入工作单位" value="<%= user.company%>"/>
+        </div>
+        <div class="form-group">
+            <label>职位<span class="necessary"> *</span>：</label>
+            <input type="text" class="form-control" name="position" placeholder="请输入职位" value="<%= user.position%>"/>
+        </div>
+        <div class="form-group">
+            <label>手机<span class="necessary"> *</span>：</label>
+            <input type="text" class="form-control" name="telephone" placeholder="请输入手机" value="<%= user.telephone%>"/>
+        </div>
+
+        <div class="form-group">
+            <label>所属地方校友会：</label>
+            <input type="text" class="form-control" name="xiaoHui" placeholder="请输入校友会（选填）" value="<%= user.xiaoHui%>"/>
+        </div>
+        <div class="form-group">
+            <label>校友会职务：</label>
+            <input type="text" class="form-control" name="xPosition" placeholder="请输入校友会职务（选填）" value="<%= user.xPosition%>"/>
+        </div>
+        <br/>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <span>
+                       <input class="btn btn-primary"  type="button" onclick="window.history.go(-1);" value="返回" />
+                </span>
+                <button type="submit" class="btn btn-success" id="regSubmit">提交</button>
+            </div>
+        </div>
+        <br/><br/><br/><br/><br/>
+    </div>
+
+</form>
+<%- include footer %>

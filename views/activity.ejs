@@ -4,6 +4,9 @@
         if('<%= isEnter %>' == 'true'){
             $("#enterButton").attr('disabled',true);
         }
+        if('<%= isEnter%>' != 'true' || '<%= isSign%>' == 'true'){
+            $("#signButton").attr('disabled',true);
+        }
         $("#signConfirm").click(function() {
             if($('#signCode').val() == ''){
                 alert('签到码不能为空');
@@ -18,8 +21,8 @@
     <% if (user && (user.email == "admin")) { %>
     <span><a class="btn btn-info" href="/activity/<%= activity.postTime.minute %>/<%= activity.title %>/edit">编辑</a></span>
     <span><button class="btn btn-danger" data-toggle="modal" data-target="#remove">删除</button></span>
-    <span><button class="btn btn-success" href="/activity/<%= activity.postTime.minute %>/<%= activity.title %>/enterState">报名状态</button></span>
-    <span><button class="btn btn-success" href="/activity/<%= activity.postTime.minute %>/<%= activity.title %>/signState">签到状态</button></span>
+    <span><a class="btn btn-success" href="/activity/<%= activity.postTime.minute %>/<%= activity.title %>/enterState">报名状态</a></span>
+    <span><a class="btn btn-success" href="/activity/<%= activity.postTime.minute %>/<%= activity.title %>/signState">签到状态</a></span>
     <% } %>
 </p>
 <div class="panel panel-info">

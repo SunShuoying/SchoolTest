@@ -15,7 +15,12 @@
         </p>
         <p><%- activitie.content %></p>
         <div class="panel-footer">
+            <%if(user && user.email == 'admin') {%>
+            <a class="btn btn-success" href="/activity/<%= activitie.postTime.minute %>/<%= activitie.title %>">查看详情</a>
+            <% }else {%>
             <a class="btn btn-success" href="/activity/<%= activitie.postTime.minute %>/<%= activitie.title %>">进入报名页面</a>
+            <% }%>
+
             <span>已有<%=activitie.enters.length %>人报名</span>
         </div>
     </div>
