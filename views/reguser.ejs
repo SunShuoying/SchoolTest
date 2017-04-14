@@ -1,0 +1,122 @@
+
+<%- include header %>
+<div style="width:90%;position: relative;left:5%;top: 1em;">
+    <p>
+        <span><input class="btn btn-primary"  type="button" onclick="window.history.go(-1);" value="返回" /></span>
+        <span><button class="btn btn-success" data-toggle="modal" data-target="#add">添加</button></span>
+        <span><a class="btn btn-info" href="/reg/<%=regUser.email %>/edit">编辑</a></span>
+        <span><button class="btn btn-danger" data-toggle="modal" data-target="#remove">删除</button></span>
+    </p>
+
+    <table class="table table-bordered table-striped table-condensed">
+        <thead>
+        <tr>
+            <th width="20%">信息项</th>
+            <th>信息值</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>姓名<span class="necessary"> *</span></td>
+            <td class="td-value"><%= regUser.name %></td>
+
+        </tr>
+        <tr>
+            <td>性别<span class="necessary"> *</span></td>
+            <td class="td-value"><%= regUser.sex %></td>
+        </tr>
+
+        <%  regUser.experience.forEach(function (experience, index) { %>
+        <% var translate = {"undergraduate":"本科","master":"硕士","doctor":"博士","postdoctor":"博士后"}%>
+        <% if (experience) { %>
+        <tr>
+            <td><%= translate[experience.experience] %><span class="necessary"> *</span></td>
+            <td class="td-value">
+                <%= experience.major %>&nbsp;&nbsp;&nbsp;<span style="color: darkorange">|</span>&nbsp;&nbsp;&nbsp;
+                <%= experience.date %>&nbsp;&nbsp;&nbsp;<span style="color: darkorange">|</span>&nbsp;&nbsp;&nbsp;
+                <%= experience.class %>&nbsp;&nbsp;&nbsp;<span style="color: darkorange">|</span>&nbsp;&nbsp;&nbsp;
+                <%= experience.studentId %>
+            </td>
+        </tr>
+        <% } %>
+        <% });%>
+
+        <tr>
+            <td>所在国家<span class="necessary"> *</span></td>
+            <td class="td-value"><%= regUser.country %></td>
+        </tr>
+        <tr>
+            <td>城市<span class="necessary"> *</span></td>
+            <td class="td-value"><%= regUser.city %></td>
+        </tr>
+        <tr>
+            <td>工作单位<span class="necessary"> *</span></td>
+            <td class="td-value"><%= regUser.company %></td>
+        </tr>
+        <tr>
+            <td>职位<span class="necessary"> *</span></td>
+            <td class="td-value"><%= regUser.position %></td>
+        </tr>
+        <tr>
+            <td>手机<span class="necessary"> *</span></td>
+            <td class="td-value"><%= regUser.telephone %></td>
+        </tr>
+        <tr>
+            <td>邮箱<span class="necessary"> *</span></td>
+            <td class="td-value"><%= regUser.email %></td>
+        </tr>
+        <tr>
+            <td>所属地方校友会</td>
+            <td class="td-value"><%= regUser.xiaoHui %></td>
+        </tr>
+        <tr>
+            <td>校友会职务</td>
+            <td class="td-value"><%= regUser.xPosition %></td>
+        </tr>
+
+        </tbody>
+    </table>
+
+    <!-- add（Modal） -->
+    <div class="modal fade" id="add" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="addLabel">请确认您的添加！</h4>
+                </div>
+                <div class="modal-body">您将添加
+                    <span class="activity-time">
+                                <%= regUser.name %>
+                            </span>
+                    为正式用户！
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">取消添加</button>
+                    <a class="btn btn-success" href="/regAdd/<%= regUser.email %>">确认添加</a>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal -->
+    </div>
+
+    <div class="modal fade" id="remove" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="removeLabel">请确认您的添加！</h4>
+                </div>
+                <div class="modal-body">您将删除
+                    <span class="activity-time">
+                                <%= regUser.name %>
+                            </span>
+                    用户！
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">取消删除</button>
+                    <a class="btn btn-danger" href="/regRemove/<%= regUser.email %>">确认删除</a>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal -->
+</div>
+<%- include footer %>

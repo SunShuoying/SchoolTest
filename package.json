@@ -3,17 +3,21 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-  "start": "node app.js"
+    "start": "node app.js"
   },
   "dependencies": {
-    "express": "3.4.4",
+    "async": "*",
+    "connect-flash": "*",
+    "connect-mongo": "*",
     "ejs": "*",
-	"mongodb": "*",
-	"connect-mongo": "*",
-     "markdown":"*",
-      "connect-flash": "*",
-      "express3-handlebars": "*",
-      "async": "*"
-
+    "express": "3.4.4",
+    "express3-handlebars": "*",
+    "http-server": "^0.9.0",
+    "karma": "^1.5.0",
+    "markdown": "*",
+    "mongodb": "*"
+  },
+  "devDependencies": {
+    "http-server": "^0.9.0"
   }
 }

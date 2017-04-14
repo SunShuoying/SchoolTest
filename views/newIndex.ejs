@@ -1,0 +1,34 @@
+<%- include header %>
+<% activities.forEach(function (activitie, index) { %>
+<div class="panel panel-info">
+    <div class="panel-heading act-title-div">
+        <h2 class="act-title"><%= activitie.title %></h2>
+    </div>
+    <div class="panel-body">
+        <p class="info">
+            活动日期：<span style="color: #0275d8"><%= activitie.actTime %></span> |
+            标签：<% activitie.tags.forEach(function (tag, index) { %>
+            <% if (tag) { %>
+            <a class="btn btn-info btn-sm tag" href="/tags/<%= tag %>"><%= tag %></a>
+            <% } %>
+            <% }) %>
+        </p>
+        <p><%- activitie.content %></p>
+        <div class="panel-footer">
+            <%if(user && user.email == 'admin') {%>
+            <a class="btn btn-success" href="/activity/<%= activitie.postTime.minute %>/<%= activitie.title %>">查看详情</a>
+            <% }else {%>
+            <a class="btn btn-success" href="/activity/<%= activitie.postTime.minute %>/<%= activitie.title %>">进入报名页面</a>
+            <% }%>
+
+            <span>已有<%=activitie.enters.length %>人报名</span>
+        </div>
+    </div>
+</div>
+    <p><h3></h3>
+
+
+
+<% }) %>
+<%- include paging %>
+<%- include footer %>

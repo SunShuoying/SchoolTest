@@ -10,16 +10,14 @@ var  crypto = require('crypto'),
      fs = require('fs'),
      User = require('../models/user.js'),
      Post = require('../models/post.js'),
-    Comment = require('../models/comment.js');
+     RegUser = require('../models/regUser.js'),
+     FormalUser = require('../models/formalUser.js'),
+       Activity = require('../models/activity.js'),
+     Comment = require('../models/comment.js');
 var exphbs = require('express3-handlebars');
 var querystring = require('querystring');
 var http = require('http');
 
-var url;
-var sigt;
-var sigu;
-var cookies = '';
-var cookie = '';
 
 module.exports=function(app) {
     /*app.get('/',function (req,res){
@@ -31,23 +29,24 @@ module.exports=function(app) {
         //判断是否是第一页，并把请求的页数转换成number类型
         var page = req.query.p?parseInt(req.query.p):1;
         //查询并返回第page页的10篇文章
-        Post.getTen(null, page ,function (err, posts, total) {
+        Activity.getTen( page ,function (err, activities, total) {
             if (err) {
-                posts = [];
+                activities = [];
             }
 
-            res.render('index', {
-                title: '主页',
-                posts: posts,
+            res.render('newIndex', {
+                title: 'new主页',
+                activities: activities,
                 page :page,
                 isFirstPage:(page-1)==0,
-                isLastPage: ((page-1)*10+posts.length)==total,
+                isLastPage: ((page-1)*10+activities.length)==total,
                 user:req.session.user,
                 success: req.flash('success').toString(),
                 error: req.flash('error').toString()
             });
         });
     });
+
     app.get('/reg', checkNotLogin);
     app.get('/reg', function (req, res) {
         res.render('reg', {
@@ -61,38 +60,69 @@ module.exports=function(app) {
 
     app.post('/reg', checkNotLogin);
     app.post('/reg', function (req, res) {
-        var name = req.body.name,
-            password = req.body.password,
-            password_re = req.body['password-repeat'];
-//检验用户两次输入的密码是否一致
-        if (password_re != password) {
-            req.flash('error', '两次输入的密码不一致!');
-            return res.redirect('/reg');//返回注册页
+        for(var i in req.body){
+            console.log(i+":"+req.body[i]);
         }
-//生成密码的 md5 值
+        console.log(req.body.experience[0]+":"+typeof req.body.experience);
         var md5 = crypto.createHash('md5'),
             password = md5.update(req.body.password).digest('hex');
-        var newUser = new User({
+        var newRegUser = new RegUser({
             name: req.body.name,
-
+            sex: req.body.sex,
+            experience:req.body.experience,
+            underMajor:req.body.underMajor,
+            underDate:req.body.underDate,
+            underClass:req.body.underClass,
+            underStudentID:req.body.underStudentID,
+            masterMajor:req.body.masterMajor,
+            masterDate:req.body.masterDate,
+            masterClass:req.body.masterClass,
+            masterStudentID:req.body.masterStudentID,
+            doctorMajor:req.body.doctorMajor,
+            doctorDate:req.body.doctorDate,
+            doctorClass:req.body.doctorClass,
+            doctorStudentID:req.body.doctorStudentID,
+            postMajor:req.body.postMajor,
+            postDate:req.body.postDate,
+            postClass:req.body.postClass,
+            postStudentID:req.body.postStudentID,
+            country: req.body.country,
+            city: req.body.city,
+            company: req.body.company,
+            position: req.body.position,
+            telephone: req.body.telephone,
+            xiaoHui: req.body.xiaoHui,
+            xPosition: req.body.xPosition,
             password: password,
             email: req.body.email
         });
-//检查用户名是否已经存在
-        User.get(newUser.name, function (err, user) {
+        console.log("get");
+        FormalUser.get(newRegUser.email,function (err,user) {
             if (user) {
-                req.flash('error', '用户已存在!');
+                req.flash('error', '此邮箱已存在!');
+                console.log("此邮箱已存在");
                 return res.redirect('/reg');//返回注册页
             }
-//如果不存在则新增用户
-            newUser.save(function (err, user) {
-                if (err) {
-                    req.flash('error', err);
-                    return res.redirect('/reg');//注册失败返回主册页
+            RegUser.get(newRegUser.email, function (err, user) {
+                if (user) {
+                    req.flash('error', '此邮箱已申请!');
+                    console.log("此邮箱已申请");
+                    return res.redirect('/reg');//返回注册页
                 }
-                req.session.user = user;//用户信息存入 session
-                req.flash('success', '注册成功!');
-                res.redirect('/');//注册成功后返回主页
+                //如果不存在则新增用户
+
+                //verifyUser(newUser);
+                newRegUser.save(function (err, user) {
+                    if (err) {
+                        req.flash('error', err);
+                        console.log("error");
+                        return res.redirect('/reg');//注册失败返回主册页
+                    }
+                    //req.session.user = user;//用户信息存入 session
+                    req.flash('success', '注册申请成功，等待审核通过短信或者邮箱通知!');
+                    console.log("success");
+                    res.redirect('/');//注册成功后返回主页
+                });
             });
         });
     });
@@ -106,6 +136,152 @@ module.exports=function(app) {
             error: req.flash('error').toString()});
     });
 
+    app.get('/activity/:minute/:title', checkLogin);
+    app.get('/activity/:minute/:title',function (req,res) {
+
+        if(req.session.user){
+            Activity.getOne(req.params.minute,req.params.title,function (err,activity) {
+                if(err){
+                    req.flash('error', '网络错误请重试!');
+                    return res.redirect('back');
+                }
+                var isEnter = 'false';
+                var enters = activity.enters;
+                for(var i = 0;i<enters.length;i++){
+                    if(enters[i].email == req.session.user.email){
+                        isEnter = 'true';
+                        break;
+                    }
+                }
+
+                var isSign = 'false';
+                var signs = activity.signs;
+                for(var i = 0;i<signs.length;i++){
+                    if(signs[i].email == req.session.user.email){
+                        isSign = 'true';
+                        break;
+                    }
+                }
+
+                res.render('activity',{
+                    title:'活动报名/签到页面',
+                    isEnter:isEnter,
+                    isSign : isSign,
+                    activity:activity,
+                    user:req.session.user,
+                    success:req.flash('success').toString(),
+                    error:req.flash('error').toString()
+                })
+            });
+        }
+    });
+
+    //show enters
+    app.get('/activity/:minute/:title/enterState',function (req,res) {
+       Activity.getOne(req.params.minute,req.params.title,function (err,activity) {
+           if(err){
+               req.flash('error','出现异常，请重试！');
+               return res.redirect('back');
+           }
+            res.render('enterState',{
+                title: '发表',
+                enters:activity.enters,
+                user: req.session.user,
+                success: req.flash('success').toString(),
+                error: req.flash('error').toString()
+           });
+       }) ;
+    });
+
+    //show signs
+    app.get('/activity/:minute/:title/signState',function (req,res) {
+        Activity.getOne(req.params.minute,req.params.title,function (err,activity) {
+            if(err){
+                req.flash('error','出现异常，请重试！');
+                return res.redirect('back');
+            }
+
+            res.render('signState',{
+                title: '发表',
+                signs:activity.signs,
+                user: req.session.user,
+                success: req.flash('success').toString(),
+                error: req.flash('error').toString()
+            });
+        }) ;
+    });
+
+    //申请报名
+    app.get('/enter/:minute/:title',function (req,res) {
+        var url = 'back';
+       Activity.getOne(req.params.minute,req.params.title,function (err,activity) {
+         if(err){
+             req.flash('error', '错误请重试!');
+             return res.redirect(url);
+         }
+           var newEdit = {
+             enters:activity.enters
+           };
+         //create update object;
+           var user = req.session.user;
+           var enterUser = {
+               name:user.name,
+               sex:user.sex,
+               experience:user.experience[0],
+               telephone:user.telephone,
+               email:user.email
+           };
+           newEdit.enters.push(enterUser);
+           Activity.update(req.params.minute, req.params.title,newEdit, function (err) {
+               if(err){
+                   req.flash('error', '网络错误请重试!');
+                   return res.redirect(url);
+               }
+               req.flash('success', '报名成功!');
+               res.redirect(url);
+           });
+       });
+    });
+
+    //签到
+    app.post('/activity/:minute/:title',function (req,res) {
+       var signCode = req.body.signCode;
+       var currentUser = req.session.user;
+       console.log(signCode);
+       var url = 'back';
+       Activity.getOne(req.params.minute,req.params.title,function (err,activity) {
+           if(err){
+               req.flash('error','签到未成功，请重试！');
+               return res.redirect(url);
+           }
+
+           if(signCode != activity.signCode){
+               req.flash('error','签到码错误，请检查签到码！');
+               return res.redirect(url);
+           }
+           var newEdit = {
+               signs:activity.signs
+           };
+           //create update object;
+           var user = req.session.user;
+           var signUser = {
+               name:user.name,
+               sex:user.sex,
+               experience:user.experience[0],
+               telephone:user.telephone,
+               email:user.email
+           };
+           newEdit.signs.push(signUser);
+           Activity.update(req.params.minute,req.params.title,newEdit,function (err) {
+               if(err){
+                   req.flash('error','签到未成功，请重试！');
+                   return res.redirect(url);
+               }
+               req.flash('success','签到成功！');
+               res.redirect('back');
+           })
+       });
+    });
 
     app.post('/login', checkNotLogin);
     app.post('/login', function (req, res) {
@@ -113,7 +289,7 @@ module.exports=function(app) {
         var md5 = crypto.createHash('md5'),
             password = md5.update(req.body.password).digest('hex');
 //检查用户是否存在
-        User.get(req.body.name, function (err, user) {
+        FormalUser.get(req.body.email, function (err, user) {
             if (!user) {
                 req.flash('error', '用户不存在!');
                 return res.redirect('/login');//用户不存在则跳转到登录页
@@ -144,14 +320,12 @@ module.exports=function(app) {
     });
 
 
-
-
     app.post('/post', checkLogin);
     app.post('/post', function (req, res) {
         var currentUser = req.session.user,
             tags = [req.body.tag1, req.body.tag2, req.body.tag3],
-            post = new Post(currentUser.name, currentUser.head, req.body.title, tags, req.body.post);
-        post.save(function (err) {
+            newActivity = new Activity(req.body.title,  tags, req.body.content, req.body.actTime,req.body.signCode);
+        newActivity.save(function (err) {
             if (err) {
                 req.flash('error', err);
                 return res.redirect('/');
@@ -161,6 +335,139 @@ module.exports=function(app) {
         });
     });
 
+    app.get('/person',function (req,res) {
+        var currentUser = req.session.user;
+        res.render('person', {
+            title:"个人信息",
+            currentUser:currentUser,
+            user: currentUser,
+            success:req.flash('success').toString(),
+            error:req.flash('error').toString()
+        });
+    });
+
+    app.get('/person/edit',function (req,res) {
+        var user = req.session.user,
+            experienceSum = user.experience.length,
+            exp=[];
+        for(var i = 0;i<experienceSum;i++){
+            exp[i] = user.experience[i];
+        }
+        for(var i = experienceSum;i<4;i++){
+            exp[i] = {
+                experience:"",
+                major:"",
+                date:"",
+                class:"",
+                studentId:""
+            }
+        }
+        console.log(experienceSum);
+        res.render('personEdit', {
+            title: '修改个人信息',
+            sum:experienceSum,
+            exp1:exp[0],
+            exp2:exp[1],
+            exp3:exp[2],
+            exp4:exp[3],
+            user: user,
+            success: req.flash('success').toString(),
+            error: req.flash('error').toString()
+        });
+    });
+
+    app.post('/person/edit',function (req,res) {
+        var currentUser = req.session.user;
+        var newEditUser = {
+            name: req.body.name,
+            sex: req.body.sex,
+            experience:[],
+            country: req.body.country,
+            city: req.body.city,
+            company: req.body.company,
+            position: req.body.position,
+            telephone: req.body.telephone,
+            xiaoHui: req.body.xiaoHui,
+            xPosition: req.body.xPosition,
+        };
+        var exp = ["undergraduate","master","doctor","postdoctor"];
+        var unObj = {
+            experience:"undergraduate",
+            major:req.body.underMajor,
+            date:req.body.underDate,
+            class:req.body.underClass,
+            studentId:req.body.underStudentID
+        };
+        var maObj = {
+            experience:"master",
+            major:req.body.masterMajor,
+            date:req.body.masterDate,
+            class:req.body.masterClass,
+            studentId:req.body.masterStudentID
+        };
+        var doObj = {
+            experience:"doctor",
+            major:req.body.doctorMajor,
+            date:req.body.doctorDate,
+            class:req.body.doctorClass,
+            studentId:req.body.doctorStudentID
+        };
+        var poObj = {
+            experience:"postdoctor",
+            major:req.body.postMajor,
+            date:req.body.postDate,
+            class:req.body.postClass,
+            studentId:req.body.postStudentID
+        };
+        var ar = [unObj,maObj,doObj,poObj];
+
+        for(var i = 0;i<4;i++){
+            if(req.body.experience.indexOf(exp[i]) != -1){
+                newEditUser.experience.push(ar[i]);
+            }
+        }
+        for(var i in currentUser){
+            if(newEditUser[i] == currentUser[i]){
+                delete newEditUser[i];
+                //console.log(i+"new:"+newEditUser[i]+"user:"+currentUser[i]);
+            }
+            if(i == "experience" && newEditUser[i].toString() == currentUser[i].toString()){
+                delete newEditUser[i];
+            }
+            if(i == "activities" && newEditUser[i].toString() == currentUser[i].toString()){
+                delete newEditUser[i];
+            }
+
+        }
+        var isEmpty = true;
+        for(var i in newEditUser){
+            isEmpty = false;
+            console.log(i+":"+newEditUser[i]);
+        }
+        if(newEditUser == false){
+            FormalUser.update(currentUser.email,newEditUser,function (err) {
+                if(err){
+                    req.flash('error', err);
+                    return res.redirect('/person/edit');//出错，返回
+                }
+                FormalUser.get(currentUser.email,function (err,user) {
+                    if(err){
+                        req.flash('error', err);
+                        return res.redirect('/person/edit');
+                    }
+                    req.session.user = user;
+                    req.flash('success', '修改成功！');
+                    res.redirect('/person');
+                });
+            });
+        }
+        else {
+            req.flash('success', '修改成功！');
+            res.redirect('/person');
+        }
+
+
+    });
 
     app.get('/logout', checkLogin);
     app.get('/logout', function (req, res) {
@@ -208,7 +515,7 @@ module.exports=function(app) {
                 return res.redirect('/');
             }
             res.render('archive', {
-                title:'存档',
+                title:'存档查看',
                 posts: posts,
                 user: req.session.user,
                 success: req.flash('success').toString(),
@@ -225,6 +532,32 @@ module.exports=function(app) {
         });
     });
 
+    app.get('/verify', function (req, res) {
+        //判断是否是第一页，并把请求的页数转换成number类型
+        console.log("verify");
+        var page = req.query.p?parseInt(req.query.p):1;
+        //查询并返回第page页的10篇文章
+        console.log("page"+page);
+        RegUser.getTen( page ,function (err, regUsers, total) {
+            if (err) {
+                posts = [];
+                console.log("error");
+            }
+          //console.log("enter");
+            console.log("regUser"+typeof regUsers);
+            res.render('verify', {
+                title: '验证用户',
+                regUsers: regUsers,
+                page :page,
+                isFirstPage:(page-1)==0,
+                isLastPage: ((page-1)*10+regUsers.length)==total,
+                user: req.session.user,
+                success: req.flash('success').toString(),
+                error: req.flash('error').toString(),
+
+            });
+        });
+    });
 
     app.get('/tags', function (req, res) {
         Post.getTags(function (err, posts) {
@@ -258,19 +591,6 @@ module.exports=function(app) {
             });
         });
     });
-
-
-
-    app.get('/links', function (req, res) {
-        res.render('links', {
-            title:'友情链接',
-            user:req.session.user,
-            success: req.flash('success').toString(),
-            error: req.flash('error').toString()
-        });
-    });
-
-
 
     app.get('/search', function (req, res) {
         Post.search(req.query.keyword, function (err, posts) {
@@ -338,6 +658,159 @@ module.exports=function(app) {
         });
     });
 
+    app.get('/reg/:email', function (req, res) {
+        RegUser.get(req.params.email, function (err, regUser) {
+            if (err) {
+                req.flash('error', err);
+                return res.redirect('/');
+            }
+            res.render('reguser', {
+                title:req.params.email,
+                regUser:regUser,
+                user: req.session.user,
+                success:req.flash('success').toString(),
+                error:req.flash('error').toString()
+            });
+        });
+    });
+
+    app.get('/reg/:email/edit',function (req,res) {
+        RegUser.get(req.params.email,function (err,regUser) {
+            if(err){
+                req.flash('error',err);
+                return res.redirect('back');
+            }
+            var user = regUser,
+                experienceSum = user.experience.length,
+                exp=[];
+            for(var i = 0;i<experienceSum;i++){
+                exp[i] = user.experience[i];
+            }
+            for(var i = experienceSum;i<4;i++){
+                exp[i] = {
+                    experience:"",
+                    major:"",
+                    date:"",
+                    class:"",
+                    studentId:""
+                }
+            }
+            res.render('reguseredit',{
+                title:'修改用户信息',
+                regUser:regUser,
+                sum:experienceSum,
+                exp1:exp[0],
+                exp2:exp[1],
+                exp3:exp[2],
+                exp4:exp[3],
+                user: req.session.user,
+                success:req.flash('success').toString(),
+                error:req.flash('error').toString()
+            });
+        })
+    });
+
+    app.post('/reg/:email/edit',function (req,res) {
+        var url = '/reg/'+req.params.email+'/edit';
+        RegUser.get(req.params.email,function (err,regUser) {
+            if(err){
+                req.flash('error',err);
+
+                return res.redirect(url);
+            }
+            var currentUser = regUser;
+            var newEditUser = {
+                name: req.body.name,
+                sex: req.body.sex,
+                experience:[],
+                country: req.body.country,
+                city: req.body.city,
+                company: req.body.company,
+                position: req.body.position,
+                telephone: req.body.telephone,
+                xiaoHui: req.body.xiaoHui,
+                xPosition: req.body.xPosition,
+            };
+            var exp = ["undergraduate","master","doctor","postdoctor"];
+            var unObj = {
+                experience:"undergraduate",
+                major:req.body.underMajor,
+                date:req.body.underDate,
+                class:req.body.underClass,
+                studentId:req.body.underStudentID
+            };
+            var maObj = {
+                experience:"master",
+                major:req.body.masterMajor,
+                date:req.body.masterDate,
+                class:req.body.masterClass,
+                studentId:req.body.masterStudentID
+            };
+            var doObj = {
+                experience:"doctor",
+                major:req.body.doctorMajor,
+                date:req.body.doctorDate,
+                class:req.body.doctorClass,
+                studentId:req.body.doctorStudentID
+            };
+            var poObj = {
+                experience:"postdoctor",
+                major:req.body.postMajor,
+                date:req.body.postDate,
+                class:req.body.postClass,
+                studentId:req.body.postStudentID
+            };
+            var ar = [unObj,maObj,doObj,poObj];
+
+            for(var i = 0;i<4;i++){
+                if(req.body.experience.indexOf(exp[i]) != -1){
+                    newEditUser.experience.push(ar[i]);
+                }
+            }
+            for(var i in currentUser){
+                if(newEditUser[i] == currentUser[i]){
+                    delete newEditUser[i];
+                    //console.log(i+"new:"+newEditUser[i]+"user:"+currentUser[i]);
+                }
+                if(i == "experience" && newEditUser[i].length == currentUser[i].length ){
+                    var isChange = false;
+                    for(var j = 0;j<newEditUser[i].length;j++){
+                        for(var k in newEditUser[i][j]){
+                            if(newEditUser[i][j][k] != currentUser[i][j][k]){
+                                isChange = true;
+                                j=4;
+                                break;
+                            }
+                        }
+                    }
+                    if(!isChange){
+                        delete newEditUser[i];
+                    }
+                }
+            }
+            var isEmpty = true;
+            for(var i in newEditUser){
+                isEmpty = false;
+                console.log(i+":"+newEditUser[i]);
+            }
+            if(isEmpty == false){
+                RegUser.update(req.params.email,newEditUser,function (err) {
+                    if(err){
+                        req.flash('error',err);
+                        console.log(err);
+                        return res.redirect(url);
+                    }
+                    req.flash('success','修改成功！');
+                    res.redirect('/reg/'+req.params.email);
+                });
+            }
+            else {
+                req.flash('success','您未作修改！');
+                res.redirect('/reg/'+req.params.email);
+            }
+
+        });
+    });
 
     app.post('/u/:name/:day/:title', function (req, res) {
         var date = new Date(),
@@ -382,6 +855,71 @@ module.exports=function(app) {
         });
     });
 
+    app.get('/activity/:minute/:title/edit',function (req,res) {
+       Activity.edit(req.params.minute,req.params.title,function (err,activity) {
+           if(err){
+               req.flash('error', err);
+               return res.redirect('back');
+           }
+           res.render('activityEdit',{
+               title:"活动修改",
+               activity:activity,
+               user:req.session.user,
+               success: req.flash('success').toString(),
+               error: req.flash('error').toString()
+           })
+       });
+    });
+
+
+    app.get('/regRemove/:email',function (req,res) {
+        RegUser.remove(req.params.email,function (err) {
+            if (err) {
+                req.flash('error',err);
+                return res.redirect('back');
+            }
+            req.flash('success','删除成功！');
+            res.redirect('/verify');
+        });
+    });
+
+    app.get('/activityRemove/:minute/:title',function (req,res) {
+       Activity.remove(req.params.minute,req.params.title,function (err) {
+           if(err){
+               req.flash('error',err);
+               return res.redirect('back');
+           }
+           req.flash('success','删除成功！');
+           res.redirect('/');
+       }) ;
+    });
+
+    app.get('/regAdd/:email',function (req,res) {
+        RegUser.get(req.params.email,function (err,user) {
+            if (err) {
+                req.flash('error',err);
+                return res.redirect('back');
+            }
+            var newFormalUser = new FormalUser(user);
+
+            newFormalUser.save(function (err, user) {
+                if (err) {
+                    req.flash('error', err);
+                    console.log("error");
+                    return res.redirect('/reg');//注册失败返回主册页
+                }
+                RegUser.remove(req.params.email,function (err) {
+                    if (err) {
+                        req.flash('error',err);
+                        return res.redirect('back');
+                    }
+                    req.flash('success','添加成功！');
+                    res.redirect('/verify');
+                });
+
+            });
+        });
+    });
 
     app.post('/edit/:name/:day/:title',checkLogin);
     app.post('/edit/:name/:day/:title',function (req, res) {
@@ -398,6 +936,23 @@ module.exports=function(app) {
         });
     });
 
+    app.post('/activity/:minute/:title/edit',function (req,res) {
+        var newEdit = {
+            signCode:req.body.signCode,
+            actTime:req.body.actTime,
+            content:req.body.content
+        };
+        var url = 'back';
+        console.log(url);
+       Activity.update(req.params.minute,req.params.title,newEdit,function (err) {
+            if(err){
+                req.flash('error', "修改失败！");
+                return res.redirect(url);
+            }
+           req.flash('success', "修改成功！");
+           res.redirect('../');
+       });
+    });
 
     app.get('/remove/:name/:day/:title', checkLogin);
     app.get('/remove/:name/:day/:title', function (req, res) {
@@ -413,196 +968,6 @@ module.exports=function(app) {
     });
 
 
-    app.get('/chats',function (req, res1) {
-        var header={};
-        var filedata = '';
-
-        var options1 = {
-            hostname: 'wpa.qq.com',
-            port: 80,
-            path:'/msgrd?v=3&uin=2472740498&site=qq&menu=yes',
-            method: 'GET',
-            rejectUnauthorized:false,
-            headers: {
-                'Content-Type': 'application/x-www-form-urlencoded',
-                'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.71 Safari/537.36',
-                'Connection': 'keep-alive'
-            }
-        };
-        var req1 = http.request(options1, function(res) {
-            console.log('STATUS: ' + res.statusCode);
-            header=JSON.stringify(res.headers);
-            res.setEncoding('utf8');
-            res.on('data', function (chunk) {
-                filedata += chunk;
-            });
-            res.on('end',function() {
-                console.log('No more data in response.');
-                var reg = /tencentSeries\s*=\s*("|')([^"]+?)\1/g;
-                var tencentSeries = reg.exec(filedata)[2];
-                console.log(tencentSeries);
-                sigt = tencentSeries.replace(/^\S+sigT=/g, "").replace(/&\S+$/g, "");
-                var str = sigt.substr(0, sigt.indexOf('s'));
-                sigt = str.substring(0,str.length - 6);
-                sigu = tencentSeries.replace(/^\S+sigU=/g, "").replace(/&\S+$/g, "");
-                console.log("sigt:"+sigt);
-                console.log("sigu:"+sigu);
-                url="/widget/wpa/chat.html?tuin=2472740498&sigT="+sigt+"&sigU="+sigu;
-                res1.redirect('/chats2');
-               // res1.redirect('http://connect.qq.com/widget/wpa/chat.html?tuin=2472740498&sigT='+sigt+"&sigU="+sigu);
-                //var data0='';
-               /* fs.writeFile('e:/blog/views/qq.html', data0, function (err) {
-                    if (!err) {
-                        console.log('Wrote data0 to qq.ejs');
-                    } else {
-                        throw err;
-                    }
-                });
-*/
-            });
-        });
-
-        req1.on('error', function(e) {
-            console.log('problem with request: ' + e.message);
-        });
-//        req1.write({});
-        req1.end();
-
-    });
-
-    app.get('/chats2',function (req, res1) {
-        var header = {};
-
-        //    var sigt='1fbc805af2d1d88f764e707955d921a25bcd35c6ed4bedcb2ed5c0bed140e4bf0790bd3b5fd2156cd8359c71c6119397';
-        //   var sigu='2613fc2c0ef7457f3a1d8f588ec0aa8e283550b0e8677aba9840ded3c6e4671ffc03fad25ca4c4dd';
-        var user = querystring.stringify({
-            'u': '2183573656',
-            'p': '18232577982'
-
-        });
-
-        var options1 = {
-            hostname: 'ui.ptlogin2.qq.com',
-            port: 80,
-            path: '/cgi-bin/login?appid=716027604&style=12&dummy=1&s_url=http%3A%2F%2Fconnect.qq.com%2Fwidget%2Fwpa%2Fchat.html%3Ftuin%3D2472740498%26sigT%3D' + sigt + '%26sigU%3D' + sigu,
-            method: 'GET',
-            rejectUnauthorized: false,
-            headers: {
-                'Content-Type': 'application/x-www-form-urlencoded',
-                'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.71 Safari/537.36',
-                'Connection': 'keep-alive',
-                //'Cookie': cookie,
-                'Content-Length': user.length
-            }
-        };
-
-        var req1 = http.request(options1, function (res) {
-            console.log('STATUS: ' + res.statusCode);
-            header = JSON.stringify(res.headers);
-            console.log('HEADERS: ' + header);
-//console.log('WEBFORMS: ' + JSON.stringify(res.WebForms));
-            cookie = (JSON.parse(header)['set-cookie']);
-            console.log(cookie);
-            console.log('-------------------------------');
-            for (x in cookie) {
-                cookies += (cookie[x]).split(";")[0] + '; ';
-                //console.log(cookies);
-                //cookies=cookie[0]
-            }
-            cookies = cookies.substring(0, cookies.length - 2);
-            console.log(cookies);
-            res.setEncoding('utf8');
-            res.on('data', function (chunk) {
-                console.log('BODY:' + chunk);
-              /*  fs.appendFile('file.js', chunk, function (err) {
-
-                    if (!err) {
-                        console.log('Wrote data to file.txt');
-                    } else {
-                        throw err;
-                    }
-                });*/
-
-
-            });
-            res.on('end', function () {
-                console.log('No more data in response.');
-                res1.redirect('/chats3');
-            })
-        });
-
-        req1.on('error', function (e) {
-            console.log('problem with request: ' + e.message);
-        });
-
-        req1.write(user);
-//req1.write(hello);
-        req1.end();
-    });
-    app.get('/chats3',function (req, res1) {
-        var header={};
-        var hello = querystring.stringify({
-            'u' : '2183573656',
-            'p' : '18232577982'
-        });
-        var options2 = {
-            hostname: 'connect.qq.com',
-            port: 80,
-            path:url,
-            method: 'GET',
-            rejectUnauthorized:false,
-            headers: {
-                'Content-Type': 'application/x-www-form-urlencoded',
-                'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.71 Safari/537.36',
-                'Connection': 'keep-alive',
-                //'Cookie': 'ptui_loginuin=1404563299; pt2gguin=o1404563299; uin=o1404563299; skey=@DyVWF8E5a; ptisp=edu; RK=T9vO0DXGey; ptcz=ffd4352d2b5fe2f4a2ec272ee7bdf2a79d29c33a5230ddaf79fc7ef7a8b3121b'
-                'Cookie':cookies
-
-            }
-        };
-        var req2 = http.request(options2, function(res) {
-            console.log('STATUS: ' + res.statusCode);
-            header=JSON.stringify(res.headers);
-            console.log('HEADERS: ' + header);
-            res.setEncoding('utf8');
-            res.on('data', function (chunk) {
-console.log('BODY:'+chunk);
-             /* fs.appendFile('e:/blog/views/qq.html', chunk, function (err) {
-                    if (!err) {
-                        console.log('Wrote chunk to file.txt');
-                    } else {
-                        throw err;
-                    }
-                });*/
-
-
-            });
-            res.on('end',function() {
-                console.log('No more data in response.');
-               // res1.render('qq', {});
-               res1.redirect('/chatting');
-               //res1.redirect('http://connect.qq.com/widget/wpa/chat.html?tuin=2472740498&sigT='+sigt+"&sigU="+sigu);
-               // res1.redirect('/chats3');
-            })
-        });
-        req2.on('error', function(e) {
-            console.log('problem with request: ' + e.message);
-        });
-        req2.write(hello);
-        req2.end();
-    });
-
-
-    app.get('/chatting',function(req,res){
-        res.render("qq",{
-            className:"className",
-            nick:"nick",
-            time:"time",
-            msg:"kuaijiyihao"
-
-        });
-
-    })
 
     app.get('/reprint/:name/:day/:title', checkLogin);
     app.get('/reprint/:name/:day/:title', function (req, res) {
@@ -629,11 +994,11 @@ console.log('BODY:'+chunk);
         });
     });
 
-
+    /*
     app.use(function (req, res) {
         res.render("404");
     });
-
+    */
 
     function checkLogin(req,res,next) {
       //  console.log(req.session.user);
@@ -650,4 +1015,6 @@ console.log('BODY:'+chunk);
         }
         next();
     }
+
+
 };

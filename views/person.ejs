@@ -1,0 +1,82 @@
+
+<%- include header %>
+<div style="width:90%;position: relative;left:5%;top: 0.5em;">
+    <p>
+        <span>
+            <input class="btn btn-primary"  type="button" onclick="window.history.go(-1);" value="返回" />
+        </span>
+        <span>
+            <a class="btn btn-success" href="/person/edit">修改个人信息</a>
+        </span>
+    </p>
+
+    <table class="table table-bordered table-striped table-condensed">
+        <thead>
+        <tr>
+            <th width="20%">信息项</th>
+            <th>信息值</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>姓名<span class="necessary"> *</span></td>
+            <td class="td-value"><%= currentUser.name %></td>
+
+        </tr>
+        <tr>
+            <td>性别<span class="necessary"> *</span></td>
+            <td class="td-value"><%= currentUser.sex %></td>
+        </tr>
+
+        <%  currentUser.experience.forEach(function (experience, index) { %>
+        <% var translate = {"undergraduate":"本科","master":"硕士","doctor":"博士","postdoctor":"博士后"}%>
+        <% if (experience) { %>
+        <tr>
+            <td><%= translate[experience.experience] %><span class="necessary"> *</span></td>
+            <td class="td-value">
+                <%= experience.major %>&nbsp;&nbsp;&nbsp;<span style="color: darkorange">|</span>&nbsp;&nbsp;&nbsp;
+                <%= experience.date %>&nbsp;&nbsp;&nbsp;<span style="color: darkorange">|</span>&nbsp;&nbsp;&nbsp;
+                <%= experience.class %>&nbsp;&nbsp;&nbsp;<span style="color: darkorange">|</span>&nbsp;&nbsp;&nbsp;
+                <%= experience.studentId %>
+            </td>
+        </tr>
+        <% } %>
+        <% });%>
+
+        <tr>
+            <td>所在国家<span class="necessary"> *</span></td>
+            <td class="td-value"><%= currentUser.country %></td>
+        </tr>
+        <tr>
+            <td>城市<span class="necessary"> *</span></td>
+            <td class="td-value"><%= currentUser.city %></td>
+        </tr>
+        <tr>
+            <td>工作单位<span class="necessary"> *</span></td>
+            <td class="td-value"><%= currentUser.company %></td>
+        </tr>
+        <tr>
+            <td>职位<span class="necessary"> *</span></td>
+            <td class="td-value"><%= currentUser.position %></td>
+        </tr>
+        <tr>
+            <td>手机<span class="necessary"> *</span></td>
+            <td class="td-value"><%= currentUser.telephone %></td>
+        </tr>
+        <tr>
+            <td>邮箱<span class="necessary"> *</span></td>
+            <td class="td-value"><%= currentUser.email %></td>
+        </tr>
+        <tr>
+            <td>所属地方校友会</td>
+            <td class="td-value"><%= currentUser.xiaoHui %></td>
+        </tr>
+        <tr>
+            <td>校友会职务</td>
+            <td class="td-value"><%= currentUser.xPosition %></td>
+        </tr>
+
+        </tbody>
+    </table>
+</div>
+<%- include footer %>
