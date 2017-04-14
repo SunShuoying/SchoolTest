@@ -1,0 +1,4 @@
+::1 - - [Fri, 14 Apr 2017 10:26:24 GMT] "GET / HTTP/1.1" 200 11118 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36"
+::1 - - [Fri, 14 Apr 2017 10:26:24 GMT] "GET /stylesheets/style.css HTTP/1.1" 200 3372 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36"
+::1 - - [Fri, 14 Apr 2017 10:26:24 GMT] "GET /images/dog.jpg HTTP/1.1" 200 112537 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36"
+::1 - - [Fri, 14 Apr 2017 10:26:33 GMT] "GET /stylesheets/style.css HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.110 Safari/537.36"

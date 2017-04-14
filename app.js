@@ -19,7 +19,7 @@ var errorLog = fs.createWriteStream('error.log', {flags: 'a'});
 var app = express();
 //var io = require('socket.io').listen(app);
 // all environments
-app.set('port', process.env.PORT || 8000);
+app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'));
 
 app.set('view engine', 'ejs');
